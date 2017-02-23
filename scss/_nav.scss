@@ -1,0 +1,75 @@
+@import "./_color";
+
+.brand {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 3px;
+  a { color: #fff; }
+  a:hover { opacity: .8; color: #fff; }
+  &:first-of-type { 
+    font-size: 60px; 
+    margin-top: 10px;
+  }
+  @media (max-width:767px) {
+    display: none;
+  }
+}
+
+.navbar {
+  background: $bg-white;
+  font-size: 20px;
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  
+  &.navbar-fixed-top {
+    margin: 0;
+    .navbar-brand { 
+      display: inline-block; 
+      margin: 7px 0 0;
+    }
+  }
+
+  @media (max-width:767px) {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+}
+
+.navbar .navbar-brand {
+  display: none;
+  font-weight: bold;
+  img { 
+    height: 30px; 
+    margin-top: -5px;
+    display: inline-block;
+  }
+  @media (max-width:767px) {
+    display: inline-block;
+  }
+}
+
+.navbar .navbar-collapse {
+  padding: 10px;
+  text-align: center;
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+    li.active > a, 
+    li > a:hover,
+    li > a:focus {
+      background: transparent;
+      color: $brown;
+    }
+  }
+  .dropdown-menu {
+    border: none;
+  }
+  @media (max-width:767px) {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+

@@ -1,0 +1,142 @@
+@import "./_color";
+@import "./_nav";
+@import "./_footer";
+
+html, body {
+  color: $text-color;
+  font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑", "Microsoft YaHei", Helvetica, 'sans-serif';
+	font-size: 18px;
+
+  // background-image: url('../static/images/bg.jpg');
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  color: $brown;
+  &:hover {
+    color: $brown;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+blockquote {
+  background: rgba(255,255,255,.8);
+}
+
+.container-fluid { padding: 0; }
+
+.block {
+  background: $bg-white;
+  width: 75%;
+  margin: 20px auto;
+  padding: 30px 35px;
+  @media (max-width:767px) {
+    width: 100%;
+  }
+}
+
+.title {
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 20px 0 10px;
+}
+
+@keyframes enableOpenList {
+	0% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.list-content {
+  padding: 5px 20px;
+  display: none;
+	animation-name: enableOpenList;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
+  &.active { display: block; }
+  .date { font-weight: bold; }
+  .type { color: red; }
+}
+.comment {
+  font-size: 16px;
+  color: $light-gray;
+}
+
+ol, ul { padding-left: 25px; }
+
+p,li {
+  line-height: 2;
+}
+
+hr {
+  max-width: 400px;
+  border-color: $gray;
+}
+.list-content > hr { 
+  margin-top: 30px;
+  margin-bottom: 40px; 
+}
+
+ul.enableOpen {
+  list-style-type: none;
+  padding-left: 0;
+  & > li {
+    font-size: 20px;
+    &.active::before {
+      content: "\e259  ";
+    }
+    &::before {
+		  font-family:'Glyphicons Halflings';
+		  content: "\e258  ";
+		  font-size: 14px;
+      color: $text-color;
+    }
+    &:hover { opacity: .8; }
+    cursor: pointer;
+    color: $brown;
+  }
+}
+
+ol > li ol { list-style-type: lower-alpha; }
+
+.nav-tabs {
+  margin: 10px auto -20px;
+  padding: 0 12.5%;
+  border-bottom: none;
+  & > li.active > a,
+  & > li > a:hover { 
+    background: $bg-white; 
+    border: 1px solid $bg-white;
+  }
+  & > li > a:focus,
+  & > li.toTop > a { 
+    background: transparent; 
+    border: none;
+    color: $brown;
+  }
+  &.navbar-fixed-top {
+    margin: 0;
+    background: rgba(0,0,0,.1);
+  }
+  li.toTop { 
+    float: right; 
+    & > a::before {
+		  font-family:'Glyphicons Halflings';
+      content: "\e253";
+    }
+  }
+}
+

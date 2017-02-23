@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="{{#if lang}}en{{else}}zh-tw{{/if}}">
+  <head>
+    {{> head}}
+    <link rel="stylesheet" href="{{baseUrl}}css/home.css" />
+	</head>
+	<body>
+    {{> header}}
+    <div class="container-fluid">
+      <div class="block">
+        <hr><h3 class="title">{{home.head1}}!</h3><hr>
+        <p>{{home.content1}}</p>
+      </div> <!-- /.block -->
+      {{#if lang}}{{else}}
+      <div class="block">
+        <hr><h3 class="title">必看</h3><hr>
+        <ul class="enableOpen">
+          <li id="list-1">找老師寫推薦信注意事項(大四甄試研究所適用)</li>
+          <div id="content-1" class="list-content">
+            <h3 class="subtitle">準備工作</h3>
+            <ol><li>仔細看簡章上的要求, 包括封數/格式等等</li>
+                <li>思考要找的老師。有幾個思考的面向:
+                    <ol><li>除非有特殊原因, 否則專題老師一定要找</li>
+                        <li>最熟悉你的老師, 比方說上課或下課會去問問題的</li>
+                        <li>考試或作業有傑出表現科目的授課老師<br/>
+                            (什麼叫傑出? 兩年過後助教和老師還有印象就叫傑出!) <br/>
+                            不要以為找高分科目的老師幫你寫就會加分, 有時候找低分科目的老師幫你證明你其實有 100 分的實力, 反而更有加分效果<br/>
+                            (如果想破了頭都想不到應該找誰寫, 那你憑什麼甄試? 憑什麼要人家推薦你?)</li></ol></li>
+                <li>應準備的文件: (缺一樣或不完整就別想進入下一階段)
+                    <ol><li>備審資料</li>
+                        <li>成績單</li>
+                        <li>專題報告 (此時專題至少應完成 70% 實作)</li>
+                        <li>特殊表現清單 (值得被寫在推薦信中的事蹟; 至少三點)</li>
+                        <li>推薦信 (上方的基本資料先填好)</li></ol></li>
+            </ol>
+            <hr>
+            <h3 class="subtitle">寄信給老師</h3>
+            <ol><li>第一封信是詢問老師是否願意幫忙寫推薦信, 信中必須提供完整資訊, 包括:
+                  <ol><li>我是誰? 我和老師的關聯是?</li>
+                      <li>預計要甄試的校系, 未來想從事的研究方向</li>
+                      <li>想請老師幫忙推薦的事由 (應為特殊表現清單的子集合)</li>
+                      <li>備審資料電子檔</li>
+                      <li>成績單掃瞄檔</li>
+                      <li>專題報告電子檔</li>
+                      <li>推薦信電子檔 (已填好基本資料)</li>
+                      <li>上述資料若未包含照片, 應另附照片於信中, 或提供任何方便老師拾回對你的記憶的資訊 (如 Facebook 帳號) 不要期望老師看到名字就知道你是誰</li></ol></li>
+                <li>等老師回信說願意幫你寫之後, 才可以寫第二封信跟老師約時間, 切忌不要直接問 "老師什麼時候有空?", 如果老師說了一個時間, 但你卻沒空, 豈不糗哉? 比較好的作法是把課表給老師, 或是把有空的區段都列出, 讓老師可以很快速地選時段<br/>
+                    有些老師會叫你先寫好給他改, 這時候不要急著約時間, 先透過 email 往返推薦信的內容, 確定老師說 OK 了再約時間。 寄出第一封信之後, 一直到拿到推薦信為止, 要多檢查信箱。 老師隨時可能會問你問題, 要你補資料。<br/>
+                    如果你希望老師 "重視" 你的推薦信, 你必須 "非常重視" 與老師間的互動。<br/>
+                    至於到底要多常檢查信箱? <span style="font-weight:bold">Clean up your mail before you go to bed!</span></li></ol>
+            <hr>
+            <h3 class="subtitle">去拿推薦信</h3>
+            <p>除非老師明確地說他會從他那邊印, 否則一定要自己印了帶去 切忌帶一張空白的推薦信去找老師 (上面的基本資料一定要先填好) </p>
+            <hr>
+            <h3 class="subtitle">放榜之後</h3>
+            <p>記得要寄信跟老師說上榜的情況, 這是基本的禮貌, 未來若有機會再請同一位老師寫推薦信, 老師會比較願意再幫你寫</p>
+          </div> <!-- #content-1.list-content"> -->
+          <li id="list-2">怎麼找專題實驗室？ (大一 / 大二生適用)</li>
+          <div id="content-2" class="list-content">
+		        <p>沒有爛老師/爛學生, 只有適合/不適合的師生關係, 熱門的老師不一定適合你, 請用心找最適合你 (你也適合他) 的指導老師!!!</p>
+            <hr>
+		        <h3 class="subtitle">前言</h3>
+		          <p>成大資訊系在大三上、下兩學期有門必修課 "資訊專題(一)" 及 "資訊專題(二)", 是資訊系學生進入某個專業領域的主要方式之一。
+
+		          <blockquote>
+                <p>此課程主要在培養大學部學生動手實作一個資訊小系統或小模組的能力。資訊系學生在大一、大二，和大三上學期已修習了很多資訊領域的基礎和專業知識，也已具備軟/硬體程式的能力。在修習資訊專題此門課之前，學生程式能力的培養是奠基在專業課程中的程式性作業，尚未有針對某個資訊應用系統或模組整合性程式能力培養。<u>此門課將由學生根據自己的興趣和老師的專業及研究方向，由學生主動找老師</u>，老師帶數位學生，進行某一個資訊應用系統或模組的專題研究，並將其由程式化實現之。</p>
+                <footer><cite><a target="_blank" href="http://course-query.acad.ncku.edu.tw/crm/course_map/course.php?dept=F7&cono=F730210">資訊專題(一)</a></cite> 的概述</footer>
+              </blockquote>
+		          <!--p>注意 "此門課將由學生根據自己的興趣和老師的專業及研究方向，由學生主動找老師"。</p-->
+		          <p>問題是, 找哪位老師? 應該何時找? 怎麼找?</p>
+              <hr>
+		  <h3 class="subtitle">本文在這裡</h3>
+		  <ul><li>找哪位老師?
+		      <div class="que">我才大一/大二, 我不知道要找哪位老師？</div>
+		      <div class="ans">課程綱要中有提到 "根據自己的興趣和老師的專業及研究方向"。</div>
+
+		     <div class="que">但我怎麼知道我對什麼領域有興趣？</div>
+		     <div class="ans">施主, 這個問題就要問你自己了。興趣別人無法幫你決定。如果真的完全無法找到興趣，那就選個比較不討厭的！</div>
+
+		     <div class="que">我知道我興趣在哪, 但我應該找哪位老師呢？</div>
+		     <div class="ans">首先你應該瀏覽系上網頁 "<a href="http://www.csie.ncku.edu.tw/ncku_csie/research/groups" target="_blank">學術研究 -> 研究群</a>" 看看你有興趣的研究群中有哪些老師。 </br>
+		 然後到 "<a href="http://www.csie.ncku.edu.tw/ncku_csie/depmember/teacher" target="_blank">系所成員 -> 師資陣容</a>" 去找這幾位老師的個人網頁及實驗室網頁, 裡面會有更細盡的資訊。</div>
+
+		      <div class="que">老師跟實驗室的網頁我都看不懂怎麼辦？</div>
+		      <div class="ans">一開始看不懂是正常的, 你需要做功課!! Google 是你的好朋友!
+		 另外, 應該去查一下有興趣的老師指導研究生的畢業論文, 還有近幾年指導的專題題目。
+		 (碩博士論文可至<a target="_blank" href="http://ndltd.ncl.edu.tw/">臺灣博碩士論文知識加值系統</a>查,
+		 系上近幾年專題題目可以到 <a target="_blank" href="http://www.csie.ncku.edu.tw/ncku_csie/student/bachelor#tab2">這裡</a> 查詢)</br>
+
+	        <div class="que">還是看的霧煞煞怎辦?</div>
+	        <div class="ans">在鎖定幾位老師之後, 你應該趁每年的專題展去看看那幾位老師指導的學長姊的作品, 多問問題, 問到你懂為止! 當然也可以私下請教, 不需要等到專題展。</div>
+
+	        <div class="que">會不會選了之後才後悔？</div>
+	        <div class="ans">當然有可能！找老師跟找老婆一樣，如果早上才剛認識，下午就衝去登記結婚，你覺得後悔的機率大不大？功課做的愈足，後悔的機率就愈小！</div>
+	        <div class="que">功課做足了就一定不會後悔嗎？</div>
+	        <div class="ans">還是有可能會後悔！有不少人在做完專題之後才發現這個領域其實沒那麼有趣 (或做不來)，研究所就換領域了！
+	           這很正常！這很正常！這很正常！
+	           但你一定要確定在作選擇的當下，你對這個領域是不排斥的。未來的事誰也說不準，做了才會知道！</br>
+	           另外，你應該培養一個能力：即使在途中發現沒興趣了，你也能持續認真做到最後一刻，畢竟人生中不是每件工作都能剛好符合興趣的。</div>
+
+	      </li><hr/>
+        <li>應該何時找老師？
+	        <div class="que">專題大三上才開始, 我是不是大三上開學之後再找就好?</div>
+	        <div class="ans">不是不行, 但每位老師的時間和實驗室資源有限, 無法想收幾位就收幾位, 如果你已經把上述的功課作足, 並且很確定想要找的老師是誰, 擇日不如撞日! 根據經驗, 大部分的學生會在專題開始前一個學期 (也就是大二下) 找到指導老師。</div>
+
+	        <div class="que">同學都好早就開始找, 如果我想找的老師一下就收滿了怎麼辦?</div>
+	        <div class="ans">限量是殘酷的 (茶)。但請不要什麼功課都沒做就提早亂找, 如果 100 位同學每位都來花我 10 分鐘時間, 我要花 16 小時!! </div>
+
+	        <div class="que">我還是不知道我的興趣在哪, 我覺得我做什麼都可以,那我能不能大三上開學後由系辦幫我決定?</div>
+	        <div class="ans">系辦無法幫你決定, 只能告訴你哪些老師 "可能" 還沒收滿, 你還是要自己去找老師!</div>
+        </li><hr/>
+	      <li>怎麼找？
+	        <div class="que">我已經做好功課, 很確定就是想找 XX 老師, 接下來怎麼辦？</div>
+	        <div class="ans">在與老師聯絡之前, 請 "務必" 先去詢問該老師的學生, 一來確認自己之前做的功課理解無誤, 二來應該問一下老師帶學生的方式, 確認是不是自己想要的方式。如果都確定了, 就可以寫信跟老師約時間, 在信中務必要提到:
+	          <ol>
+	            <li>我是誰, 之前和老師的交集 (修過課, 問過問題, ...)</li>
+	            <li>做過什麼功課 (參觀專題展, 瀏覽過網頁, 看過老師的論文, ...)</li>
+	            <li>想做什麼題目, 以及找這位老師指導的確切理由 (請不要寫 "因為老師人很帥" 或 "因為老師人很好", 那樣表示你沒有做過功課!)</li>
+	            <li>曾經詢問過哪一位 (或哪幾位) 學長姊</li>
+	          </ol>
+	          若你有打算研究所繼續留在系上念，找老師面談的時候可以跟老師說，老師比較能建議一些較有延續性的題目,讓你研究所可以繼續做。</div>
+      </li></ul>
+    <hr>
+    <h3 class="subtitle">後記</h3>
+      <p>學生沒做功課就亂找，常常讓我哭笑不得。曾經有學生(還是個卷哥)來找我談之後，發現我原來是做網路的，說了一句 "老師，原來你不是研究 C++ 的啊?"。</p>
+	    <p>另外，學生喜歡在 email 裡用一行文，讓人也只好回他一行文。下面節錄一段我與學生 email 往返的內容 (不是即時通訊)</p>
+      <blockquote class="conversation">
+        <p class="student">生：想跟老師約時間，了解一下專題內容</p>
+	      <p class="teacher">師：目前對我實驗室知道多少？</p>
+	      <p class="student">生：行動網路相關的
+	研究主題,計畫包括 通訊 定位 寬頻網路 等等</p>
+	<p class="teacher">師：有問過我的哪個學生嗎?</p>
+	<p class="student">生：還沒有問過</p>
+	<p class="teacher">師：你先找我學生談，確定有興趣再找我</p>
+	<p class="student">生：好~謝謝</p></blockquote>
+	    <p>然後就沒消息了。<br/>
+	  學生都很愛直接找老師，以為老師會告訴他接下來每一步要怎麼做, 所以先見了再說。我個人的經驗，超過一半以上的信都是只有一兩句話，直接破題要見老師。</p>
+	    <p>不是老師愛耍大牌，而是因為很多學生來辦公室找我時，過程往往都是：</p>
+	    <blockquote class="conversation"><p><i>生：老師，我們想來問專題。</br>
+	師：好，請坐。</br>
+	(靜~) (學生總是要等老師先開口？)</br>
+	師：你叫什麼名字？</br>
+	生：XXX。</br>
+	師：你來找我，想必你是對網路有興趣囉？</br>
+	生：ㄜ...其實我不知道。</br>
+	師：那你來找我的原因是？</br>
+	(靜~)</br>
+	師：好吧，我大概說一下我實驗室在做什麼...</br>
+	(五分鐘過去~)</br>
+	師：這樣聽完之後，對我實驗室還有興趣嗎？</br>
+	生：ㄜ...我不知道，我要回去想一下。謝謝老師。</br>
+	(學生起身就走，感覺想趕快逃離現場)</br></i></p></blockquote>
+
+          </div> <!-- #content-2.list-content -->
+        </ul>
+      </div> <!-- /.block -->
+      {{/if}}
+      <div class="block">
+        <hr><h3 class="title">{{home.head3}}</h3><hr>
+        <ul class="enableOpen">
+          {{#each news}}
+          <li id="list-{{replaceBlank @key}}" class="{{#if @first}}active{{/if}}">{{@key}}</li>
+            <div id="content-{{replaceBlank @key}}" class="list-content {{#if @first}} active {{/if}}">
+              {{#each this}}
+              <div class="row" {{#if @first}}{{else}}style="margin-top:10px;"{{/if}}>
+                <div class="col-md-2 date">{{this.date}}</div>
+                <div class="col-md-1 col-xs-2 type">{{#if ../../lang}}grats{{else}}{{this.type}}{{/if}}</div>
+                <div class="col-md-9 col-xs-10">
+                  {{#ifCond this.description_en '&&' ../../lang}}
+                    {{{this.description_en}}}
+                  {{else}}
+                    {{{this.description}}}
+                {{/ifCond}}</div>
+              </div>
+                {{#if this.comment}}
+                <div class="row">
+                  <div class="col-md-3 col-xs-2"></div>
+                  <div class="col-md-9 col-xs-10 comment">
+                    {{#ifCond this.comment_en '&&' ../../lang}}
+                      {{{this.comment_en}}}
+                    {{else}}
+                      {{{this.comment}}}
+                  {{/ifCond}}</div>
+                </div>
+                {{/if}}
+              {{/each}}
+            </div> <!-- /.list-content -->
+          {{/each}}
+        </ul>
+      </div> <!-- /.block -->
+      <div class="block" id="visitor">
+        <hr><h3 class="title">Visitors (since May 9th 2016)</h3><hr>
+        <a href="http://info.flagcounter.com/WV9Z" target="_blank">
+          <img src="http://s06.flagcounter.com/map/WV9Z/size_m/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0">
+        </a>
+        <a href="http://s05.flagcounter.com/more/AX" target="_blank">
+          <img src="http://s05.flagcounter.com/count2/AX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_30/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
+        </a>
+      </div> <!-- /.block -->
+    </div> <!-- /.container-fluid -->
+    {{> footer }}
+    <script src="{{baseUrl}}js/home.js"></script>
+  </body>
+</html>

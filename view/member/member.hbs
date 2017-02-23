@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{#if lang}}en{{else}}zh-tw{{/if}}">
+  <head>
+    {{> head}}
+    <link rel="stylesheet" href="{{baseUrl}}css/member.css" />
+	</head>
+	<body>
+    {{> header}}
+    <div class="container-fluid">
+      <ul class="nav nav-tabs">
+      {{#each members}}
+        <li {{#if @first}} class="active" {{/if}}><a href="#mem-{{@index}}">{{getLang ../member @key}}</a></li>
+      {{/each}}
+        <li class="toTop"><a href="#"></a></li>
+      </ul>
+      {{#each members}}
+      <div class="block" id="mem-{{@index}}">
+        <hr><h3 class="title">{{getLang ../member @key}}</h3><hr>
+        {{#each this}}
+        <h3 {{#if @first}}{{else}}style="margin-top:50px"{{/if}}>{{#if @key}}{{getLang ../../member @key}}{{/if}}</h3>
+          {{#each this}}
+            {{#ifCond @index '!%' 3}} <div class="row" {{#if @first}}{{else}}style="margin-top:20px"{{/if}}> {{/ifCond}}
+            <div class="col-md-4">
+              <div class="photo" style="background-image:url('{{../../../baseUrl}}images/members/{{this.image}}');"></div>
+              <div class="subtitle">
+                {{this.name_ch}} {{#if this.comment}}({{this.comment}}){{/if}}<br/>
+                {{#if this.name_en}} ({{this.name_en}}) {{/if}}
+              </div>
+              {{#if this.paper}}
+                <div class="row comment">
+                  <div class="col-md-3">{{../../../member.thesis}}</div>
+                  <div class="col-md-9">{{this.paper}}</div>
+                </div> 
+              {{/if}}
+              {{#if this.proj}}
+                <div class="row comment">
+                  <div class="col-md-3">{{../../../member.proj}}</div>
+                  <div class="col-md-9">{{this.proj}}</div>
+                </div> 
+              {{/if}}
+              {{#if this.job}}
+                <div class="row comment">
+                  <div class="col-md-3">{{../../../member.destn}}</div>
+                  <div class="col-md-9">{{this.job}}</div>
+                </div>
+              {{/if}}
+            </div>
+            {{#if @last}} </div> {{/if}}
+            {{#ifCond @last '==' ''}} {{#ifCond @index '!+%' 3}} </div> {{/ifCond}} {{/ifCond}}
+          {{/each}}
+        {{/each}}
+      </div> <!-- /.block -->
+      {{/each}}
+    </div> <!-- /.container-fluid -->
+    {{> footer }}
+  </body>
+</html>
+
