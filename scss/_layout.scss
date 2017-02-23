@@ -1,0 +1,68 @@
+@import "./_color";
+@import "./_nav";
+@import "./_footer";
+
+@font-face {
+  font-family: 'NotoSansCJKtc-Regular';
+  src: url("./font/NotoSansCJKtc-Regular.woff") format('woff');
+}
+
+html, body {
+  color: $text-color;
+  font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑","Microsoft YaHei", Helvetica, 'sans-serif';
+	font-size: 18px;
+
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+a {
+  color: #CE5024;
+  &:hover {
+    color: #CE5024;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+.block {
+  background: rgba(255,255,255,.9);
+  width: 75%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+p {
+  color: #000;
+  line-height: 1.6;
+}
+
+hr {
+  max-width: 400px;
+  border-color: $gray;
+}
+
+ul.enableOpen {
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+  li {
+    &::before {
+		  font-family:'Glyphicons Halflings';
+		  content: "\e259  ";
+		  font-size: 14px;
+    }
+    &:hover {
+      color: #CE5024;
+    }
+    cursor: pointer;
+  }
+}
+

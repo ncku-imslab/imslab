@@ -1,0 +1,1 @@
+Element.prototype.removeClass=function(e){return this.className=this.className.replace(new RegExp("(?:^|\\s)"+e+"(?:\\s|$)")," "),this},Element.prototype.addClass=function(e){return this.className+=" "+e,this};
