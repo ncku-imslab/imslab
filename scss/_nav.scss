@@ -43,6 +43,12 @@
   .navbar-nav {
     float: none;
     display: inline-block;
+    li.active > a, 
+    li > a:hover,
+    li > a:focus {
+      background: transparent;
+      color: $brown;
+    }
   }
   .dropdown-menu {
     border: none;
