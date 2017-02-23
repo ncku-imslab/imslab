@@ -28,11 +28,16 @@ a {
   }
 }
 
+.container-fluid { padding: 0; }
+
 .block {
   background: rgba(255,255,255,.9);
   width: 75%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px 35px;
+  @media (max-width:767px) {
+    width: 100%;
+  }
 }
 
 .title {
@@ -51,18 +56,18 @@ hr {
 
 ul.enableOpen {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
   font-size: 20px;
   li {
     &::before {
 		  font-family:'Glyphicons Halflings';
 		  content: "\e259  ";
 		  font-size: 14px;
+      color: $text-color;
     }
-    &:hover {
-      color: #CE5024;
-    }
+    &:hover { opacity: .8; }
     cursor: pointer;
+    color: #CE5024;
   }
 }
 
