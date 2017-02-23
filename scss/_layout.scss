@@ -55,6 +55,8 @@ a {
   padding: 5px 20px;
   display: none;
   &.active { display: block; }
+  .date { font-weight: bold; }
+  .type { color: red; }
 }
 
 ol, ul { padding-left: 25px; }
