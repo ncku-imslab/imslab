@@ -56,7 +56,8 @@ a {
   display: none;
   &.active { display: block; }
   .date { font-weight: bold; }
-  .type { color: red; }
+  .type-red { color: red; }
+  .type-blue { color: blue; }
 }
 
 ol, ul { padding-left: 25px; }

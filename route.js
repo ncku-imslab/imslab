@@ -1,10 +1,12 @@
 var path = require('path');
 var url = require('url');
+var news = require('./data/news.json');
 
 route = [
   {
     data: {
-      "title": "IMS Lab"
+      "title": "IMS Lab",
+      "news": news.news
     },
     "partials": './partials.js',
     "layout":  "./view/index.hbs",
