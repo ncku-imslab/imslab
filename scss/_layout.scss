@@ -51,13 +51,28 @@ a {
   padding-top: 10px;
 }
 
+@keyframes enableOpenList {
+	0% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .list-content {
   padding: 5px 20px;
   display: none;
+	animation-name: enableOpenList;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
   &.active { display: block; }
   .date { font-weight: bold; }
-  .type-red { color: red; }
-  .type-blue { color: blue; }
+  .type { color: red; }
+  .comment {
+    font-size: 16px;
+    color: #5d5d5d;
+  }
 }
 
 ol, ul { padding-left: 25px; }

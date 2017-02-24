@@ -32,6 +32,11 @@
 .navbar .navbar-brand {
   display: none;
   font-weight: bold;
+  img { 
+    height: 30px; 
+    margin-top: -5px;
+    display: inline-block;
+  }
   @media (max-width:767px) {
     display: inline-block;
   }
@@ -52,6 +57,10 @@
   }
   .dropdown-menu {
     border: none;
+  }
+  @media (max-width:767px) {
+    text-align: left;
+    padding-left: 20px;
   }
 }
 

@@ -56,22 +56,24 @@
       <div class="block">
         <hr><h3 class="title">最新消息</h3><hr>
         <ul class="enableOpen">
-          <li id="list-2017">2017</li>
-            <div id="content-2017" class="list-content active">
-              {{#each news}}
+          {{#each news}}
+          <li id="list-{{@key}}">{{@key}}</li>
+            <div id="content-{{@key}}" class="list-content {{#if @first}} active {{/if}}">
+              {{#each this}}
               <div class="row">
                 <div class="col-xs-2 date">{{this.date}}</div>
-                {{#if this.type}}
-                <div class="col-xs-1 type-red">狂賀</div>
-                {{else}}
-                <div class="col-xs-1 type-blue">賀</div>
-                {{/if}}
+                <div class="col-xs-1 type">{{this.type}}</div>
                 <div class="col-xs-9">{{this.description}}</div>
-              </div>
+              </div> 
+                {{#if this.comment}}
+                <div class="row">
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-10 comment">{{this.comment}}</div>
+                </div>
+                {{/if}}
               {{/each}}
             </div> <!-- /.list-content -->
-          <li>2016</li>
-          <li>2015</li>
+          {{/each}}
         </ul>
       </div> <!-- /.block -->
     </div> <!-- /.container-fluid -->

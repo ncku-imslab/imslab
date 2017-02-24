@@ -6,7 +6,7 @@ route = [
   {
     data: {
       "title": "IMS Lab",
-      "news": news.news
+      "news": news
     },
     "partials": './partials.js',
     "layout":  "./view/index.hbs",
