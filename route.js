@@ -25,6 +25,16 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/research.hbs",
     "filename": "./docs/research/index.html"
+  },
+  {
+    data: {
+      "title": "指導教授 - IMS Lab",
+      "menu_member": true,
+      "baseUrl": "../../"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/member/professor.hbs",
+    "filename": "./docs/member/professor/index.html"
   }
 ];
 
