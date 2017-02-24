@@ -2,6 +2,7 @@ var path = require('path');
 var url = require('url');
 var news = require('./data/news.json');
 var projects = require('./data/projects.json');
+var members = require('./data/members.json');
 
 route = [
   {
@@ -35,6 +36,28 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/member/professor.hbs",
     "filename": "./docs/member/professor/index.html"
+  },
+  {
+    data: {
+      "title": "學生 - IMS Lab",
+      "menu_member": true,
+      "baseUrl": "../../",
+      "members": members.students
+    },
+    "partials": './partials.js',
+    "layout":  "./view/member/member.hbs",
+    "filename": "./docs/member/student/index.html"
+  },
+  {
+    data: {
+      "title": "學生 - IMS Lab",
+      "menu_member": true,
+      "baseUrl": "../../",
+      "members": members.alumni
+    },
+    "partials": './partials.js',
+    "layout":  "./view/member/member.hbs",
+    "filename": "./docs/member/alumni/index.html"
   }
 ];
 

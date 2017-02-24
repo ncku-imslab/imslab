@@ -1,0 +1,114 @@
+{
+  "students": {
+    "學生 - 博士班學生": {
+      "": [
+        {
+          "name_ch": "莊琮暉",
+          "name_en": "Tsung-Hui Chuang",
+          "image": "thchuang.jpg"
+        },
+        {
+          "name_ch": "張蕙玲",
+          "name_en": "Hui-Ling Chang",
+          "image": "hlchang.jpg"
+        },
+        {
+          "name_ch": "林佳瑩",
+          "name_en": "Chia-Ying Lin",
+          "image": "cylin.jpg"
+        }
+      ]
+    },
+    "學生 - 碩士班學生": {
+      "碩三": [
+        {
+          "name_ch": "呂宜龍",
+          "name_en": "Yi Long Lu",
+          "image": "yllu.jpg"
+        },
+        {
+          "name_ch": "張鶴騰",
+          "name_en": "He-Teng Chang",
+          "image": "htchang.jpg"
+        }
+      ],
+      "碩二": [
+        {
+          "name_ch": "吳孟庭",
+          "name_en": "Mong-Ting Wu",
+          "image": "mtwu.jpg"
+        },
+        {
+          "name_ch": "林賢哲",
+          "name_en": "Sian-Jhe Lin",
+          "image": "sjlin.jpg"
+        }
+      ],
+      "碩一": [
+        {
+          "name_ch": "謝忠穎",
+          "name_en": "Chung-Ying Hsieh",
+          "image": "cyhsieh.jpg"
+        },
+        {
+          "name_ch": "陳蓓蓓",
+          "name_en": "Pei-Pei Chen",
+          "image": "ppchen.jpg"
+        },
+        {
+          "name_ch": "方彥婷",
+          "name_en": "Yen-Ting Fang",
+          "image": "ytfang.jpg"
+        }
+      ]
+    },
+    "學生 - 大學部專題生": {
+      "107級": [
+        {
+          "name_ch": "方鈞麒",
+          "name_en": "Chun-Chi Fang",
+          "image": "ccfang.jpg"
+        },
+        {
+          "name_ch": "趙珮均",
+          "image": "pcchao.jpg"
+        },
+        {
+          "name_ch": "陳珞安",
+          "image": "lachen.jpg"
+        }
+      ]
+    }
+  },
+  "alumni": {
+    "學成下山 - 碩士": {
+      "102 年畢": [
+        {
+          "name_ch": "俞中豪",
+          "name_en": "Chung-Hau Yu",
+          "image": "chyu.jpg",
+          "paper": "LTE-A上行傳輸中藉由正向回饋協調細胞間干擾之方法",
+          "job": "富智康 (FIH Mobile Limited)"
+        },
+        {
+          "name_ch": "余仲剴",
+          "name_en": "Zhong-Kai Yu",
+          "image": "zkyu.jpg",
+          "paper": "設備對設備通訊中無線電資源重覆使用之研究",
+          "job": "思銳科技 (研發替代役)"
+        }
+      ]
+    },
+    "學成下山 - 學士": {
+      "101 級": [
+        {
+          "name_ch": "高宏瑋",
+          "name_en": "Hung-Wei Kao",
+          "image": "hwkao.jpg",
+          "paper": "主動偵測與隔離記憶體不當使用之方法",
+          "job": "成大資工所碩士生"
+        }
+      ]
+    }
+  }
+}

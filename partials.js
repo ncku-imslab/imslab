@@ -27,6 +27,12 @@ module.exports= function (hbs) {
         return (v1 && v2) ? options.fn(this) : options.inverse(this);
       case '||':
         return (v1 || v2) ? options.fn(this) : options.inverse(this);
+      case '%':
+        return (v1 % v2) ? options.fn(this) : options.inverse(this);
+      case '!%':
+        return (v1 % v2) ? options.inverse(this) : options.fn(this);
+      case '!+%':
+        return ((v1+1) % v2) ? options.inverse(this) : options.fn(this);
       default:
         return options.inverse(this);
     }
