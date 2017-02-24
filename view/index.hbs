@@ -2,7 +2,7 @@
 <html>
   <head>
     {{> head}}
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="{{baseUrl}}css/home.css" />
 	</head>
 	<body>
     {{> header}}
@@ -32,6 +32,7 @@
                         <li>特殊表現清單 (值得被寫在推薦信中的事蹟; 至少三點)</li>
                         <li>推薦信 (上方的基本資料先填好)</li></ol></li>
             </ol>
+            <hr>
             <h3 class="subtitle">寄信給老師</h3>
             <ol><li>第一封信是詢問老師是否願意幫忙寫推薦信, 信中必須提供完整資訊, 包括:
                   <ol><li>我是誰? 我和老師的關聯是?</li>
@@ -46,8 +47,10 @@
                     有些老師會叫你先寫好給他改, 這時候不要急著約時間, 先透過 email 往返推薦信的內容, 確定老師說 OK 了再約時間。 寄出第一封信之後, 一直到拿到推薦信為止, 要多檢查信箱。 老師隨時可能會問你問題, 要你補資料。<br/>
                     如果你希望老師 "重視" 你的推薦信, 你必須 "非常重視" 與老師間的互動。<br/>
                     至於到底要多常檢查信箱? <span style="font-weight:bold">Clean up your mail before you go to bed!</span></li></ol>
+            <hr>
             <h3 class="subtitle">去拿推薦信</h3>
             <p>除非老師明確地說他會從他那邊印, 否則一定要自己印了帶去 切忌帶一張空白的推薦信去找老師 (上面的基本資料一定要先填好) </p>
+            <hr>
             <h3 class="subtitle">放榜之後</h3>
             <p>記得要寄信跟老師說上榜的情況, 這是基本的禮貌, 未來若有機會再請同一位老師寫推薦信, 老師會比較願意再幫你寫</p>
           </div>
@@ -78,6 +81,6 @@
       </div> <!-- /.block -->
     </div> <!-- /.container-fluid -->
     {{> footer }}
-    <script src="./js/home.js"></script>
+    <script src="{{baseUrl}}js/home.js"></script>
   </body>
 </html>
