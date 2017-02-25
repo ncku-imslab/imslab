@@ -1,11 +1,13 @@
-var nav, navTop;
+var nav, navTop, hasTabs = false;
 
 (function() {
   nav = document.getElementsByClassName("nav-tabs")[0];
   if(typeof nav === "undefined") 
     nav = document.getElementsByClassName("navbar")[0];
-  else
+  else {
     nav.addEventListener('click', navClick, false);
+    hasTabs = true;
+  }
   navTop = nav.offsetTop;
 
   var lists = document.getElementsByClassName("enableOpen");
@@ -17,6 +19,26 @@ $(window).bind("scroll", function() {
   var offset = $(document).scrollTop();
   if(offset > navTop) nav.addClass("navbar-fixed-top");
   else nav.removeClass("navbar-fixed-top");
+
+  if(hasTabs) {
+    var tabs = nav.getElementsByTagName("A");
+    for(var i=0; i<tabs.length; ++i) {
+      if(tabs[i].parentElement.hasClass("toTop")) continue;
+      var id = tabs[i].getAttribute("href").substr(1);
+      id = document.getElementById(id);
+      var pos = id.offsetTop + id.offsetHeight - 82;
+      if(offset <= pos) {
+        if(!tabs[i].parentElement.hasClass("active")) {
+          var act = nav.getElementsByClassName("active");
+          if(act.length) act[0].removeClass("active");
+          tabs[i].parentElement.addClass("active");
+        }
+        break;
+      } 
+    }
+    var act = nav.getElementsByClassName("active");
+    if(!act.length) tabs[0].parentElement.addClass("active");
+  }
 });
 
 function scrollTo(id) {
@@ -39,11 +61,13 @@ function toggleList(e) {
 
 function navClick(e) {
   if(e.target.tagName.toUpperCase() === "A") {
-    var id = e.target.getAttribute("href").substr(1);
-    var act = e.currentTarget.getElementsByClassName("active");
-    for(var i=0; i<act.length; ++i) act[i].removeClass("active");
-    e.target.parentElement.addClass("active");
-    scrollTo(id);
+    if(e.target.parentElement.hasClass("toTop")) { 
+      var body = $("html, body");
+      body.stop().animate({scrollTop: 0}, '500', 'swing');
+    } else {
+      var id = e.target.getAttribute("href").substr(1);
+      scrollTo(id);
+    }
   }
 }
 
@@ -59,8 +83,10 @@ Element.prototype.removeClass = function(name) {
 };
 
 Element.prototype.addClass = function(name) {
-  if(!this.hasClass(name))
+  if(!this.hasClass(name)) {
     this.className += (" "+name);
+    this.className = this.className.trim();
+  }
   return this;
 };
 

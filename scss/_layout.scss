@@ -109,14 +109,27 @@ ol > li ol { list-style-type: lower-alpha; }
   margin: 10px auto -20px;
   padding: 0 12.5%;
   border-bottom: 2px solid $bg-white;
-  li.active a,
+  & > li.active > a,
   & > li > a:hover { 
     background: $bg-white; 
     border: 1px solid $bg-white;
   }
+  & > li > a:focus,
+  & > li.toTop > a { 
+    background: transparent; 
+    border: none;
+    color: $brown;
+  }
   &.navbar-fixed-top {
     margin: 0;
     background: rgba(0,0,0,.1);
+  }
+  li.toTop { 
+    float: right; 
+    & > a::before {
+		  font-family:'Glyphicons Halflings';
+      content: "\e253";
+    }
   }
 }
 
