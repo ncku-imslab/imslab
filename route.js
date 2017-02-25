@@ -3,6 +3,7 @@ var url = require('url');
 var news = require('./data/news.json');
 var projects = require('./data/projects.json');
 var members = require('./data/members.json');
+var honors = require('./data/honors.json');
 
 route = [
   {
@@ -58,6 +59,17 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/member/member.hbs",
     "filename": "./docs/member/alumni/index.html"
+  },
+  {
+    data: {
+      "title": "榮譽 - IMS Lab",
+      "menu_member": true,
+      "baseUrl": "../",
+      "members": honors
+    },
+    "partials": './partials.js',
+    "layout":  "./view/honors.hbs",
+    "filename": "./docs/honor/index.html"
   }
 ];
 

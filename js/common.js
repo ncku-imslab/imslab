@@ -36,8 +36,6 @@ $(window).bind("scroll", function() {
         break;
       } 
     }
-    var act = nav.getElementsByClassName("active");
-    if(!act.length) tabs[0].parentElement.addClass("active");
   }
 });
 
