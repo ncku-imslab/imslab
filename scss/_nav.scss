@@ -17,12 +17,21 @@
 }
 
 .navbar {
-  background: rgba(255,255,255,.9);
+  background: $bg-white;
   font-size: 20px;
   border: none;
   border-radius: 0;
   margin-top: 20px;
   margin-bottom: 0;
+  
+  &.navbar-fixed-top {
+    margin: 0;
+    .navbar-brand { 
+      display: inline-block; 
+      margin: 7px 0 0;
+    }
+  }
+
   @media (max-width:767px) {
     margin-top: 0;
     padding: 0 20px;

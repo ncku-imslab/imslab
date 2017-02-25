@@ -7,8 +7,13 @@
 	<body>
     {{> header}}
     <div class="container-fluid">
+      <ul class="nav nav-tabs">
       {{#each members}}
-      <div class="block">
+        <li {{#if @first}} class="active" {{/if}}><a href="#mem-{{@index}}">{{@key}}</a></li>
+      {{/each}}
+      </ul>
+      {{#each members}}
+      <div class="block" id="mem-{{@index}}">
         <hr><h3 class="title">{{@key}}</h3><hr>
         {{#each this}}
         <h3>{{@key}}</h3>

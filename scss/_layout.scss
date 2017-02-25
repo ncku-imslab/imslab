@@ -31,7 +31,7 @@ a {
 .container-fluid { padding: 0; }
 
 .block {
-  background: rgba(255,255,255,.9);
+  background: $bg-white;
   width: 75%;
   margin: 20px auto;
   padding: 30px 35px;
@@ -104,4 +104,19 @@ ul.enableOpen {
 }
 
 ol > li ol { list-style-type: lower-alpha; }
+
+.nav-tabs {
+  margin: 10px auto -20px;
+  padding: 0 12.5%;
+  border-bottom: 2px solid $bg-white;
+  li.active a,
+  & > li > a:hover { 
+    background: $bg-white; 
+    border: 1px solid $bg-white;
+  }
+  &.navbar-fixed-top {
+    margin: 0;
+    background: rgba(0,0,0,.1);
+  }
+}
 
