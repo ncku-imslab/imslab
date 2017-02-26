@@ -4,6 +4,7 @@ var news = require('./data/news.json');
 var projects = require('./data/projects.json');
 var members = require('./data/members.json');
 var honors = require('./data/honors.json');
+var conf = require('./data/conference.json');
 
 route = [
   {
@@ -70,6 +71,17 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/honor.hbs",
     "filename": "./docs/honor/index.html"
+  },
+  {
+    data: {
+      "title": "相關資源 - IMS Lab",
+      "menu_resource": true,
+      "baseUrl": "../",
+      "conf": conf
+    },
+    "partials": './partials.js',
+    "layout":  "./view/resource.hbs",
+    "filename": "./docs/resource/index.html"
   }
 ];
 

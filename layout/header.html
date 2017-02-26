@@ -27,16 +27,7 @@
           </ul>
         </li>
         <li {{#if menu_honor}} class="active" {{/if}}><a href="{{baseUrl}}honor">榮譽 {{#if menu_honor}} <span class="sr-only">(current)</span> {{/if}}</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相關資源 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">相關技術文件</a></li>
-            <li><a href="#">相關期刊</a></li>
-            <li><a href="#">相關研討會</a></li>
-            <li><a href="#">推薦部落格</a></li>
-            <li><a href="#">可申請獎項</a></li>
-          </ul>
-        </li>
+        <li {{#if menu_resource}} class="active" {{/if}}><a href="{{baseUrl}}resource">相關資源 {{#if menu_resource}} <span class="sr-only">(current)</span> {{/if}}</a></li>
         <li><a href="#">聯絡我們</a></li>
         <li><a href="#">English</a></li>
       </ul>

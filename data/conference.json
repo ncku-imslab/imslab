@@ -1,0 +1,62 @@
+{
+  "ACM SIGCOMM": [
+    {
+      "date": "2016, August 22-26",
+      "place": "Salvador, Brazil",
+      "deadline": "2016, January 22",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2016/"
+    },
+    {
+      "date": "2015, August 17-21",
+      "place": "London, UK",
+      "deadline": "2015, January 30",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2015/"
+    },
+    {
+      "date": "2014, August 17-22",
+      "place": "Chicago, USA",
+      "deadline": "2014, January 31",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2014/"
+    },
+    {
+      "date": "2013, August 12-16",
+      "place": "Hong Kong, China",
+      "deadline": "2013, January 27",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2013/"
+    },
+    {
+      "date": "2012, August 13-17",
+      "place": "Helsinki, Finland",
+      "deadline": "2012, January 27",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2012/"
+    },
+    {
+      "date": "2011, August 15-19",
+      "place": "Toronto, Ontario, Canada",
+      "deadline": "2011, January 31",
+      "due": true,
+      "link": "http://conferences.sigcomm.org/sigcomm/2011/"
+    }
+  ],
+  "GlobeCom": [
+    {
+      "date": "2012, December 3-7",
+      "place": "Disneyland Hotel, Anaheim, California, USA",
+      "deadline": "2012, March 15",
+      "due": true,
+      "link": "http://www.ieee-globecom.org/2012/"
+    },
+    {
+      "date": "2011, December 5-9",
+      "place": "Houston,Texas, USA",
+      "deadline": "2011, April 5",
+      "due": true,
+      "link": "http://www.ieee-globecom.org/2011/"
+    }
+  ]
+}
