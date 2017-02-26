@@ -17,9 +17,9 @@
       <div class="block" id="mem-{{@index}}">
         <hr><h3 class="title">{{@key}}</h3><hr>
         {{#each this}}
-        <h3>{{@key}}</h3>
+        <h3 {{#if @first}}{{else}}style="margin-top:50px"{{/if}}>{{@key}}</h3>
           {{#each this}}
-            {{#ifCond @index '!%' 3}} <div class="row"> {{/ifCond}}
+            {{#ifCond @index '!%' 3}} <div class="row" {{#if @first}}{{else}}style="margin-top:20px"{{/if}}> {{/ifCond}}
             <div class="col-md-4">
               <div class="photo" style="background-image:url('{{../../../baseUrl}}images/members/{{this.image}}');"></div>
               <div class="subtitle">
