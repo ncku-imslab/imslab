@@ -82,6 +82,16 @@ route = [
     "partials": './partials.js',
     "layout":  "./view/resource.hbs",
     "filename": "./docs/resource/index.html"
+  },
+  {
+    data: {
+      "title": "聯絡我們 - IMS Lab",
+      "menu_contact": true,
+      "baseUrl": "../"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/contact.hbs",
+    "filename": "./docs/contact/index.html"
   }
 ];
 
