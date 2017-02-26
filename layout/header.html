@@ -26,15 +26,7 @@
             <li><a href="{{baseUrl}}member/alumni">學成下山</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">榮譽事蹟 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">獲獎</a></li>
-            <li><a href="#">實習</a></li>
-            <li><a href="#">交換學生</a></li>
-            <li><a href="#">國外短期研究</a></li>
-          </ul>
-        </li>
+        <li {{#if menu_honor}} class="active" {{/if}}><a href="{{baseUrl}}honor">榮譽 {{#if menu_honor}} <span class="sr-only">(current)</span> {{/if}}</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">相關資源 <span class="caret"></span></a>
           <ul class="dropdown-menu">

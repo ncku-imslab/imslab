@@ -63,12 +63,12 @@ route = [
   {
     data: {
       "title": "榮譽 - IMS Lab",
-      "menu_member": true,
+      "menu_honor": true,
       "baseUrl": "../",
-      "members": honors
+      "honors": honors
     },
     "partials": './partials.js',
-    "layout":  "./view/honors.hbs",
+    "layout":  "./view/honor.hbs",
     "filename": "./docs/honor/index.html"
   }
 ];
