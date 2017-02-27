@@ -23,13 +23,19 @@
             <div class="col-md-4">
               <div class="photo" style="background-image:url('{{../../../baseUrl}}images/members/{{this.image}}');"></div>
               <div class="subtitle">
-                {{this.name_ch}} <br/>
+                {{this.name_ch}} {{#if this.comment}}({{this.comment}}){{/if}}<br/>
                 {{#if this.name_en}} ({{this.name_en}}) {{/if}}
               </div>
               {{#if this.paper}}
                 <div class="row comment">
                   <div class="col-md-3">論文題目</div>
                   <div class="col-md-9">{{this.paper}}</div>
+                </div> 
+              {{/if}}
+              {{#if this.proj}}
+                <div class="row comment">
+                  <div class="col-md-3">專題題目</div>
+                  <div class="col-md-9">{{this.proj}}</div>
                 </div> 
               {{/if}}
               {{#if this.job}}

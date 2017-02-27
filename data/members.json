@@ -181,7 +181,161 @@
           "name_ch": "高宏瑋",
           "name_en": "Hung-Wei Kao",
           "image": "hwkao.jpg",
-          "paper": "主動偵測與隔離記憶體不當使用之方法",
+          "proj": "主動偵測與隔離記憶體不當使用之方法",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "李冠賢",
+          "name_en": "Kuan-Hsien Li",
+          "image": "khli.jpg",
+          "proj": "主動偵測與隔離記憶體不當使用之方法",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "楊鵬穎",
+          "name_en": "Peng-Ying Yang",
+          "image": "pyyang.jpg",
+          "proj": "資訊生活最知心",
+          "job": "成大製造所碩士生"
+        },
+        {
+          "name_ch": "吳惟郁",
+          "name_en": "Wei-Yu Wu",
+          "image": "wywu.jpg",
+          "proj": "資訊生活最知心",
+          "job": "清大資工所碩士生"
+        }
+      ],
+      "102 級": [
+        {
+          "name_ch": "廖啟翔",
+          "name_en": "Chi-Hsiang Liao",
+          "image": "chliao.jpg",
+          "proj": "D2D通訊模式可確保品質之高效能資源機制",
+          "job": "IC 測試工程師 @ Cypress Semiconductor 美商賽普拉斯半導體"
+        },
+        {
+          "name_ch": "賴志豪",
+          "name_en": "Chih-Hao Lai",
+          "image": "chlai.jpg",
+          "proj": "D2D通訊模式可確保品質之高效能資源機制",
+          "job": "成大資工所碩士生"
+        }
+      ],
+      "103 級": [
+        {
+          "name_ch": "張釗銘",
+          "name_en": "Chao-Ming Chang",
+          "image": "cmchang.jpg",
+          "proj": "即時街景資訊擷取與分享之行動雲端計算平台與系統",
+          "job": "報效國家"
+        },
+        {
+          "name_ch": "蘇偉嘉",
+          "name_en": "Wei-Chai Su",
+          "image": "wcsu.jpg",
+          "proj": "即時街景資訊擷取與分享之行動雲端計算平台與系統",
+          "job": "交大資工所碩士生"
+        },
+        {
+          "name_ch": "陳冠宇",
+          "name_en": "Guan-Yu Chen",
+          "image": "gychen.jpg",
+          "proj": "管你停哪裡－適地性停車格引導服務 (102 年國科會大專生專題研究計畫)",
+          "job": "台大資工所碩士生"
+        }
+      ],
+      "104 級": [
+        {
+          "name_ch": "林佳瑩",
+          "name_en": "Chia-Ying Lin",
+          "image": "cylin.jpg",
+          "proj": "車位來了－基於視訊行車紀錄之停車格引導服務",
+          "job": "成大資工所博士生"
+        },
+        {
+          "name_ch": "蘇容德",
+          "name_en": "Jung-Te Su",
+          "image": "jtsu.jpg",
+          "proj": "車位來了－基於視訊行車紀錄之停車格引導服務",
+          "job": "交大資工所碩士生"
+        },
+        {
+          "name_ch": "林賢哲",
+          "name_en": "Sian-Jhe Lin",
+          "image": "sjlin.jpg",
+          "proj": "黎明志工銀行－你今天志工了嗎",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "黃筱涵",
+          "name_en": "Hsiao-Han Huang",
+          "image": "hhhuang.jpg",
+          "proj": "SDN 中增進視訊電話 QoE 之應用認知方法設計",
+          "job": "工業技術研究院"
+        }
+      ],
+      "105 級": [
+        {
+          "name_ch": "楊靜妃",
+          "name_en": "Jingfei Yang",
+          "image": "jfyang.jpg",
+          "proj": "愛停車 -- 雲端停車格即時監控暨引導系統"
+        },
+        {
+          "name_ch": "朱宥繐",
+          "name_en": "You-Huei Ju",
+          "comment": "工資管系",
+          "image": "yhju.jpg",
+          "proj": "愛停車 -- 雲端停車格即時監控暨引導系統 (104 年科技部大專生專題研究計畫; 科技部大專生專題研究計畫研究創作獎 )",
+          "job": "交工業技術研究院"
+        },
+        {
+          "name_ch": "謝忠穎",
+          "name_en": "Chung-Ying Hsieh",
+          "image": "cyhsieh.jpg",
+          "proj": "愛停車 -- 雲端停車格即時監控暨引導系統",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "林季伯",
+          "name_en": "Chi-Bo Lin",
+          "comment": "共同指導",
+          "image": "cblin.jpg",
+          "proj": "基於互動式臉部表情虛擬實境之視訊通話 (104 年科技部大專生專題研究計畫)",
+          "job": "成大資工所碩士生"
+        }
+      ],
+      "106 級": [
+        {
+          "name_ch": "徐朝逸",
+          "image": "tyhsu.jpg",
+          "proj": "教學用跨平台自動編譯開發環境實作"
+        },
+        {
+          "name_ch": "瞿旭民",
+          "image": "hmchiu.jpg",
+          "proj": "教學用跨平台自動編譯開發環境實作",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "蔡昀展",
+          "name_en": "Yun-Zhan Cai",
+          "image": "yzcai.jpg",
+          "proj": "以 OpenFlow 為基礎之視覺化網路即時監測 (105 年科技部大專生專題研究計畫)",
+          "job": "成大資工所碩士生"
+        },
+        {
+          "name_ch": "陸勇盛",
+          "image": "yslu.jpg",
+          "proj": "以 OpenFlow 為基礎之視覺化網路即時監測",
+          "job": "交大資工所碩士生"
+        },
+        {
+          "name_ch": "劉心慈",
+          "comment": "共同指導",
+          "image": "ssliu.jpg",
+          "proj": "穿搭推薦系統",
           "job": "成大資工所碩士生"
         }
       ]
