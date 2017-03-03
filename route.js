@@ -28,6 +28,20 @@ route = [
     "layout":  "./view/home.hbs",
     "filename": "./docs/index.html"
   },
+  { // home page in /cht directory (to solve cache problem)
+    data: {
+      "url": "",
+      "title": "IMS Lab",
+      "menu_home": true,
+      "menu": menu,
+      "home": home,
+      "news": news,
+      "baseUrl": "../"
+    },
+    "partials": './partials.js',
+    "layout":  "./view/home.hbs",
+    "filename": "./docs/cht/index.html"
+  },
   {
     data: {
       "url": "research",
