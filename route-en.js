@@ -10,6 +10,7 @@ var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
 var resource = require('./data/en/resource.json');
 var conf = require('./data/conference.json');
+var contact = require('./data/en/contact.json');
 
 route = [
   {
@@ -121,6 +122,7 @@ route = [
       "title": "Contact - IMS Lab",
       "menu_contact": true,
       "menu": menu,
+      "contact": contact,
       "baseUrl": "../../",
       "lang": "en/"
     },
