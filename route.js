@@ -7,7 +7,8 @@ var research = require('./data/zh-TW/research.json');
 var projects = require('./data/zh-TW/projects.json');
 var member = require('./data/zh-TW/member.json');
 var members = require('./data/members.json');
-var honors = require('./data/zh-TW/honors.json');
+var honor = require('./data/zh-TW/honor.json');
+var honors = require('./data/honors.json');
 var resource = require('./data/zh-TW/resource.json');
 var conf = require('./data/conference.json');
 var contact = require('./data/zh-TW/contact.json');
@@ -88,6 +89,7 @@ route = [
       "title": "榮譽 - IMS Lab",
       "menu_honor": true,
       "menu": menu,
+      "honor": honor,
       "baseUrl": "../",
       "honors": honors
     },

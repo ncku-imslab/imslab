@@ -9,13 +9,13 @@
     <div class="container-fluid">
       <ul class="nav nav-tabs">
       {{#each honors}}
-        <li {{#if @first}} class="active" {{/if}}><a href="#hon-{{@index}}">{{@key}}</a></li>
+        <li {{#if @first}} class="active" {{/if}}><a href="#hon-{{@index}}">{{getLang ../honor @key}}</a></li>
       {{/each}}
         <li class="toTop"><a href="#"></a></li>
       </ul>
       {{#each honors}}
       <div class="block" id="hon-{{@index}}">
-        <hr><h3 class="title">{{@key}}</h3><hr>
+        <hr><h3 class="title">{{getLang ../honor @key}}</h3><hr>
         <ul class="enableOpen">
           {{#each this}}
           <li id="list-{{@../index}}-{{@key}}">{{@key}}</li>

@@ -7,7 +7,8 @@ var research = require('./data/en/research.json');
 var projects = require('./data/zh-TW/projects.json');
 var member = require('./data/en/member.json');
 var members = require('./data/members.json');
-var honors = require('./data/zh-TW/honors.json');
+var honor = require('./data/en/honor.json');
+var honors = require('./data/honors.json');
 var resource = require('./data/en/resource.json');
 var conf = require('./data/conference.json');
 var contact = require('./data/en/contact.json');
@@ -93,6 +94,7 @@ route = [
       "title": "Honors - IMS Lab",
       "menu_honor": true,
       "menu": menu,
+      "honor": honor,
       "baseUrl": "../../",
       "lang": "en/",
       "honors": honors
