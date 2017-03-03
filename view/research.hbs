@@ -39,7 +39,7 @@
         {{#ifCond projects.current.independent '||' projects.current.cooperation}}
           <h3 class="subtitle">{{research.subtitle2-1}}</h3>
           {{#if projects.current.independent}}
-            <h3>蔡孟勳教授擔任主持人之計劃</h3>
+            <h3>{{research.PI}}</h3>
             <ol reversed>
             {{#each projects.current.independent}}
               <li>{{../research.proj-name}}－
@@ -59,7 +59,7 @@
             </ol>
           {{/if}}
           {{#if projects.current.cooperation}}
-            <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
+            <h3>{{research.co-PI}}</h3>
             <ol reversed>
             {{#each projects.current.cooperation}}
               <li>{{../research.proj-name}}－
@@ -82,7 +82,7 @@
         {{/ifCond}}
         <h3 class="subtitle">{{research.subtitle2-2}}</h3>
         {{#if projects.past.independent}}
-          <h3>蔡孟勳教授擔任主持人之計劃</h3>
+          <h3>{{research.PI}}</h3>
           <ol reversed>
           {{#each projects.past.independent}}
             <li>{{../research.proj-name}}－
@@ -102,7 +102,7 @@
           </ol>
         {{/if}}
         {{#if projects.past.cooperation}}
-          <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
+          <h3>{{research.co-PI}}</h3>
           <ol reversed>
           {{#each projects.past.cooperation}}
             <li>{{../research.proj-name}}－
