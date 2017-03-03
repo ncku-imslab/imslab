@@ -8,6 +8,7 @@ var projects = require('./data/zh-TW/projects.json');
 var member = require('./data/zh-TW/member.json');
 var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
+var resource = require('./data/zh-TW/resource.json');
 var conf = require('./data/conference.json');
 
 route = [
@@ -99,6 +100,7 @@ route = [
       "title": "相關資源 - IMS Lab",
       "menu_resource": true,
       "menu": menu,
+      "resource": resource,
       "baseUrl": "../",
       "conf": conf
     },

@@ -8,34 +8,36 @@
     {{> header}}
     <div class="container-fluid">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#document">技術文件</a></li>
-        <li><a href="#journal">期刊</a></li>
-        <li><a href="#conf">研討會</a></li>
+        <li class="active"><a href="#document">{{resource.doc-header}}</a></li>
+        <li><a href="#journal">{{resource.jour-header}}</a></li>
+        <li><a href="#conf">{{resource.conf-header}}</a></li>
+        {{#if lang}}{{else}}
         <li><a href="#blog">部落格</a></li>
         <li><a href="#apply">申請獎項</a></li>
+        {{/if}}
         <li class="toTop"><a href="#"></a></li>
       </ul>
       <div class="block" id="document">
-        <hr><h3 class="title">相關技術文件</h3><hr>
+        <hr><h3 class="title">{{resource.doc-title}}</h3><hr>
         <h3>3GPP LTE/LTE-Adv</h3>
         <ul><li><a href="http://blog.3g4g.co.uk/" target="_blank">3G and 4G Wireless Blog</a></li>
             <li><a href="http://4g-portal.com/" target="_blank">4G-Portal</a></li>
         </ul>
         <hr>
-        <h3>頻譜分配</h3>
-        <ul><li><a href="http://www.motc.gov.tw/post/home.jsp?id=364&parentpath=0" target="_blank">交通部 我國無線電頻率分配表</a></li>
-            <li><a href="http://freqdbo.ncc.gov.tw/Portal/index.aspx" target="_blank">NCC 頻率資料庫查詢系統</a></li>
-            <li><a href="http://freqdbo.ncc.gov.tw/upload/FILESAVE/080724081215.pdf" target="_blank">中華民國頻率分配圖</a></li>
+        <h3>{{resource.doc-subtitle2}}</h3>
+        <ul><li><a href="http://www.motc.gov.tw/post/home.jsp?id=364&parentpath=0" target="_blank">{{resource.doc-list2-1}}</a></li>
+            <li><a href="http://freqdbo.ncc.gov.tw/Portal/index.aspx" target="_blank">{{resource.doc-list2-2}}</a></li>
+            <li><a href="http://freqdbo.ncc.gov.tw/upload/FILESAVE/080724081215.pdf" target="_blank">{{resource.doc-list2-3}}</a></li>
         </ul>
         <hr>
-        <h3>開放式課程</h3>
-        <ul><li><a href="http://ocw.aca.ntu.edu.tw/ntu-ocw/" target="_blank">台灣大學</a></li>
-            <li><a href="http://ocw.nctu.edu.tw/" target="_blank">交通大學</a></li>
-            <li><a href="http://ocw.nthu.edu.tw/ocw/" target="_blank">清華大學</a></li>
+        <h3>{{resource.doc-subtitle3}}</h3>
+        <ul><li><a href="http://ocw.aca.ntu.edu.tw/ntu-ocw/" target="_blank">{{resource.doc-list3-1}}</a></li>
+            <li><a href="http://ocw.nctu.edu.tw/" target="_blank">{{resource.doc-list3-2}}</a></li>
+            <li><a href="http://ocw.nthu.edu.tw/ocw/" target="_blank">{{resource.doc-list3-3}}</a></li>
         </ul>
       </div> <!-- /.block -->
       <div class="block" id="journal">
-        <hr><h3 class="title">相關期刊</h3><hr>
+        <hr><h3 class="title">{{resource.jour-title}}</h3><hr>
         <ul><li>IEEE Wireless Communications Magazine</li>
             <li>IEEE Communications Magazine</li>
             <li>IEEE Network</li>
@@ -46,7 +48,7 @@
         </ul>
       </div> <!-- /.block -->
       <div class="block" id="conf">
-        <hr><h3 class="title">相關研討會</h3><hr>
+        <hr><h3 class="title">{{resource.conf-title}}</h3><hr>
         <div class="table-responsive">
         <table class="table">
           <thead class="thead-inverse"><tr>
@@ -70,6 +72,7 @@
           </tbody>
         </table></div>
       </div> <!-- /.block -->
+      {{#if lang}}{{else}}
       <div class="block" id="blog">
         <hr><h3 class="title">推薦部落格</h3><hr>
         <ul><li><a href="http://blog.bs2.to/liny" target="_blank">林一平部落格</a></li>
@@ -107,6 +110,7 @@
             <li><a href="http://associations.cyc.org.tw/" target="_blank">救國團 青年節表揚大專優秀青年</a> (Deadline: 3/15)</li>
         </ul>
       </div> <!-- /.block -->
+      {{/if}}
     </div> <!-- /.container-fluid -->
     {{> footer }}
     <script>
