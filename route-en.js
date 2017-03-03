@@ -3,6 +3,7 @@ var url = require('url');
 var menu = require('./data/en/menu.json');
 var home = require('./data/en/home.json');
 var news = require('./data/zh-TW/news.json');
+var research = require('./data/en/research.json');
 var projects = require('./data/zh-TW/projects.json');
 var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
@@ -30,6 +31,7 @@ route = [
       "title": "Research - IMS Lab",
       "menu_research": true,
       "menu": menu,
+      "research": research,
       "projects": projects,
       "baseUrl": "../../",
       "lang": "en/"

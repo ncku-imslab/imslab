@@ -3,6 +3,7 @@ var url = require('url');
 var menu = require('./data/zh-TW/menu.json');
 var home = require('./data/zh-TW/home.json');
 var news = require('./data/zh-TW/news.json');
+var research = require('./data/zh-TW/research.json');
 var projects = require('./data/zh-TW/projects.json');
 var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
@@ -29,6 +30,7 @@ route = [
       "title": "研究 - IMS Lab",
       "menu_research": true,
       "menu": menu,
+      "research": research,
       "projects": projects,
       "baseUrl": "../"
     },

@@ -8,14 +8,14 @@
     {{> header}}
     <div class="container-fluid">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#direction">研究方向</a></li>
-        <li><a href="#project">研究計畫</a></li>
+        <li class="active"><a href="#topic">{{research.head1}}</a></li>
+        <li><a href="#project">{{research.head2}}</a></li>
         <li class="toTop"><a href="#"></a></li>
       </ul>
-      <div class="block" id="direction">
-        <hr><h3 class="title">研究方向</h3><hr>
-        <h3 style="margin:30px 0;">本實驗室的研究主軸為<span style="font-weight:bold;">行動網路設計與分析</span></h3>
-        <h3 class="subtitle">目前本實驗室之研究主題包括</h3>
+      <div class="block" id="topic">
+        <hr><h3 class="title">{{research.head1}}</h3><hr>
+        <h3 style="margin:30px 0;">{{research.des1-1}}<span style="font-weight:bold;">{{research.des1-2}}</span></h3>
+        <h3 class="subtitle">{{research.subtitle1-1}}</h3>
         <ul><li>Software Defined Network (SDN) and Network Function Virtualization (NFV)</li>
             <li>Machine-to-Machine (M2M) Communication / Machine-type Communication (MTC)</li>
             <li>enhanced Inter-Cell Interference Coordination (eICIC)</li>
@@ -23,7 +23,7 @@
             <li>Device-to-Device (D2D) Communication</li>
             <li>Cloud Gaming</li></ul>
         <hr>
-        <h3 class="subtitle">近五年之研究主題包括</h3>
+        <h3 class="subtitle">{{research.subtitle1-2}}</h3>
         <ul><li>行動定位技術</li>
             <li>緊急通訊技術</li>
             <li>電信企業等級資訊系統設計</li>
@@ -35,16 +35,16 @@
             <li>電信網路與 Web 2.0 技術之整合</li></ul>
       </div> <!-- /.block -->
       <div class="block" id="project">
-        <hr><h3 class="title">研究計畫</h3><hr>
+        <hr><h3 class="title">{{research.head2}}</h3><hr>
         {{#ifCond projects.current.independent '||' projects.current.cooperation}}
-          <h3 class="subtitle">本實驗室正在執行中之計畫</h3>
+          <h3 class="subtitle">{{research.subtitle2-1}}</h3>
           {{#if projects.current.independent}}
             <h3>蔡孟勳教授擔任主持人之計劃</h3>
             <ol reversed>
             {{#each projects.current.independent}}
-              <li>計畫名稱－{{this.name}}<br/>
-                  執行期間－{{this.duration}}<br/>
-                  補助單位－{{this.subsidy}}</li>
+              <li>{{../research.proj-name}}－{{this.name}}<br/>
+                  {{../research.proj-dur}}－{{this.duration}}<br/>
+                  {{../research.proj-sponsor}}－{{this.subsidy}}</li>
             {{/each}}
             </ol>
           {{/if}}
@@ -52,22 +52,22 @@
             <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
             <ol reversed>
             {{#each projects.current.cooperation}}
-              <li>計畫名稱－{{this.name}}<br/>
-                  執行期間－{{this.duration}}<br/>
-                  補助單位－{{this.subsidy}}</li>
+              <li>{{../research.proj-name}}－{{this.name}}<br/>
+                  {{../research.proj-dur}}－{{this.duration}}<br/>
+                  {{../research.proj-sponsor}}－{{this.subsidy}}</li>
             {{/each}}
             </ol>
           {{/if}}
           <hr>
         {{/ifCond}}
-        <h3 class="subtitle">本實驗室過去執行過之計畫</h3>
+        <h3 class="subtitle">{{research.subtitle2-2}}</h3>
         {{#if projects.past.independent}}
           <h3>蔡孟勳教授擔任主持人之計劃</h3>
           <ol reversed>
           {{#each projects.past.independent}}
-            <li>計畫名稱－{{this.name}}<br/>
-                執行期間－{{this.duration}}<br/>
-                補助單位－{{this.subsidy}}</li>
+            <li>{{../research.proj-name}}－{{this.name}}<br/>
+                {{../research.proj-dur}}－{{this.duration}}<br/>
+                {{../research.proj-sponsor}}－{{this.subsidy}}</li>
           {{/each}}
           </ol>
         {{/if}}
@@ -75,9 +75,9 @@
           <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
           <ol reversed>
           {{#each projects.past.cooperation}}
-            <li>計畫名稱－{{this.name}}<br/>
-                執行期間－{{this.duration}}<br/>
-                補助單位－{{this.subsidy}}</li>
+            <li>{{../research.proj-name}}－{{this.name}}<br/>
+                {{../research.proj-dur}}－{{this.duration}}<br/>
+                {{../research.proj-sponsor}}－{{this.subsidy}}</li>
           {{/each}}
           </ol>
         {{/if}}
