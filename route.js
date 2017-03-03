@@ -1,6 +1,7 @@
 var path = require('path');
 var url = require('url');
 var menu = require('./data/zh-TW/menu.json');
+var home = require('./data/zh-TW/home.json');
 var news = require('./data/zh-TW/news.json');
 var projects = require('./data/zh-TW/projects.json');
 var members = require('./data/members.json');
@@ -14,11 +15,12 @@ route = [
       "title": "IMS Lab",
       "menu_home": true,
       "menu": menu,
+      "home": home,
       "news": news,
       "baseUrl": "./"
     },
     "partials": './partials.js',
-    "layout":  "./view/index.hbs",
+    "layout":  "./view/home.hbs",
     "filename": "./docs/index.html"
   },
   {
