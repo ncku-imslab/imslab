@@ -5,6 +5,7 @@ var home = require('./data/en/home.json');
 var news = require('./data/zh-TW/news.json');
 var research = require('./data/en/research.json');
 var projects = require('./data/zh-TW/projects.json');
+var member = require('./data/en/member.json');
 var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
 var conf = require('./data/conference.json');
@@ -46,6 +47,7 @@ route = [
       "title": "Professor - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../../",
       "lang": "en/"
     },
@@ -59,6 +61,7 @@ route = [
       "title": "Students - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../../",
       "lang": "en/",
       "members": members.students
@@ -73,6 +76,7 @@ route = [
       "title": "Alumni - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../../",
       "lang": "en/",
       "members": members.alumni

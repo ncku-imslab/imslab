@@ -9,15 +9,15 @@
     <div class="container-fluid">
       <ul class="nav nav-tabs">
       {{#each members}}
-        <li {{#if @first}} class="active" {{/if}}><a href="#mem-{{@index}}">{{@key}}</a></li>
+        <li {{#if @first}} class="active" {{/if}}><a href="#mem-{{@index}}">{{getLang ../member @key}}</a></li>
       {{/each}}
         <li class="toTop"><a href="#"></a></li>
       </ul>
       {{#each members}}
       <div class="block" id="mem-{{@index}}">
-        <hr><h3 class="title">{{@key}}</h3><hr>
+        <hr><h3 class="title">{{getLang ../member @key}}</h3><hr>
         {{#each this}}
-        <h3 {{#if @first}}{{else}}style="margin-top:50px"{{/if}}>{{@key}}</h3>
+        <h3 {{#if @first}}{{else}}style="margin-top:50px"{{/if}}>{{#if @key}}{{getLang ../../member @key}}{{/if}}</h3>
           {{#each this}}
             {{#ifCond @index '!%' 3}} <div class="row" {{#if @first}}{{else}}style="margin-top:20px"{{/if}}> {{/ifCond}}
             <div class="col-md-4">
@@ -28,19 +28,19 @@
               </div>
               {{#if this.paper}}
                 <div class="row comment">
-                  <div class="col-md-3">論文題目</div>
+                  <div class="col-md-3">{{../../../member.thesis}}</div>
                   <div class="col-md-9">{{this.paper}}</div>
                 </div> 
               {{/if}}
               {{#if this.proj}}
                 <div class="row comment">
-                  <div class="col-md-3">專題題目</div>
+                  <div class="col-md-3">{{../../../member.proj}}</div>
                   <div class="col-md-9">{{this.proj}}</div>
                 </div> 
               {{/if}}
               {{#if this.job}}
                 <div class="row comment">
-                  <div class="col-md-3">出路</div>
+                  <div class="col-md-3">{{../../../member.destn}}</div>
                   <div class="col-md-9">{{this.job}}</div>
                 </div>
               {{/if}}

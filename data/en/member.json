@@ -1,0 +1,26 @@
+{
+  "stu-phd": "PhD students",
+  "stu-master": "Master students",
+  "stu-bachelor": "Bachelor students",
+  "alu-phd": "PhD",
+  "alu-master": "Master",
+  "alu-bachelor": "Bachelor",
+  "thesis": "Thesis",
+  "proj": "Project",
+  "destn": "Destn.",
+  "m3": "Third grade",
+  "m2": "Second grade",
+  "m1": "First grade",
+  "gra102": "Graduate in 2013",
+  "gra103": "Graduate in 2014",
+  "gra104": "Graduate in 2015",
+  "gra105": "Graduate in 2016",
+  "b107": "Graduate in 2018",
+  "b106": "Graduate in 2017",
+  "b105": "Graduate in 2016",
+  "b104": "Graduate in 2015",
+  "b103": "Graduate in 2014",
+  "b102": "Graduate in 2013",
+  "b101": "Graduate in 2012"
+}
+

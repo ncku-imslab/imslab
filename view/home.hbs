@@ -11,6 +11,7 @@
         <hr><h3 class="title">{{home.head1}}!</h3><hr>
         <p>{{home.content1}}</p>
       </div> <!-- /.block -->
+      {{#if lang}}{{else}}
       <div class="block">
         <hr><h3 class="title">必看</h3><hr>
         <ul class="enableOpen">
@@ -56,6 +57,7 @@
           </div>
         </ul>
       </div> <!-- /.block -->
+      {{/if}}
       <div class="block">
         <hr><h3 class="title">{{home.head3}}</h3><hr>
         <ul class="enableOpen">

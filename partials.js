@@ -37,6 +37,10 @@ module.exports= function (hbs) {
         return options.inverse(this);
     }
   });
+
+  hbs.registerHelper("getLang", function(member, key) {
+    return member[key];
+  });
 };
 
 function getPartials(filename) {

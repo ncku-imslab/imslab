@@ -5,6 +5,7 @@ var home = require('./data/zh-TW/home.json');
 var news = require('./data/zh-TW/news.json');
 var research = require('./data/zh-TW/research.json');
 var projects = require('./data/zh-TW/projects.json');
+var member = require('./data/zh-TW/member.json');
 var members = require('./data/members.json');
 var honors = require('./data/zh-TW/honors.json');
 var conf = require('./data/conference.json');
@@ -44,6 +45,7 @@ route = [
       "title": "指導教授 - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../"
     },
     "partials": './partials.js',
@@ -56,6 +58,7 @@ route = [
       "title": "學生 - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../",
       "members": members.students
     },
@@ -69,6 +72,7 @@ route = [
       "title": "學成下山 - IMS Lab",
       "menu_member": true,
       "menu": menu,
+      "member": member,
       "baseUrl": "../../",
       "members": members.alumni
     },
