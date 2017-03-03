@@ -42,9 +42,19 @@
             <h3>蔡孟勳教授擔任主持人之計劃</h3>
             <ol reversed>
             {{#each projects.current.independent}}
-              <li>{{../research.proj-name}}－{{this.name}}<br/>
+              <li>{{../research.proj-name}}－
+                  {{#ifCond ../lang '&&' this.name_en}}
+                    {{{this.name_en}}}
+                  {{else}}
+                    {{{this.name}}}
+                  {{/ifCond}}<br/>
                   {{../research.proj-dur}}－{{this.duration}}<br/>
-                  {{../research.proj-sponsor}}－{{this.subsidy}}</li>
+                  {{../research.proj-sponsor}}－
+                  {{#ifCond ../lang '&&' this.subsidy_en}}
+                    {{{this.subsidy_en}}}
+                  {{else}}
+                    {{{this.subsidy}}}
+                  {{/ifCond}}</li>
             {{/each}}
             </ol>
           {{/if}}
@@ -52,9 +62,19 @@
             <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
             <ol reversed>
             {{#each projects.current.cooperation}}
-              <li>{{../research.proj-name}}－{{this.name}}<br/>
+              <li>{{../research.proj-name}}－
+                  {{#ifCond ../lang '&&' this.name_en}}
+                    {{{this.name_en}}}
+                  {{else}}
+                    {{{this.name}}}
+                  {{/ifCond}}<br/>
                   {{../research.proj-dur}}－{{this.duration}}<br/>
-                  {{../research.proj-sponsor}}－{{this.subsidy}}</li>
+                  {{../research.proj-sponsor}}－
+                  {{#ifCond ../lang '&&' this.subsidy_en}}
+                    {{{this.subsidy_en}}}
+                  {{else}}
+                    {{{this.subsidy}}}
+                  {{/ifCond}}</li>
             {{/each}}
             </ol>
           {{/if}}
@@ -65,9 +85,19 @@
           <h3>蔡孟勳教授擔任主持人之計劃</h3>
           <ol reversed>
           {{#each projects.past.independent}}
-            <li>{{../research.proj-name}}－{{this.name}}<br/>
+            <li>{{../research.proj-name}}－
+                {{#ifCond ../lang '&&' this.name_en}}
+                  {{{this.name_en}}}
+                {{else}}
+                  {{{this.name}}}
+                {{/ifCond}}<br/>
                 {{../research.proj-dur}}－{{this.duration}}<br/>
-                {{../research.proj-sponsor}}－{{this.subsidy}}</li>
+                {{../research.proj-sponsor}}－
+                {{#ifCond ../lang '&&' this.subsidy_en}}
+                  {{{this.subsidy_en}}}
+                {{else}}
+                  {{{this.subsidy}}}
+                {{/ifCond}}</li>
           {{/each}}
           </ol>
         {{/if}}
@@ -75,9 +105,19 @@
           <h3>蔡孟勳教授擔任共同主持人或協同主持人之計劃</h3>
           <ol reversed>
           {{#each projects.past.cooperation}}
-            <li>{{../research.proj-name}}－{{this.name}}<br/>
+            <li>{{../research.proj-name}}－
+                {{#ifCond ../lang '&&' this.name_en}}
+                  {{{this.name_en}}}
+                {{else}}
+                  {{{this.name}}}
+                {{/ifCond}}<br/>
                 {{../research.proj-dur}}－{{this.duration}}<br/>
-                {{../research.proj-sponsor}}－{{this.subsidy}}</li>
+                {{../research.proj-sponsor}}－
+                {{#ifCond ../lang '&&' this.subsidy_en}}
+                  {{{this.subsidy_en}}}
+                {{else}}
+                  {{{this.subsidy}}}
+                {{/ifCond}}</li>
           {{/each}}
           </ol>
         {{/if}}

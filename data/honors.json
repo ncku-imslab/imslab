@@ -3,7 +3,9 @@
     "year 2017": [
       {
         "name": ["呂尚霖"],
-        "content": "中華民國資訊學會 最佳碩博士論文獎佳作"
+        "name_en": ["Shang-Lin Lu"],
+        "content": "中華民國資訊學會 最佳碩博士論文獎佳作",
+        "content_en": "IICM Master Thesis Award"
       },
       {
         "name": ["蔡昀展", "陸勇盛"],

@@ -4,12 +4,14 @@
       {
         "name": "LTE-A中 MTC 之省電機制",
         "duration": "2016/8 ~ 2017/7",
-        "subsidy": "國科會 (105-2221-E-006-186-)"
+        "subsidy": "國科會 (105-2221-E-006-186-)",
+        "subsidy_en": "NSC (105-2221-E-006-186-)"
       },
       {
         "name": "以OpenFlow為基礎之視覺化網路即時路況監測 (科技部大專學生研究計畫; 蔡昀展)",
         "duration": "2016/7 ~ 2017/2",
-        "subsidy": "科技部 (105-2815-C-006-108-E)"
+        "subsidy": "科技部 (105-2815-C-006-108-E)",
+        "subsidy_en": "MOST (105-2815-C-006-108-E)"
       }
     ],
     "cooperation": []
@@ -19,22 +21,26 @@
       {
         "name": "LTE-Advanced 網路中 D2D 與 LIPA 之交遞研究",
         "duration": "2015/8 ~ 2016/7",
-        "subsidy": "國科會 (104-2221-E-006-041-)"
+        "subsidy": "國科會 (104-2221-E-006-041-)",
+        "subsidy_en": "NSC (104-2221-E-006-041-)"
       },
       {
         "name": "愛停車 -- 雲端停車格即時監控暨引導系統 (科技部大專學生研究計畫; 朱宥繐)",
         "duration": "2015/7 ~ 2016/2",
-        "subsidy": "科技部 (104-2815-C-006-029-E)"
+        "subsidy": "科技部 (104-2815-C-006-029-E)",
+        "subsidy_en": "MOST (104-2815-C-006-029-E)"
       },
       {
         "name": "行動寬頻網路與應用—小細胞基站 (small cell)",
         "duration": "2015/4 ~ 2016/3",
-        "subsidy": "教育部"
+        "subsidy": "教育部",
+        "subsidy_en": "Ministry of Education Republic of China (Taiwan)"
       },
       {
         "name": "基於錄製與重播原理之雲端檔案系統應用",
         "duration": "2014/12 ~ 2015/12",
-        "subsidy": "工研院"
+        "subsidy": "工研院",
+        "subsidy_en": "Industrial Technology Research"
       },
       {
         "name": "LTE-Advanced 網路之資源管理",
