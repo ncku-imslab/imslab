@@ -18,3 +18,9 @@ build template
 $ ./bin/build
 ```
 
+build template (english version)
+
+```
+$ ./bin/build -e
+```
+

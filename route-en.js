@@ -1,6 +1,6 @@
 var path = require('path');
 var url = require('url');
-var menu = require('./data/zh-TW/menu.json');
+var menu = require('./data/en/menu.json');
 var news = require('./data/zh-TW/news.json');
 var projects = require('./data/zh-TW/projects.json');
 var members = require('./data/members.json');
@@ -15,100 +15,108 @@ route = [
       "menu_home": true,
       "menu": menu,
       "news": news,
-      "baseUrl": "./"
+      "baseUrl": "../",
+      "lang": "en/"
     },
     "partials": './partials.js',
     "layout":  "./view/index.hbs",
-    "filename": "./docs/index.html"
+    "filename": "./docs/en/index.html"
   },
   {
     data: {
       "url": "research",
-      "title": "研究 - IMS Lab",
+      "title": "Research - IMS Lab",
       "menu_research": true,
       "menu": menu,
       "projects": projects,
-      "baseUrl": "../"
+      "baseUrl": "../../",
+      "lang": "en/"
     },
     "partials": './partials.js',
     "layout":  "./view/research.hbs",
-    "filename": "./docs/research/index.html"
+    "filename": "./docs/en/research/index.html"
   },
   {
     data: {
       "url": "member/professor",
-      "title": "指導教授 - IMS Lab",
+      "title": "Professor - IMS Lab",
       "menu_member": true,
       "menu": menu,
-      "baseUrl": "../../"
+      "baseUrl": "../../../",
+      "lang": "en/"
     },
     "partials": './partials.js',
     "layout":  "./view/member/professor.hbs",
-    "filename": "./docs/member/professor/index.html"
+    "filename": "./docs/en/member/professor/index.html"
   },
   {
     data: {
       "url": "member/student",
-      "title": "學生 - IMS Lab",
+      "title": "Students - IMS Lab",
       "menu_member": true,
       "menu": menu,
-      "baseUrl": "../../",
+      "baseUrl": "../../../",
+      "lang": "en/",
       "members": members.students
     },
     "partials": './partials.js',
     "layout":  "./view/member/member.hbs",
-    "filename": "./docs/member/student/index.html"
+    "filename": "./docs/en/member/student/index.html"
   },
   {
     data: {
       "url": "member/alumni",
-      "title": "學成下山 - IMS Lab",
+      "title": "Alumni - IMS Lab",
       "menu_member": true,
       "menu": menu,
-      "baseUrl": "../../",
+      "baseUrl": "../../../",
+      "lang": "en/",
       "members": members.alumni
     },
     "partials": './partials.js',
     "layout":  "./view/member/member.hbs",
-    "filename": "./docs/member/alumni/index.html"
+    "filename": "./docs/en/member/alumni/index.html"
   },
   {
     data: {
       "url": "honor",
-      "title": "榮譽 - IMS Lab",
+      "title": "Honors - IMS Lab",
       "menu_honor": true,
       "menu": menu,
-      "baseUrl": "../",
+      "baseUrl": "../../",
+      "lang": "en/",
       "honors": honors
     },
     "partials": './partials.js',
     "layout":  "./view/honor.hbs",
-    "filename": "./docs/honor/index.html"
+    "filename": "./docs/en/honor/index.html"
   },
   {
     data: {
       "url": "resource",
-      "title": "相關資源 - IMS Lab",
+      "title": "Resource - IMS Lab",
       "menu_resource": true,
       "menu": menu,
-      "baseUrl": "../",
+      "baseUrl": "../../",
+      "lang": "en/",
       "conf": conf
     },
     "partials": './partials.js',
     "layout":  "./view/resource.hbs",
-    "filename": "./docs/resource/index.html"
+    "filename": "./docs/en/resource/index.html"
   },
   {
     data: {
       "url": "contact",
-      "title": "聯絡我們 - IMS Lab",
+      "title": "Contact - IMS Lab",
       "menu_contact": true,
       "menu": menu,
-      "baseUrl": "../"
+      "baseUrl": "../../",
+      "lang": "en/"
     },
     "partials": './partials.js',
     "layout":  "./view/contact.hbs",
-    "filename": "./docs/contact/index.html"
+    "filename": "./docs/en/contact/index.html"
   }
 ];
 
