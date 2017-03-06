@@ -4,6 +4,7 @@
       "date": "2017, August 21-25",
       "place": "UCLA campus, Los Angeles, CA, USA",
       "deadline": "2017, January 27",
+      "due": true,
       "link": "http://conferences.sigcomm.org/sigcomm/2017/"
     },
     {
@@ -50,6 +51,13 @@
     }
   ],
   "GlobeCom": [
+    {
+      "date": "2017, December 4-8",
+      "place": "Singapore",
+      "deadline": "2017, April 1",
+      "due": false,
+      "link": "http://www.ieee-globecom.org/2017/"
+    },
     {
       "date": "2016, December 6-10",
       "place": "Washington DC, USA",
