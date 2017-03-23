@@ -11,7 +11,8 @@
     {
       "date": "2017-01-06",
       "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 獲得 成大資工系 106 級專題展 佳作 !!"
+      "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 獲得 成大資工系 106 級專題展 佳作 !!",
+      "description_en": "Yun-Zhan Cai and Y.-S. Lu have won Honorable Poster Award in 2017 NCKU CSIE Undergraduate Project Exhibition"
     }
   ],
   "year 2016": [
@@ -19,7 +20,9 @@
       "date": "2016-12-28",
       "type": "賀",
       "description": "恭喜 賴志豪 碩士 博班 張蕙玲 林佳瑩 的論文被接受!!",
-      "comment": "恭喜 論文 \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" 被 IEEE Transactions on Vehicular Technology 接受"
+      "description_en": "Chih-Hao Lai, Hui-Ling Chang and Chia-Ying Lin's paper was accepted",
+      "comment": "恭喜 論文 \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" 被 IEEE Transactions on Vehicular Technology 接受",
+      "comment_en": "The paper \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" was accepted by IEEE Transactions on Vehicular Technology"
     },
     {
       "date": "2016-12-22",
