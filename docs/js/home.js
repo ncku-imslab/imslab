@@ -1,0 +1,1 @@
+!function(){var i=window.location.href;-1!==i.indexOf("#list-1")&&(window.scrollTo("list-1"),eventFire(document.getElementById("list-1"),"click"))}();
