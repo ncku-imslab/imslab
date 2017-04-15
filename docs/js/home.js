@@ -1,1 +1,1 @@
-!function(){var i=window.location.href;-1!==i.indexOf("#list-1")&&(window.scrollTo("list-1"),eventFire(document.getElementById("list-1"),"click"))}();
+window.onload=function(){var o=window.location.hash;o.length>0&&(o=o.substring(4),console.log(o),scrollTo(o),eventFire(document.getElementById(o),"click"))};
