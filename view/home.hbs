@@ -62,8 +62,8 @@
         <hr><h3 class="title">{{home.head3}}</h3><hr>
         <ul class="enableOpen">
           {{#each news}}
-          <li id="list-{{@key}}">{{@key}}</li>
-            <div id="content-{{@key}}" class="list-content {{#if @first}} active {{/if}}">
+          <li id="list-{{replaceBlank @key}}">{{@key}}</li>
+            <div id="content-{{replaceBlank @key}}" class="list-content {{#if @first}} active {{/if}}">
               {{#each this}}
               <div class="row" {{#if @first}}{{else}}style="margin-top:10px;"{{/if}}>
                 <div class="col-md-2 date">{{this.date}}</div>

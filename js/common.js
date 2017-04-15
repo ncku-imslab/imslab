@@ -39,6 +39,15 @@ $(window).bind("scroll", function() {
   }
 });
 
+window.onload = function () {
+  var hash = window.location.hash;
+  if(hash.length > 0 && hash.indexOf("#go-")!==-1 ) {
+    hash = hash.substring(4);
+    scrollTo(hash);
+    eventFire(document.getElementById(hash),"click");
+  }
+}
+
 function scrollTo(id) {
   var body = $("html, body");
   var idTop = document.getElementById(id).offsetTop;

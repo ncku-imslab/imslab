@@ -5,6 +5,10 @@ module.exports= function (hbs) {
   hbs.registerPartial('header', getPartials('header'));
   hbs.registerPartial('footer', getPartials('footer'));
 
+  hbs.registerHelper('replaceBlank', function(string) {
+    return new hbs.SafeString(string.replace(/ /g,'-'));
+  });
+
   hbs.registerHelper('ifCond', function (v1, operator, v2, options) {
     switch (operator) {
       case '==':

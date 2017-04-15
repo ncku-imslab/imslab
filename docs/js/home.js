@@ -1,1 +1,0 @@
-window.onload=function(){var o=window.location.hash;o.length>0&&(o=o.substring(4),console.log(o),scrollTo(o),eventFire(document.getElementById(o),"click"))};
