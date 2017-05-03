@@ -61,6 +61,7 @@ route = [
       "url": "member/professor",
       "title": "指導教授 - IMS Lab",
       "menu_member": true,
+      "menu_prof": true,
       "menu": menu,
       "member": member,
       "baseUrl": "../../"
@@ -74,6 +75,7 @@ route = [
       "url": "member/student",
       "title": "學生 - IMS Lab",
       "menu_member": true,
+      "menu_stu": true,
       "menu": menu,
       "member": member,
       "baseUrl": "../../",
@@ -88,6 +90,7 @@ route = [
       "url": "member/alumni",
       "title": "學成下山 - IMS Lab",
       "menu_member": true,
+      "menu_alu": true,
       "menu": menu,
       "member": member,
       "baseUrl": "../../",

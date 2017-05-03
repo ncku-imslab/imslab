@@ -18,12 +18,12 @@
       <ul class="nav navbar-nav">
         <li {{#if menu_home}} class="active" {{/if}}><a href="{{baseUrl}}{{lang}}">{{menu.home}} {{#if menu_home}} <span class="sr-only">(current)</span> {{/if}}</a></li>
         <li {{#if menu_research}} class="active" {{/if}}><a href="{{baseUrl}}{{lang}}research">{{menu.research}} {{#if menu_research}} <span class="sr-only">(current)</span> {{/if}}</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle {{#if menu_member}} active {{/if}}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{menu.member}} <span class="caret"></span>{{#if menu_member}}<span class="sr-only">(current)</span>{{/if}}</a>
+        <li class="dropdown {{#if menu_member}}active{{/if}}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{menu.member}} <span class="caret"></span>{{#if menu_member}}<span class="sr-only">(current)</span>{{/if}}</a>
           <ul class="dropdown-menu">
-            <li><a href="{{baseUrl}}{{lang}}member/professor">{{menu.member-prof}}</a></li>
-            <li><a href="{{baseUrl}}{{lang}}member/student">{{menu.member-student}}</a></li>
-            <li><a href="{{baseUrl}}{{lang}}member/alumni">{{menu.member-alumni}}</a></li>
+            <li {{#if menu_prof}}class="active"{{/if}}><a href="{{baseUrl}}{{lang}}member/professor">{{menu.member-prof}}</a></li>
+            <li {{#if menu_stu}}class="active"{{/if}}><a href="{{baseUrl}}{{lang}}member/student">{{menu.member-student}}</a></li>
+            <li {{#if menu_alu}}class="active"{{/if}}><a href="{{baseUrl}}{{lang}}member/alumni">{{menu.member-alumni}}</a></li>
           </ul>
         </li>
         <li {{#if menu_honor}} class="active" {{/if}}><a href="{{baseUrl}}{{lang}}honor">{{menu.honor}} {{#if menu_honor}} <span class="sr-only">(current)</span> {{/if}}</a></li>
