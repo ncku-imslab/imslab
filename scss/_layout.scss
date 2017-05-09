@@ -28,6 +28,10 @@ a {
   }
 }
 
+blockquote {
+  background: rgba(255,255,255,.8);
+}
+
 .container-fluid { padding: 0; }
 
 .block {
@@ -84,6 +88,10 @@ p,li {
 hr {
   max-width: 400px;
   border-color: $gray;
+}
+.list-content > hr { 
+  margin-top: 30px;
+  margin-bottom: 40px; 
 }
 
 ul.enableOpen {

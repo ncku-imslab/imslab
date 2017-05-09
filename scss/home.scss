@@ -8,3 +8,27 @@
   }
 }
 
+#content-2 {
+  ul > hr {
+    width: 30%;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+  }
+  .que {
+    font-weight: bold;
+    line-height: 1.8em;
+    margin-top: 20px;
+  }
+  .ans {
+    line-height: 1.8em;
+    margin-bottom: 20px;
+  }
+  .conversation {
+    font-style: italic;
+    max-width: 500px;
+    .teacher { 
+      //text-align: right; 
+    }
+  }
+}
+
