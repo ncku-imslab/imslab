@@ -61,7 +61,10 @@ function toggleList(e) {
     if(id.indexOf("list-")===0) {
       var num = id.substr(5);
       var content = document.getElementById("content-"+num);
-      if(content) content.toggleClass("active");
+      if(content) {
+        content.toggleClass("active");
+        window.location.hash = "go-"+id;
+      }
     }
   }
 }
