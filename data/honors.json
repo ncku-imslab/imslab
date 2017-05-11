@@ -2,6 +2,12 @@
   "award": {
     "year 2017": [
       {
+        "name": ["林佳瑩"],
+        "name_en": ["Chia-Ying Lin"],
+        "content": "GHC 獎學金 (並受邀前往美國參加 Grace Hopper Celebration of Women in Computing)",
+        "content_en": "GHC Scholarship (with invitation to attend Grace Hopper Celebration of Women in Computing)"
+      },
+      {
         "name": ["呂尚霖"],
         "name_en": ["Shang-Lin Lu"],
         "content": "中華民國資訊學會 最佳碩博士論文獎佳作",

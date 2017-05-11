@@ -1,7 +1,13 @@
 {
   "year 2017": [
     {
-      "date": "2017-4-21",
+      "date": "2017-05-11",
+      "type": "賀",
+      "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金，受邀前往美國參加  Grace Hopper Celebration of Women in Computing !!",
+      "description_en": "Chia-Ying Lin gets GHC Scholarship with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"
+    },
+    {
+      "date": "2017-04-21",
       "type": "賀",
       "description": "恭喜 楊靜妃 朱宥繐 謝忠穎 林佳瑩 張蕙玲 的論文被接受!!",
       "description_en": "Ching-Fei Yang, You-Huei Ju, Chung-Ying Hsieh, Chia-Ying Lin and Hui-Ling Chang's paper was accepted",
