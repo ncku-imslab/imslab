@@ -7,9 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var jsonTransform = require('gulp-json-transform');
-
 var minifyHTML = require('gulp-minify-html');
-
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 8',
