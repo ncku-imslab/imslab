@@ -12,7 +12,7 @@ build js, css
 $ gulp
 ```
 
-build template
+build all template
 
 ```
 $ ./bin/build
@@ -22,5 +22,11 @@ build template (english version)
 
 ```
 $ ./bin/build -e
+```
+
+build template (chinese version)
+
+```
+$ ./bin/build -c
 ```
 
