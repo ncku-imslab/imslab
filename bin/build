@@ -5,17 +5,21 @@ var argv = require('minimist')(process.argv.slice(2));
 
 var fs = require('fs-extra');
 var path = require('path');
-var load = './route.js';
+var load_ch = './route.js';
 var load_en = './route-en.js';
 var project = argv._[1];
 var minify = argv.m;
 var w = argv.w;
 var i;
 
-if (argv.e)
+if(argv.c)
+  build(load_ch, w);
+else if (argv.e)
   build(load_en, w);
-else
-  build(load, w);
+else {
+  build(load_ch, w);
+  build(load_en, w);
+}
 
 function build(load, w) {
 

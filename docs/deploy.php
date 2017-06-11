@@ -61,11 +61,9 @@ flush();
 $commands = array(
 	'echo $PWD',
 	'whoami',
-	'git pull',
-	'git status',
-	'git submodule sync',
-	'git submodule update',
-	'git submodule status',
+  '/usr/local/bin/git reset --hard',
+	'/usr/local/bin/git pull',
+	'/usr/local/bin/git status',
     'test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"',
 );
 
