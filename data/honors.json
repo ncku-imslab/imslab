@@ -120,6 +120,18 @@
   "intern": {
     "year 2017": [
       {
+        "name": ["王俞婷"],
+        "name_en": ["Yu-Ting Wang"],
+        "content": "威聯通科技 (QNAP)",
+        "content_en": "QNAP Systems Inc."
+      },
+      {
+        "name": ["林賢哲"],
+        "name_en": ["Sian-Jhe Lin"],
+        "content": "思銳科技 (EstiNet)",
+        "content_en": "EstiNet Technologies Inc."
+      },
+      {
         "name": ["張鶴騰"],
         "name_en": ["He-Teng Chang"],
         "content": "瑞昱科技 (RealTek)",
@@ -214,6 +226,12 @@
     ]
   },
   "research": {
+    "year 2017": [
+      {
+        "name": ["林佳瑩"],
+        "content": "德國 RWTH Aachen University"
+      }
+    ],
     "year 2016": [
       {
         "name": ["呂宜龍"],

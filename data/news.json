@@ -1,6 +1,18 @@
 {
   "year 2017": [
     {
+      "date": "2017-06-11",
+      "type": "賀",
+      "description": "恭喜 碩士生 王俞婷 獲得 威聯通科技 實習機會!!",
+      "description_en": "Yu-Ting Wang gets internship opportunity of QNAP Systems, Inc.!!"
+    },
+    {
+      "date": "2017-06-02",
+      "type": "賀",
+      "description": "恭喜 碩士生 林賢哲 獲得 思銳科技 實習機會!!",
+      "description_en": "Sian-Jhe Lin gets internship opportunity of EstiNet Technologies Inc.!!"
+    },
+    {
       "date": "2017-05-11",
       "type": "賀",
       "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金，受邀前往美國參加  Grace Hopper Celebration of Women in Computing !!",
@@ -19,6 +31,12 @@
       "type": "賀",
       "description": "恭喜 碩士生 張鶴騰 獲得 瑞昱科技 暑期實習機會!!",
       "description_en": "He-Teng Chang gets internship opportunity of RealTek!!"
+    },
+    {
+      "date": "2017-04-06",
+      "type": "賀",
+      "description": "恭喜 博士生 林佳瑩 獲得德國 RWTH Aachen University     短期訪問機會!!",
+      "description_en": "Chia-Ying Lin gets invitation of short-term academic visit to RWTH Aachen University (in Germany )!!"
     },
     {
       "date": "2017-02-21",
