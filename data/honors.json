@@ -2,6 +2,10 @@
   "award": {
     "year 2017": [
       {
+        "name": ["謝忠穎,陳蓓蓓"],
+        "content": "工研院 (ITRI)"
+      },
+      {
         "name": ["方鈞麒,陳珞安"],
         "content": "科技部大專生計畫"
       },
@@ -231,6 +235,10 @@
   },
   "research": {
     "year 2017": [
+      {
+        "name": ["劉俊林"],
+        "content": "香港大學(HKU)"
+      },
       {
         "name": ["林佳瑩"],
         "content": "德國 RWTH Aachen University"
