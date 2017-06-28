@@ -2,10 +2,6 @@
   "award": {
     "year 2017": [
       {
-        "name": ["謝忠穎,陳蓓蓓"],
-        "content": "工研院 (ITRI)"
-      },
-      {
         "name": ["方鈞麒,陳珞安"],
         "content": "科技部大專生計畫"
       },
@@ -127,6 +123,12 @@
   },
   "intern": {
     "year 2017": [
+      {
+        "name": ["謝忠穎,陳蓓蓓"],
+        "name_en": ["Chung-Ying Hsieh, Pei-Pei Chen"],
+        "content": "工研院 (ITRI)",
+        "content_en": "Industrial Technology Research Institute (ITRI)"
+      },
       {
         "name": ["王俞婷"],
         "name_en": ["Yu-Ting Wang"],
