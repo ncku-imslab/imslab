@@ -8,16 +8,22 @@
         "subsidy_en": "NSC (105-2221-E-006-186-)"
       },
       {
-        "name": "以OpenFlow為基礎之視覺化網路即時路況監測 (科技部大專學生研究計畫; 蔡昀展)",
-        "duration": "2016/7 ~ 2017/2",
-        "subsidy": "科技部 (105-2815-C-006-108-E)",
-        "subsidy_en": "MOST (105-2815-C-006-108-E)"
+        "name": "基於SDN之網路服務品質優化機制 (科技部大專學生研究計畫; 方鈞麒)",
+        "duration": "2017/7 ~ 2018/2",
+        "subsidy": "科技部 (106-2813-C-006-084-E)",
+        "subsidy_en": "MOST (106-2813-C-006-084-E)"
       }
     ],
     "cooperation": []
   },
   "past": {
     "independent": [
+      {
+        "name": "以OpenFlow為基礎之視覺化網路即時路況監測 (科技部大專學生研究計畫; 蔡昀展)",
+        "duration": "2016/7 ~ 2017/2",
+        "subsidy": "科技部 (105-2815-C-006-108-E)",
+        "subsidy_en": "MOST (105-2815-C-006-108-E)"
+      },
       {
         "name": "LTE-Advanced 網路中 D2D 與 LIPA 之交遞研究",
         "duration": "2015/8 ~ 2016/7",
