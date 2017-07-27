@@ -12,7 +12,9 @@
         "duration": "2017/7 ~ 2018/2",
         "subsidy": "科技部 (106-2813-C-006-084-E)",
         "subsidy_en": "MOST (106-2813-C-006-084-E)"
-      },
+      }
+	],
+    "cooperation": [
       {
         "name": "5G開放平台與物聯網整合服務研究",
         "duration": "2017/1 ~ 2017/12",
@@ -23,8 +25,7 @@
         "duration": "2017/3 ~ 2017/12",
         "subsidy": "工研院"
       }
-    ],
-    "cooperation": []
+    ]
   },
   "past": {
     "independent": [
