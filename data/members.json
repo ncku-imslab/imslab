@@ -88,6 +88,22 @@
           "name_en": "Lo-An Chen",
           "image": "lachen.jpg"
         }
+      ],
+      "b108": [
+        {
+          "name_ch": "劉俊林",
+          "name_en": "Chan Lam Lao",
+          "image": "cllao.jpg"
+        },
+        {
+          "name_ch": "廖其忻",
+          "name_en": "Cayon Liow",
+          "image": "cliow.jpg"
+        },
+        {
+          "name_ch": "梁祐承",
+          "image": "ycliang.jpg"
+        }
       ]
     }
   },
