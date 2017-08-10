@@ -16,23 +16,16 @@
           "name_ch": "林佳瑩",
           "name_en": "Chia-Ying Lin",
           "image": "cylin.jpg"
+        },
+        {
+          "name_ch": "蔡昀展",
+          "name_en": "Yun-Zhan Cai",
+          "image": "yzcai.jpg"
         }
       ]
     },
     "stu-master": {
       "m3": [
-        {
-          "name_ch": "呂宜龍",
-          "name_en": "Yi Long Lu",
-          "image": "yllu.jpg"
-        },
-        {
-          "name_ch": "張鶴騰",
-          "name_en": "He-Teng Chang",
-          "image": "htchang.jpg"
-        }
-      ],
-      "m2": [
         {
           "name_ch": "吳孟庭",
           "name_en": "Mong-Ting Wu",
@@ -44,7 +37,7 @@
           "image": "sjlin.jpg"
         }
       ],
-      "m1": [
+      "m2": [
         {
           "name_ch": "謝忠穎",
           "name_en": "Chung-Ying Hsieh",
@@ -59,6 +52,22 @@
           "name_ch": "方彥婷",
           "name_en": "Yen-Ting Fang",
           "image": "ytfang.jpg"
+        }
+      ],
+      "m1": [
+        {
+          "name_ch": "瞿旭民",
+          "name_en": "Shiu-Min Cyu",
+          "image": "hmchiu.jpg"
+        },
+        {
+          "name_ch": "王俞婷",
+          "name_en": "Yu-Ting Wang",
+          "image": "ytwang.jpg"
+        },
+        {
+          "name_ch": "林瀞文",
+          "image": "jylin.jpg"
         }
       ]
     },
@@ -175,7 +184,23 @@
           "paper": "可靠且輕量化的物聯網通訊之閘道器輔助重傳機制",
           "job": "晨星 (MorningStar)"
         }
-      ]
+      ],
+      "gra106": [
+        {
+          "name_ch": "呂宜龍",
+          "name_en": "Yi Long Lu",
+          "image": "yllu.jpg",
+          "paper": "智慧城市中以使用率為基礎之停車位推薦方案",
+          "job": "報效國家"
+        },
+        {
+          "name_ch": "張鶴騰",
+          "name_en": "He-Teng Chang",
+          "image": "htchang.jpg",
+          "paper": "利用互斥對稱與內部節點的非確切投射布林配對",
+          "job": "台大電機系博士班"
+        }
+	  ]
     },
     "alu-bachelor": {
       "b101": [
