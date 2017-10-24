@@ -2,14 +2,22 @@
   "award": {
     "year 2017": [
       {
+        "name": ["張鶴騰"],
+        "content": "台灣電機電子工程學會 最佳碩博士論文獎佳作"
+      },
+      {
+        "name": ["蔡昀展"],
+        "content": "科技部大專生計畫研究創作獎"
+      },
+      {
         "name": ["方鈞麒,陳珞安"],
         "content": "科技部大專生計畫"
       },
       {
         "name": ["林佳瑩"],
         "name_en": ["Chia-Ying Lin"],
-        "content": "GHC 獎學金 (並受邀前往美國參加 Grace Hopper Celebration of Women in Computing)",
-        "content_en": "GHC Scholarship (with invitation to attend Grace Hopper Celebration of Women in Computing)"
+        "content": "GHC 獎學金 (Google 提供；並受邀前往美國參加 Grace Hopper Celebration of Women in Computing)",
+        "content_en": "GHC Scholarship (by Google; with invitation to attend Grace Hopper Celebration of Women in Computing)"
       },
       {
         "name": ["呂尚霖"],

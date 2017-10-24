@@ -1,6 +1,17 @@
 {
   "year 2017": [
     {
+      "date": "2017-10-07",
+      "type": "狂賀",
+      "description": "恭喜 碩班 張鶴騰 獲得台灣電機電子工程學會最佳碩博士論文獎!!",
+      "comment": "恭喜 論文 \"利用互斥對稱與內部節點的非確切投射布林配對\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"
+    },
+    {
+      "date": "2017-08-18",
+      "type": "賀",
+      "description": "恭喜 106 級專題生 蔡昀展 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"
+    },
+    {
       "date": "2017-07-25",
       "type": "賀",
       "description": "恭喜 107 級專題生 方鈞麒 陳珞安 趙珮均 108 級專題生 劉俊林 廖其忻  的論文被接受!!",
@@ -38,8 +49,8 @@
     {
       "date": "2017-05-11",
       "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金，受邀前往美國參加  Grace Hopper Celebration of Women in Computing !!",
-      "description_en": "Chia-Ying Lin gets GHC Scholarship with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"
+      "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金(Google 提供)，受邀前往美國參加  <a href=\"https://ghc.anitaborg.org/2017-student-academic/2017-scholarships/ghc-17-scholars/\">Grace Hopper Celebration of Women in Computing</a> !!",
+      "description_en": "Chia-Ying Lin gets GHC Scholarship (by Google) with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"
     },
     {
       "date": "2017-04-21",
