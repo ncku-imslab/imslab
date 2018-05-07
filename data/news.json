@@ -1,6 +1,18 @@
 {
   "year 2018": [
     {
+      "date": "2018-04-10",
+      "type": "狂賀",
+      "description": "恭喜 碩班 張鶴騰 獲得中華民國資訊學會最佳碩博士論文獎!!",
+      "description_en": "He-Teng Chang's paper has won the IICM Master Thesis Award!!"
+    },
+    {
+      "date": "2018-03-17",
+      "type": "賀",
+      "description": "恭喜 博班 林佳瑩 獲得 Linux Foundation Scholarship (受邀前往 ONS North America 2018)!!",
+      "description_en": "Chia-Ying Lin got Linux Foundation Scholarship (with invitation to attend Open Networking Summit North America 2018) !!"
+    },
+    {
       "date": "2018-02-13",
       "type": "賀",
       "description": "恭喜 博班 林佳瑩 獲得 女性科技人才-高通全球學者 (WeTech-Qualcomm Global Scholars)!!",
@@ -109,7 +121,7 @@
       "description": "恭喜 碩班 呂尚霖 獲得中華民國資訊學會最佳碩博士論文獎!!",
       "description_en": "Shang-Lin Lu's paper has won the IICM Master Thesis Award!!",
       "comment": "恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 中華民國資訊學會碩博士最佳論文獎",
-      "comment_en": "The paper \"Optimistic DRX for Machine-type\" has won the IICM Master Thesis Award!!"
+      "comment_en": "The thesis \"Optimistic DRX for Machine-type\" has won the IICM Master Thesis Award!!"
     },
     {
       "date": "2017-01-06",

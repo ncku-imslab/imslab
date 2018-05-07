@@ -2,6 +2,16 @@
   "award": {
     "year 2018": [
       {
+        "name": ["張鶴騰"],
+        "name_en": ["He-Teng Chang"],
+        "content": "中華民國資訊學會 最佳碩博士論文獎優等",
+        "content_en": "IICM Master Thesis Award"
+      },
+      {
+        "name": ["林佳瑩"],
+        "content": "Linux Foundation Scholarship (with invitation to attend ONS North America 2018)"
+      },
+      {
         "name": ["林佳瑩"],
         "content": "WeTech Qualcomm Global Scholars"
       }
