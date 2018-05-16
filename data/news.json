@@ -1,6 +1,18 @@
 {
   "year 2018": [
     {
+      "date": "2018-05-14",
+      "type": "賀",
+      "description": "恭喜 專題生 廖其忻 獲得 台達電子 實習機會!!",
+      "description_en": "Cayon Liow KeeiYann get internship opportunities of Delta Electronics, Inc.!!"
+    },
+    {
+      "date": "2018-05-3",
+      "type": "賀",
+      "description": "恭喜 博士生 蔡昀展 專題生 方鈞麒 獲得 工研院 實習機會!!",
+      "description_en": "Yun-Zhan Cai and Chun-Chi Fang get internship opportunities of ITRI !!"
+    },
+    {
       "date": "2018-04-10",
       "type": "狂賀",
       "description": "恭喜 碩班 張鶴騰 獲得中華民國資訊學會最佳碩博士論文獎!!",
@@ -11,6 +23,11 @@
       "type": "賀",
       "description": "恭喜 博班 林佳瑩 獲得 Linux Foundation Scholarship (受邀前往 ONS North America 2018)!!",
       "description_en": "Chia-Ying Lin got Linux Foundation Scholarship (with invitation to attend Open Networking Summit North America 2018) !!"
+    },
+    {
+      "date": "2018-02-21",
+      "type": "賀",
+      "description": "恭喜 博士生 林佳瑩 獲得 Google Code Jam for Women 全球第 118 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2018!!"
     },
     {
       "date": "2018-02-13",

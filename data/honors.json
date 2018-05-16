@@ -13,6 +13,10 @@
       },
       {
         "name": ["林佳瑩"],
+        "content": "Google Code Jam for Women 全球第 118名, 受邀前往 Mountain View 參加 Google I/O 2018"
+      },
+      {
+        "name": ["林佳瑩"],
         "content": "WeTech Qualcomm Global Scholars"
       }
     ],
@@ -154,6 +158,20 @@
     ]
   },
   "intern": {
+    "year 2018": [
+      {
+        "name": ["廖其忻"],
+        "name_en": ["Cayon Liow Keei Yann"],
+        "content": "台達電子",
+        "content_en": "Delta Electronics Inc."
+      },
+      {
+        "name": ["蔡昀展,方鈞麒"],
+        "name_en": ["Yun-Zhan Cai, Chun-Chi Fang"],
+        "content": "工研院 (ITRI)",
+        "content_en": "Industrial Technology Research Institute (ITRI)"
+      }
+    ],
     "year 2017": [
       {
         "name": ["謝忠穎,陳蓓蓓"],
