@@ -55,7 +55,7 @@
       "m2": [
         {
           "name_ch": "瞿旭民",
-          "name_en": "Shiu-Min Cyu",
+          "name_en": "Shu-Min Cyu",
           "image": "hmchiu.jpg"
         },
         {
@@ -65,8 +65,8 @@
         },
         {
           "name_ch": "卓景昭",
-          "name_en": "Zhao-Jing Jhuo",
-          "image": ""
+          "name_en": "Jing-Zhao Zhuo",
+          "image": "jzzhuo.jpg"
         }
       ],
       "m1": [
@@ -78,7 +78,7 @@
         {
           "name_ch": "陳俊佑",
           "name_en": "",
-          "image": ""
+          "image": "cychen.jpg"
         }
       ]
     },
@@ -109,37 +109,37 @@
         {
           "name_ch": "孫名柔",
           "name_en": "",
-          "image": ""
+          "image": "mzsun.jpg"
         },
         {
           "name_ch": "林亭伃",
           "name_en": "",
-          "image": ""
+          "image": "tylin.jpg"
         },
         {
           "name_ch": "洪培軒",
           "name_en": "",
-          "image": ""
+          "image": "phhung.jpg"
         },
         {
           "name_ch": "吳偵平",
           "name_en": "",
-          "image": ""
+          "image": "jpwu.jpg"
         },
         {
           "name_ch": "廖胤瑞 (化工系)",
           "name_en": "",
-          "image": ""
+          "image": "yzliao.jpg"
         },
         {
           "name_ch": "黃俊豪 (共同指導)",
           "name_en": "",
-          "image": ""
+          "image": "jhhuang.jpg"
         },
         {
           "name_ch": "邵鏡軒(共同指導)",
           "name_en": "",
-          "image": ""
+          "image": "jhchao.jpg"
         }
       ]
     }
@@ -150,12 +150,16 @@
         {
           "name_ch": "吳孟庭",
           "name_en": "Mong-Ting Wu",
-          "image": "mtwu.jpg"
+          "image": "mtwu.jpg",
+          "paper": "",
+          "job": ""
         },
         {
           "name_ch": "林賢哲",
           "name_en": "Sian-Jhe Lin",
-          "image": "sjlin.jpg"
+          "image": "sjlin.jpg",
+          "paper": "基於回程網路之5G協作式小型基地台快取研究",
+          "job": "群暉科技 (Synology) (研發替代役)"
         }
       ],
       "gra106": [
@@ -180,7 +184,7 @@
           "name_en": "Shang-Lin Lu",
           "image": "sllu.jpg",
           "paper": "機器型態通訊之樂觀 DRX 節能技術",
-          "job": "中華電信企業分公司"
+          "job": "中華電信企業分公司 (研發替代役)"
         },
         {
           "name_ch": "王正綱",
@@ -247,7 +251,7 @@
           "name_en": "Chih-Hsuan Kuo",
           "image": "chkuo.jpg",
           "paper": "慣性測量單元之雜訊抑制方法與其在手寫軌跡重建之應用",
-          "job": "Mozilla Taiwan 美商謀智 (研發替代役)"
+          "job": "Mozilla Taiwan 美商謀智 (研發替代役) / Google"
         }
       ],
       "gra102": [
@@ -272,27 +276,35 @@
         {
           "name_ch": "方鈞麒",
           "name_en": "Chun-Chi Fang",
-          "image": "ccfang.jpg"
+          "image": "ccfang.jpg",
+          "proj": "基於 SDN 之網路服務品質優化機制",
+          "job": "成大資工所碩士生"
         },
         {
           "name_ch": "趙珮均",
           "name_en": "Pei-Jyun Chao",
-          "image": "pcchao.jpg"
+          "image": "pcchao.jpg",
+          "proj": "整合智慧衣與語音通話之醫療應用照護開發",
+          "job": "成大資工所碩士生"
         },
         {
           "name_ch": "陳珞安",
           "name_en": "Lo-An Chen",
-          "image": "lachen.jpg"
+          "image": "lachen.jpg",
+          "proj": "整合智慧衣與語音通話之醫療應用照護開發",
+          "job": "成大資工所博士生"
         }
       ],
       "b106": [
         {
           "name_ch": "徐朝逸",
           "image": "tyhsu.jpg",
-          "proj": "教學用跨平台自動編譯開發環境實作"
+          "proj": "教學用跨平台自動編譯開發環境實作",
+          "job": "Skymizer"
         },
         {
           "name_ch": "瞿旭民",
+          "name_en": "Shu-Min Cyu",
           "image": "hmchiu.jpg",
           "proj": "教學用跨平台自動編譯開發環境實作",
           "job": "成大資工所碩士生"
