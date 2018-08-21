@@ -21,23 +21,21 @@
           "name_ch": "蔡昀展",
           "name_en": "Yun-Zhan Cai",
           "image": "yzcai.jpg"
+        },
+        {
+          "name_ch": "王俞婷",
+          "name_en": "Yu-Ting Wang",
+          "image": "ytwang.jpg"
+        },
+        {
+          "name_ch": "陳珞安",
+          "name_en": "Lo-An Chen",
+          "image": "lachen.jpg"
         }
       ]
     },
     "stu-master": {
       "m3": [
-        {
-          "name_ch": "吳孟庭",
-          "name_en": "Mong-Ting Wu",
-          "image": "mtwu.jpg"
-        },
-        {
-          "name_ch": "林賢哲",
-          "name_en": "Sian-Jhe Lin",
-          "image": "sjlin.jpg"
-        }
-      ],
-      "m2": [
         {
           "name_ch": "謝忠穎",
           "name_en": "Chung-Ying Hsieh",
@@ -54,42 +52,37 @@
           "image": "ytfang.jpg"
         }
       ],
-      "m1": [
+      "m2": [
         {
           "name_ch": "瞿旭民",
           "name_en": "Shiu-Min Cyu",
           "image": "hmchiu.jpg"
         },
         {
-          "name_ch": "王俞婷",
-          "name_en": "Yu-Ting Wang",
-          "image": "ytwang.jpg"
-        },
-        {
           "name_ch": "林瀞文",
           "name_en": "Jing-Wen Lin",
           "image": "jwlin.jpg"
+        },
+        {
+          "name_ch": "卓景昭",
+          "name_en": "Zhao-Jing Jhuo",
+          "image": ""
         }
-      ]
-    },
-    "stu-bachelor": {
-      "b107": [
+      ],
+      "m1": [
         {
           "name_ch": "方鈞麒",
           "name_en": "Chun-Chi Fang",
           "image": "ccfang.jpg"
         },
         {
-          "name_ch": "趙珮均",
-          "name_en": "Pei-Jyun Chao",
-          "image": "pcchao.jpg"
-        },
-        {
-          "name_ch": "陳珞安",
-          "name_en": "Lo-An Chen",
-          "image": "lachen.jpg"
+          "name_ch": "陳俊佑",
+          "name_en": "",
+          "image": ""
         }
-      ],
+      ]
+    },
+    "stu-bachelor": {
       "b108": [
         {
           "name_ch": "劉俊林",
@@ -105,12 +98,66 @@
           "name_ch": "梁祐承",
           "name_en": "You-Cheng Liang",
           "image": "ycliang.jpg"
+        },
+        {
+          "name_ch": "謝耀賢",
+          "name_en": "",
+          "image": "ychsieh.jpg"
+        }
+      ],
+      "b109": [
+        {
+          "name_ch": "孫名柔",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "林亭伃",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "洪培軒",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "吳偵平",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "廖胤瑞 (化工系)",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "黃俊豪 (共同指導)",
+          "name_en": "",
+          "image": ""
+        },
+        {
+          "name_ch": "邵鏡軒(共同指導)",
+          "name_en": "",
+          "image": ""
         }
       ]
     }
   },
   "alumni": {
     "alu-master": {
+      "gra107": [
+        {
+          "name_ch": "吳孟庭",
+          "name_en": "Mong-Ting Wu",
+          "image": "mtwu.jpg"
+        },
+        {
+          "name_ch": "林賢哲",
+          "name_en": "Sian-Jhe Lin",
+          "image": "sjlin.jpg"
+        }
+      ],
       "gra106": [
         {
           "name_ch": "呂宜龍",
@@ -221,6 +268,23 @@
       ]
     },
     "alu-bachelor": {
+      "b107": [
+        {
+          "name_ch": "方鈞麒",
+          "name_en": "Chun-Chi Fang",
+          "image": "ccfang.jpg"
+        },
+        {
+          "name_ch": "趙珮均",
+          "name_en": "Pei-Jyun Chao",
+          "image": "pcchao.jpg"
+        },
+        {
+          "name_ch": "陳珞安",
+          "name_en": "Lo-An Chen",
+          "image": "lachen.jpg"
+        }
+      ],
       "b106": [
         {
           "name_ch": "徐朝逸",
