@@ -3,6 +3,18 @@
     "year 2018": [
       {
         "name": ["劉俊林"],
+        "name_en": ["Chan Lam Lao"],
+        "content": "成大資工系 108 級專題展 第二名",
+        "content_en": "The 2nd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
+      },
+      {
+        "name": ["梁祐承", "謝耀賢"],
+        "name_en": ["You-Cheng Liang", "Y.-S. Hsieh"],
+        "content": "成大資工系 108 級專題展 第三名",
+        "content_en": "The 3rd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
+      },
+      {
+        "name": ["劉俊林"],
         "content": "科技部大專生計畫"
       },
       {
