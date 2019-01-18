@@ -18,7 +18,7 @@
         <hr><h3 class="title">{{getLang ../honor @key}}</h3><hr>
         <ul class="enableOpen">
           {{#each this}}
-          <li id="list-{{@../index}}-{{replaceBlank @key}}">{{@key}}</li>
+          <li id="list-{{@../index}}-{{replaceBlank @key}}" class="{{#if @first}}active{{/if}}">{{@key}}</li>
             <div id="content-{{@../index}}-{{replaceBlank @key}}" class="list-content{{#if @first}} active{{/if}}">
               {{#each this}}
               <div class="row" style="margin:5px -15px">

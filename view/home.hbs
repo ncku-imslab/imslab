@@ -159,7 +159,7 @@
         <hr><h3 class="title">{{home.head3}}</h3><hr>
         <ul class="enableOpen">
           {{#each news}}
-          <li id="list-{{replaceBlank @key}}">{{@key}}</li>
+          <li id="list-{{replaceBlank @key}}" class="{{#if @first}}active{{/if}}">{{@key}}</li>
             <div id="content-{{replaceBlank @key}}" class="list-content {{#if @first}} active {{/if}}">
               {{#each this}}
               <div class="row" {{#if @first}}{{else}}style="margin-top:10px;"{{/if}}>

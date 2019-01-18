@@ -62,6 +62,7 @@ function toggleList(e) {
       var num = id.substr(5);
       var content = document.getElementById("content-"+num);
       if(content) {
+        e.target.toggleClass("active");
         content.toggleClass("active");
         window.location.hash = "go-"+id;
       }
