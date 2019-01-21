@@ -16,6 +16,7 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -119,7 +120,7 @@ ol > li ol { list-style-type: lower-alpha; }
 .nav-tabs {
   margin: 10px auto -20px;
   padding: 0 12.5%;
-  border-bottom: 2px solid $bg-white;
+  border-bottom: none;
   & > li.active > a,
   & > li > a:hover { 
     background: $bg-white; 
