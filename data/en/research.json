@@ -1,16 +1,16 @@
 {
   "head1": "Research Topics",
-  "des1-1": "Major research areas in this lab include ",
-  "des1-2": "mobile network design and analysis, wireless communications and cloud computing",
-  "subtitle1-1": "Current research topics include",
-  "subtitle1-2": "Research topics in recent five years include",
+  "des1_1": "Major research areas in this lab include ",
+  "des1_2": "mobile network design and analysis, wireless communications and cloud computing",
+  "subtitle1_1": "Current research topics include",
+  "subtitle1_2": "Research topics in recent five years include",
   "head2": "Research Projects",
-  "subtitle2-1": "Current Projects",
-  "subtitle2-2": "Past Projects",
-  "proj-name": "Project Name",
-  "proj-dur": "Duration",
-  "proj-sponsor": "Sponsor",
+  "subtitle2_1": "Current Projects",
+  "subtitle2_2": "Past Projects",
+  "proj_name": "Project Name",
+  "proj_dur": "Duration",
+  "proj_sponsor": "Sponsor",
   "PI": "Projects with Prof. Tsai as PI",
-  "co-PI": "Projects with Prof. Tsai as co-PI"
+  "co_PI": "Projects with Prof. Tsai as co-PI"
 }
 

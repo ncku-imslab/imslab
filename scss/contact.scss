@@ -1,0 +1,9 @@
+@import './_layout';
+
+.block .row { 
+  margin: 10px 0; 
+  & > .col-md-2 {
+    font-weight: bold;
+    text-align: right;
+  }
+}

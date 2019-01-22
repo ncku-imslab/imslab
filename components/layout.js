@@ -95,11 +95,4 @@ Layout.Footer = () => (
   </div>
 );
 
-Layout.Block = (props) => (
-  <div className="block">
-    <hr /><h3 className="title">{props.title}</h3><hr />
-    <p>{props.content}</p>
-  </div>
-);
-
 export default Layout;
