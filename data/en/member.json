@@ -1,11 +1,11 @@
 {
   "lang": "en",
-  "stu-phd": "PhD students",
-  "stu-master": "Master students",
-  "stu-bachelor": "Bachelor students",
-  "alu-phd": "PhD",
-  "alu-master": "Master",
-  "alu-bachelor": "Bachelor",
+  "stu_phd": "PhD students",
+  "stu_master": "Master students",
+  "stu_bachelor": "Bachelor students",
+  "alu_phd": "PhD",
+  "alu_master": "Master",
+  "alu_bachelor": "Bachelor",
   "thesis": "Thesis",
   "proj": "Project",
   "destn": "Destn."

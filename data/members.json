@@ -1,6 +1,6 @@
 {
-  "students": {
-    "stu-phd": {
+  "student": {
+    "stu_phd": {
       "": [
         {
           "name_ch": "莊琮暉",
@@ -34,7 +34,7 @@
         }
       ]
     },
-    "stu-master": {
+    "stu_master": {
       "m3": [
         {
           "name_ch": "謝忠穎",
@@ -82,7 +82,7 @@
         }
       ]
     },
-    "stu-bachelor": {
+    "stu_bachelor": {
       "b108": [
         {
           "name_ch": "劉俊林",
@@ -145,7 +145,7 @@
     }
   },
   "alumni": {
-    "alu-master": {
+    "alu_master": {
       "gra107": [
         {
           "name_ch": "吳孟庭",
@@ -271,7 +271,7 @@
         }
       ]
     },
-    "alu-bachelor": {
+    "alu_bachelor": {
       "b107": [
         {
           "name_ch": "方鈞麒",

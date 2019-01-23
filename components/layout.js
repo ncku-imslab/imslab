@@ -58,7 +58,10 @@ Layout.Header = ({ lang, pathname }) => {
               className={pathname === '/research' ? 'active' : ''} >
                 {data.research}
             </NavItem>
-            <NavDropdown title={data.member} id="nav-member-dropdown">
+            <NavDropdown 
+              title={data.member} 
+              id="nav-member-dropdown"
+              className={pathname === '/professor' || pathname === '/member' ? 'active' : ''} >
               <MenuItem href={langUrl + "/professor"}>{data.member_prof}</MenuItem>
               <MenuItem href={langUrl + "/student"}>{data.member_student}</MenuItem>
               <MenuItem href={langUrl + "/alumni"}>{data.member_alumni}</MenuItem>

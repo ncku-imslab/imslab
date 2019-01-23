@@ -1,5 +1,13 @@
 @import "./_layout";
 
+h3.sub-title:not(:first-child) {
+  margin-top: 50px;
+}
+
+.member-row:not(:first-child) {
+  margin-top: 20px;
+}
+
 .photo { 
   height: 150px; 
   background-size: contain;
