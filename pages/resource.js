@@ -1,5 +1,6 @@
 import { Grid, Table } from 'react-bootstrap';
-import { withRouter } from 'next/router'
+import { withRouter } from 'next/router';
+import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
 
@@ -40,14 +41,16 @@ const getJourContent = () => `
 const getConfContent = () => {
   const confData = {...confDataJson};
   const confElms = [];
+  const openLink = (e) => window.open(e.currentTarget.dataset.href);
   let index = 0;
   for (let key in confData) {
     const subData = [...confData[key]];
     confElms.push(...subData.map((d, i) => (
       <tr key={`${key}-${i}`}
         className={index % 2 === 0 ? 'row-inverse' : 'row-default'}
-        datahref={d.link}>
-        {i ? '' : <td className='td-title' rowSpan={subData.length}>{key}</td>}
+        onClick={openLink}
+        data-href={d.link}>
+        {!i && <td className='td-title' rowSpan={subData.length}>{key}</td>}
         <td>{d.date}</td>
         <td>{d.place}</td>
         <td className={d.due ? 'deleted' : 'highlight'}>{d.deadline}</td>
@@ -114,7 +117,10 @@ const getApplyContent = () => `
 const Resource = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (
+  return (<div>
+    <Layout.Header 
+      pathname={router.pathname}
+      lang={lang} />
     <Grid fluid>
       <Block title={data.doc_title}>
         <Markdown source={getDocContent(data)} linkTarget='_blank' />
@@ -133,7 +139,7 @@ const Resource = ({ router }) => {
           <Markdown source={getApplyContent()} linkTarget='_blank' />
         </Block>] }
     </Grid>
-  );
+  </div>);
 };
 
 export default withRouter(Resource);

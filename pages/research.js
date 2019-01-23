@@ -1,5 +1,6 @@
 import { Grid } from 'react-bootstrap';
-import { withRouter } from 'next/router'
+import { withRouter } from 'next/router';
+import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
 
@@ -68,7 +69,10 @@ const getProjContent = (data, lang) => {
 const Research = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (
+  return (<div>
+    <Layout.Header 
+      pathname={router.pathname}
+      lang={lang} />
     <Grid fluid>
       <Block title={data.head1}>
         <Markdown source={getTopicContent(data)} />
@@ -77,7 +81,7 @@ const Research = ({ router }) => {
         <Markdown source={getProjContent(data, lang)} />
       </Block>
     </Grid>
-  );
+  </div>);
 };
 
 export default withRouter(Research);

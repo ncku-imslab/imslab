@@ -20,9 +20,6 @@ export default class MyDocument extends Document {
             title={title} />
         </Head>
         <body>
-          <Layout.Header 
-            page={props.page}
-            lang={lang} />
           <Main />
           <NextScript />
           <Layout.Footer />

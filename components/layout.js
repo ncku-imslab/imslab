@@ -25,9 +25,9 @@ Layout.Head = (props) => (
   </Head>
 );
 
-Layout.Header = (props) => {
-  const langUrl = props.lang === 'en' ? '/en' : '';
-  const data = props.lang === 'en' ? dataEn : dataTw;
+Layout.Header = ({ lang, pathname }) => {
+  const langUrl = lang === 'en' ? '/en' : '';
+  const data = lang === 'en' ? dataEn : dataTw;
   return (
     <div>
       <div className="brand">
@@ -50,12 +50,12 @@ Layout.Header = (props) => {
           <Nav>
             <NavItem 
               href={langUrl + '/'} 
-              className={props.page === '/' ? 'active' : ''} >
+              className={pathname === '/' ? 'active' : ''} >
                 {data.home}
             </NavItem>
             <NavItem
               href={langUrl + "/research"}
-              className={props.page === '/research' ? 'active' : ''} >
+              className={pathname === '/research' ? 'active' : ''} >
                 {data.research}
             </NavItem>
             <NavDropdown title={data.member} id="nav-member-dropdown">
@@ -65,21 +65,21 @@ Layout.Header = (props) => {
             </NavDropdown>
             <NavItem 
               href={langUrl + "/honor"} 
-              className={props.page === '/honor' ? 'active' : ''} >
+              className={pathname === '/honor' ? 'active' : ''} >
                 {data.honor}
             </NavItem>
             <NavItem
               href={langUrl + "/resource"}
-              className={props.page === '/resource' ? 'active' : ''} >
+              className={pathname === '/resource' ? 'active' : ''} >
                 {data.resource}
             </NavItem>
             <NavItem 
               href={langUrl + "/contact"}
-              className={props.page === '/contact' ? 'active' : ''} >
+              className={pathname === '/contact' ? 'active' : ''} >
                 {data.contact}
             </NavItem>
             <NavItem 
-              href={ (langUrl === '/en' ? '' : '/en') + props.page} >
+              href={ (langUrl === '/en' ? '' : '/en') + pathname} >
                 {data.lang}
             </NavItem>
           </Nav>

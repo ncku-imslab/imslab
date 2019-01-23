@@ -1,5 +1,6 @@
 import { Grid } from 'react-bootstrap';
-import { withRouter } from 'next/router'
+import { withRouter } from 'next/router';
+import Layout from '../components/layout';
 import Block from '../components/block';
 import List from '../components/list';
 import DataList from '../components/data-list';
@@ -13,8 +14,6 @@ const Honor = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
   const honorData = {...honorDataJson};
-  for (let key in honorData) {
-  }
   const contents = [];
   
   for (let key in honorData) {
@@ -22,10 +21,15 @@ const Honor = ({ router }) => {
     for (let sub in honorData[key]) {
       subData[sub] = <DataList.Honor data={subData[sub]} lang={lang} />
     }
-    contents.push(<Block title={data[key]}><List data={subData} /></Block>);
+    contents.push(<Block key={key} title={data[key]}><List data={subData} /></Block>);
   }
 
-  return <Grid fluid>{contents}</Grid>;
+  return (<div>
+    <Layout.Header 
+      pathname={router.pathname}
+      lang={lang} />
+    <Grid fluid>{contents}</Grid>
+  </div>);
 };
 
 export default withRouter(Honor);

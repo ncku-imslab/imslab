@@ -31,8 +31,8 @@ DataList.News.propTypes = {
   data: PropTypes.array.isRequired
 };
 
-DataList.Honor = ({ data, lang }) => data.map(d => (
-  <Row style={{ margin: '5px -15px' }}>
+DataList.Honor = ({ data, lang }) => data.map((d, i) => (
+  <Row key={`honor-${i}`} style={{ margin: '5px -15px' }}>
     <Col md={3}>{lang === 'en' && d.name_en ? d.name_en : d.name}</Col>
     <Col md={9}>{lang === 'en' && d.content_en ? d.content_en : d.content}</Col>
   </Row>

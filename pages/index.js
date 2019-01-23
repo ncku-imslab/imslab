@@ -1,6 +1,7 @@
 import { Grid } from 'react-bootstrap';
-import { withRouter } from 'next/router'
+import { withRouter } from 'next/router';
 import Markdown from 'react-markdown';
+import Layout from '../components/layout';
 import Block from '../components/block';
 import List from '../components/list';
 import DataList from '../components/data-list';
@@ -23,7 +24,10 @@ const Index = ({ router }) => {
     mustReadData[key] = <Markdown source={mustReadData[key]} linkTarget="_blank" />;
   }
 
-  return (
+  return (<div>
+    <Layout.Header 
+      pathname={router.pathname}
+      lang={lang} />
     <Grid fluid>
       <Block title={data.head1 + '!'}>
         {data.content1}
@@ -44,7 +48,7 @@ const Index = ({ router }) => {
         </a>
       </Block>
     </Grid>
-  );
+  </div>);
 };
 
 export default withRouter(Index);

@@ -1,5 +1,6 @@
 import { Grid, Row, Col } from 'react-bootstrap';
-import { withRouter } from 'next/router'
+import { withRouter } from 'next/router';
+import Layout from '../components/layout';
 
 import '../scss/contact.scss';
 import dataEn from '../data/en/contact.json';
@@ -8,7 +9,10 @@ import dataTw from '../data/zh-TW/contact.json';
 const Contact = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (
+  return (<div>
+    <Layout.Header 
+      pathname={router.pathname}
+      lang={lang} />
     <Grid fluid>
       <Row className='block'>
         <Col md={4}>
@@ -34,7 +38,7 @@ const Contact = ({ router }) => {
         <iframe className='col-md-12' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7957.577065589122!2d120.2178912995086!3d22.997032090757614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU5JzQ5LjYiTiAxMjDCsDEzJzE3LjAiRQ!5e1!3m2!1szh-TW!2sus!4v1401338254646' width='100%' height='450' frameBorder='0' style={{ border: 0 }} />
       </Row>
     </Grid>
-  );
+  </div>);
 };
 
 export default withRouter(Contact);
