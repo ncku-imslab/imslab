@@ -43,26 +43,26 @@ module.exports = withSass({
         }
       },
       '/student': {
-        page: '/student',
+        page: '/member',
         query: {
           title: "學生 - IMS Lab"
         }
       },
       '/en/student': {
-        page: '/student',
+        page: '/member',
         query: {
           title: "Students - IMS Lab",
           lang: 'en'
         }
       },
       '/alumni': {
-        page: '/alumni',
+        page: '/member',
         query: {
           title: "學成下山 - IMS Lab"
         }
       },
       '/en/alumni': {
-        page: '/alumni',
+        page: '/member',
         query: {
           title: "Alumni - IMS Lab",
           lang: 'en'

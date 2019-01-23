@@ -1,19 +1,20 @@
 @import "./_layout";
 
-#project {
-  div h3 {
-    margin: 30px 0 20px;
-    font-weight: bold;
-  }
-
-  ol {
-    display: flex;
-    flex-direction: column-reverse;
-    & > li {
-      margin: 5px 0;
-      padding-left: 5px;
-      flex: 0 0 auto;
+#research-container {
+  #project {
+    div h3 {
+      margin: 30px 0 20px;
+      font-weight: bold;
+    }
+  
+    ol {
+      display: flex;
+      flex-direction: column-reverse;
+      & > li {
+        margin: 5px 0;
+        padding-left: 5px;
+        flex: 0 0 auto;
+      }
     }
   }
-}
-
+} 

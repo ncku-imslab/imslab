@@ -38,7 +38,7 @@ const Professor = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>
+    <Grid id='prof-container' fluid>
       <Row className='block'>
         <Col lg={5} style={{ textAlign: 'center' }}>
           <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />

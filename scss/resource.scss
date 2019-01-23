@@ -1,25 +1,26 @@
 @import "./_layout";
 
-.block li { margin: 20px 0; }
-
-.table { font-size: medium; }
-
-.table > thead > tr > th { vertical-align: middle; }
-
-.table > tbody {
-  & > tr > td { vertical-align: middle; }
-  & > tr:hover > td:not(.td-title) {
-      cursor: pointer;
-      color: brown;
-      opacity: .8;
-      background: $bg-white;
+#resource-container {
+  .block li { margin: 20px 0; }
+  
+  .table { font-size: medium; }
+  
+  .table > thead > tr > th { vertical-align: middle; }
+  
+  .table > tbody {
+    & > tr > td { vertical-align: middle; }
+    & > tr:hover > td:not(.td-title) {
+        cursor: pointer;
+        color: brown;
+        opacity: .8;
+        background: $bg-white;
+    }
+    & > tr.row-inverse {
+      background: rgba(0,0,0,.075);
+      border-color: $bg-white;
+    }
   }
-  & > tr.row-inverse {
-    background: rgba(0,0,0,.075);
-    border-color: $bg-white;
-  }
+  
+  .deleted { text-decoration: line-through; }
+  .highlight { color: red; }
 }
-
-.deleted { text-decoration: line-through; }
-.highlight { color: red; }
-

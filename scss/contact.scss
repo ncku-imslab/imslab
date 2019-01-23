@@ -1,9 +1,14 @@
 @import './_layout';
 
-.block .row { 
-  margin: 10px 0; 
-  & > .col-md-2 {
-    font-weight: bold;
-    text-align: right;
+#contact-container {
+  .block .row { 
+    margin: 10px 0; 
+    & > .col-md-2 {
+      font-weight: bold;
+      text-align: right;
+      @media (max-width:767px) { 
+        text-align: left; 
+      }
+    }
   }
 }

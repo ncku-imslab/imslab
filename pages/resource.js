@@ -121,7 +121,7 @@ const Resource = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>
+    <Grid id='resource-container' fluid>
       <Block title={data.doc_title}>
         <Markdown source={getDocContent(data)} linkTarget='_blank' />
       </Block>

@@ -28,7 +28,7 @@ const Index = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>
+    <Grid id='home-container' fluid>
       <Block title={data.head1 + '!'}>
         {data.content1}
       </Block>

@@ -73,7 +73,7 @@ const Research = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>
+    <Grid id='research-container' fluid>
       <Block title={data.head1}>
         <Markdown source={getTopicContent(data)} />
       </Block>

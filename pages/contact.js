@@ -13,7 +13,7 @@ const Contact = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>
+    <Grid id='contact-container' fluid>
       <Row className='block'>
         <Col md={4}>
           <img style={{ width: '100%' }} src='/static/images/logo.png' />

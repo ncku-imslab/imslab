@@ -57,7 +57,7 @@ const Member = ({ router }) => {
     <Layout.Header 
       pathname={router.pathname}
       lang={lang} />
-    <Grid fluid>{blocks}</Grid>
+    <Grid id='member-container' fluid>{blocks}</Grid>
   </div>);
 };
 

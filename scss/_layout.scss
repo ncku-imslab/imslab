@@ -2,12 +2,17 @@
 @import "./_nav";
 @import "./_footer";
 
+@font-face {
+  font-family: 'NotoSansCJKtc-Regular';
+  src: url('/static/font/NotoSansCJKtc-Regular.woff') format('woff');
+}
+
 html, body {
   color: $text-color;
   font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑", "Microsoft YaHei", Helvetica, 'sans-serif';
 	font-size: 18px;
 
-  // background-image: url('../static/images/bg.jpg');
+  background-image: url('/static/images/bg.jpg');
   background-color: grey;
   background-size: cover;
   background-position: center;
