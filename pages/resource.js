@@ -1,10 +1,10 @@
-import { Grid, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import { withRouter } from 'next/router';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
 
-import '../scss/resource.scss';
+import '../scss/layout.scss';
 import dataEn from '../data/en/resource.json';
 import dataTw from '../data/zh-TW/resource.json';
 import confDataJson from '../data/conference.json';
@@ -115,31 +115,31 @@ const getApplyContent = () => `
 `;
 
 const Resource = ({ router }) => {
+  const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (<div>
-    <Layout.Header 
-      pathname={router.pathname}
-      lang={lang} />
-    <Grid id='resource-container' fluid>
-      <Block title={data.doc_title}>
-        <Markdown source={getDocContent(data)} linkTarget='_blank' />
+  let blocks = [
+    <Block title={data.doc_title} key='doc'>
+      <Markdown source={getDocContent(data)} linkTarget='_blank' />
+    </Block>,
+    <Block title={data.jour_title} key='jour'>
+      <Markdown source={getJourContent()} />
+    </Block>,
+    <Block title={data.conf_title} key='conf'>
+      {getConfContent()}
+    </Block>
+  ];
+  if (lang !== 'en') {
+    blocks = [...blocks, 
+      <Block title="推薦部落格" key='blog'>
+        <Markdown source={getBlogContent()} linkTarget='_blank' />
+      </Block>,
+      <Block title="可申請獎項" key='apply'>
+        <Markdown source={getApplyContent()} linkTarget='_blank' />
       </Block>
-      <Block title={data.jour_title}>
-        <Markdown source={getJourContent()} />
-      </Block>
-      <Block title={data.conf_title}>
-        {getConfContent()}
-      </Block>
-      { lang === 'en' ? '' : [
-        <Block title="推薦部落格" key='block-1'>
-          <Markdown source={getBlogContent()} linkTarget='_blank' />
-        </Block>,
-        <Block title="可申請獎項" key='block-2'>
-          <Markdown source={getApplyContent()} linkTarget='_blank' />
-        </Block>] }
-    </Grid>
-  </div>);
+    ];
+  }
+  return <Layout pathname={router.pathname} blocks={blocks} lang={lang} title={title} />;
 };
 
 export default withRouter(Resource);

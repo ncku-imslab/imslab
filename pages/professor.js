@@ -1,9 +1,9 @@
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { withRouter } from 'next/router';
-import Markdown from 'react-markdown';
 import Layout from '../components/layout';
+import Markdown from 'react-markdown';
 import Block from '../components/block';
-import '../scss/prof.scss';
+import '../scss/layout.scss';
 
 const getIntroContent = () => `
 ### [蔡孟勳 (Meng-Hsun Tsai)](http://imslab.org/~tsaimh/)
@@ -33,31 +33,28 @@ const getResearchContent = () =>`
 - Voice over IP (VoIP) Network`;
 
 const Professor = ({ router }) => {
+  const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
-  return (<div>
-    <Layout.Header 
-      pathname={router.pathname}
-      lang={lang} />
-    <Grid id='prof-container' fluid>
-      <Row className='block'>
-        <Col lg={5} style={{ textAlign: 'center' }}>
-          <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />
-        </Col>
-        <Col lg={7}>
-          <Markdown source={getIntroContent()} linkTarget='_blank' />
-        </Col>
-      </Row>
-      <Block title='Education'>
-        <Markdown source={getEduContent()} />
-      </Block>
-      <Block title='Work Experience'>
-        <Markdown source={getWorkContent()} />
-      </Block>
-      <Block title='Research Interests'>
-        <Markdown source={getResearchContent()} />
-      </Block>
-    </Grid>
-  </div>);
+  const blocks = [
+    <Row className='block' key='self'>
+      <Col lg={5} style={{ textAlign: 'center' }}>
+        <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />
+      </Col>
+      <Col lg={7}>
+        <Markdown source={getIntroContent()} linkTarget='_blank' />
+      </Col>
+    </Row>,
+    <Block title='Education' key='edu'>
+      <Markdown source={getEduContent()} />
+    </Block>,
+    <Block title='Work Experience' key='work'>
+      <Markdown source={getWorkContent()} />
+    </Block>,
+    <Block title='Research Interests' key='interests'>
+      <Markdown source={getResearchContent()} />
+    </Block>
+  ];
+  return <Layout id='prof-container' blocks={blocks} lang={lang} pathname={router.pathname} title={title} noTabs/>;
 };
 
 export default withRouter(Professor);

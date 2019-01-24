@@ -24,11 +24,11 @@ $ sudo npm install
 start dynamic app on port 3000
 
 ```
-$ next start
+$ npm start
 ```
 
 build app & export (output to `./out` directory)
 
 ```
-$ npm run build && npm run export
+$ npm run build
 ```

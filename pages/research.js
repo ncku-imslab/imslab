@@ -1,10 +1,9 @@
-import { Grid } from 'react-bootstrap';
 import { withRouter } from 'next/router';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
 
-import '../scss/research.scss';
+import '../scss/layout.scss';
 import dataEn from '../data/en/research.json';
 import dataTw from '../data/zh-TW/research.json';
 import projData from '../data/projects.json';
@@ -67,21 +66,18 @@ const getProjContent = (data, lang) => {
 };
 
 const Research = ({ router }) => {
+  const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (<div>
-    <Layout.Header 
-      pathname={router.pathname}
-      lang={lang} />
-    <Grid id='research-container' fluid>
-      <Block title={data.head1}>
-        <Markdown source={getTopicContent(data)} />
-      </Block>
-      <Block title={data.head2} id='project'>
-        <Markdown source={getProjContent(data, lang)} />
-      </Block>
-    </Grid>
-  </div>);
+  const blocks = [
+    <Block title={data.head1} key={data.head1}>
+      <Markdown source={getTopicContent(data)} />
+    </Block>,
+    <Block title={data.head2} id='project' key='project'>
+      <Markdown source={getProjContent(data, lang)} />
+    </Block>
+  ];
+  return <Layout id='research-container' pathname={router.pathname} lang={lang} blocks={blocks} title={title} />;
 };
 
 export default withRouter(Research);

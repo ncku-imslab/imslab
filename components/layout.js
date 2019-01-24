@@ -1,31 +1,24 @@
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { Grid, Navbar, Nav, NavItem, MenuItem, NavDropdown, Tabs, Tab } from 'react-bootstrap';
 import Link from "next/link";
 import Head from "next/head";
 import dataEn from '../data/en/menu.json';
 import dataTw from '../data/zh-TW/menu.json';
 
-const Layout = { host: "http://imslab.org" };
+const Layout = ({ lang, pathname, blocks, noTabs, id, title }) => {
+  // TODO: set document title
+  return (
+    <div id={id}>
+      <Header pathname={pathname} lang={lang} />
+      <Grid id='resource-container' fluid>
+        { !noTabs && <NavTab blocks={blocks} /> }
+        {blocks}
+      </Grid>
+      <Footer />
+    </div>
+  );
+};
 
-Layout.Head = (props) => (
-  <Head>
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="alternate" href={Layout.host + props.page} hrefLang={props.lang === "en" ? "zh-tw" : "en"} />
-    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" href="/static/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content={props.title} />
-    <meta property="og:site_name" content={props.title} />
-    <meta property="og:description" content="IMS Lab website" />
-    <meta property="og:image" content="/static/images/logo.png" />
-    <title>{props.title}</title>
-    <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
-    <link rel="stylesheet" href="/static/css/frame/bootstrap.min.css" />
-    <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="/static/css/frame/font-awesome.min.css" />
-  </Head>
-);
-
-Layout.Header = ({ lang, pathname }) => {
+export const Header = ({ lang, pathname }) => {
   const langUrl = lang === 'en' ? '/en' : '';
   const data = lang === 'en' ? dataEn : dataTw;
   return (
@@ -92,10 +85,37 @@ Layout.Header = ({ lang, pathname }) => {
   );
 };
 
-Layout.Footer = () => (
+export const Footer = () => (
   <div id="footer" className="block">
     Copyright © <img src="/static/images/logo.png" alt="imslab" /> IMS Lab 2017
   </div>
 );
+
+export const NavTab = ({ blocks }) => (
+  <Tabs id='nav-tabs' defaultActiveKey={1} onSelect={handleTab}>
+    { blocks.map((e, index) =>
+      <Tab eventKey={index + 1} key={index} title={e.props.title} /> )}
+  </Tabs>
+);
+
+const scrolling = (current, dir, goal) => {
+  var unit = 20;
+  current += unit * dir;
+  window.scrollBy(0, unit);
+  if (Math.abs(current - goal) > unit) {
+    setTimeout(scrolling.bind(null, current, dir, goal), 10);
+  } else {
+    window.scroll(0, goal);
+  }
+};
+
+const handleTab = section => {
+  var body = document.body;
+  var idTop = document.querySelectorAll('.block')[section - 1].offsetTop;
+  var goal = idTop - 82;
+  var current = (window.pageYOffset || document.scrollTop || 0) - (document.clientTop || 0);
+  var dir = current > goal ? -1 : +1;
+  scrolling(current, dir, goal);
+};
 
 export default Layout;

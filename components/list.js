@@ -9,19 +9,19 @@ export default class List extends React.Component {
     this.list = [];
     let i = 0;
     for (let key in props.data) {
-      this.list.push(...[
+      this.list.push(
         <li id={`list-${i}`}
             key={`list-${i}`}
-            className={i ? '' : 'active'}
+            className={i || props.noOpen ? '' : 'active'}
             onClick={this.toggleList} >
           {key}
         </li>,
         <div id={`content-${i}`}
              key={`content-${i}`}
-             className={`list-content ${i ? '' : 'active'}`}>
+             className={`list-content ${i || props.noOpen ? '' : 'active'}`}>
            {props.data[key]}
         </div>
-      ]);
+      );
       ++i;
     }
   }
@@ -43,5 +43,6 @@ export default class List extends React.Component {
 };
 
 List.propTypes = {
-  data: PropTypes.object.isRequred
+  data: PropTypes.object,
+  noOpen: PropTypes.bool,
 };

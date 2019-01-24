@@ -1,10 +1,10 @@
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { withRouter } from 'next/router';
-import Markdown from 'react-markdown';
 import Layout from '../components/layout';
+import Markdown from 'react-markdown';
 import Block from '../components/block';
 
-import '../scss/member.scss';
+import '../scss/layout.scss';
 import dataEn from '../data/en/member.json';
 import dataTw from '../data/zh-TW/member.json';
 import memberDataJson from '../data/members.json';
@@ -32,6 +32,7 @@ const getIndividualElm = (p, data) => (
 );
 
 const Member = ({ router }) => {
+  const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
   const memberData = {...memberDataJson[router.asPath.substr(1)]};
@@ -53,12 +54,7 @@ const Member = ({ router }) => {
     }
     blocks.push(<Block key={key} title={data[key]}>{rows}</Block>);
   }
-  return (<div>
-    <Layout.Header 
-      pathname={router.pathname}
-      lang={lang} />
-    <Grid id='member-container' fluid>{blocks}</Grid>
-  </div>);
+  return <Layout id='member-container' lang={lang} pathname={router.pathname} blocks={blocks} title={title} />;
 };
 
 export default withRouter(Member);
