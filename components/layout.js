@@ -4,19 +4,16 @@ import Head from "next/head";
 import dataEn from '../data/en/menu.json';
 import dataTw from '../data/zh-TW/menu.json';
 
-const Layout = ({ lang, pathname, blocks, noTabs, id, title }) => {
-  // TODO: set document title
-  return (
-    <div id={id}>
-      <Header pathname={pathname} lang={lang} />
-      <Grid id='resource-container' fluid>
-        { !noTabs && <NavTab blocks={blocks} /> }
-        {blocks}
-      </Grid>
-      <Footer />
-    </div>
-  );
-};
+const Layout = ({ lang, pathname, blocks, noTabs, id, title }) => (
+  <div id={id}>
+    <Header pathname={pathname} lang={lang} />
+    <Grid id='resource-container' fluid>
+      { !noTabs && <NavTab blocks={blocks} /> }
+      {blocks}
+    </Grid>
+    <Footer />
+  </div>
+);
 
 export const Header = ({ lang, pathname }) => {
   const langUrl = lang === 'en' ? '/en' : '';

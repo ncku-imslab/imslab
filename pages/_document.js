@@ -25,9 +25,9 @@ export default class MyDocument extends Document {
           <meta property="og:description" content="IMS Lab website" />
           <meta property="og:image" content="/static/images/logo.png" />
           <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+          <link rel="stylesheet" href="/static/frame/bootstrap.min.css" />
           <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css' />
-          <link rel="stylesheet" href="/static/css/frame/font-awesome.min.css" />
+          <link rel="stylesheet" href="/static/frame/font-awesome.min.css" />
           <Head />
         </head>
         <body>
