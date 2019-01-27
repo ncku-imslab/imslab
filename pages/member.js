@@ -52,7 +52,7 @@ const Member = ({ router }) => {
         </Row>));
       }
     }
-    blocks.push(<Block key={key} title={data[key]}>{rows}</Block>);
+    blocks.push(<Block key={key} title={data[key]} ref={React.createRef()}>{rows}</Block>);
   }
   return <Layout id='member-container' lang={lang} pathname={router.pathname} blocks={blocks} title={title} />;
 };

@@ -70,10 +70,10 @@ const Research = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
   const blocks = [
-    <Block title={data.head1} key={data.head1}>
+    <Block title={data.head1} key={data.head1} ref={React.createRef()}>
       <Markdown source={getTopicContent(data)} />
     </Block>,
-    <Block title={data.head2} id='project' key='project'>
+    <Block title={data.head2} id='project' key='project' ref={React.createRef()}>
       <Markdown source={getProjContent(data, lang)} />
     </Block>
   ];

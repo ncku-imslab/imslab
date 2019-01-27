@@ -21,7 +21,7 @@ const Honor = ({ router }) => {
     for (let sub in honorData[key]) {
       subData[sub] = <DataList.Honor data={subData[sub]} lang={lang} />
     }
-    blocks.push(<Block key={key} title={data[key]}><List data={subData} /></Block>);
+    blocks.push(<Block key={key} title={data[key]} ref={React.createRef()}><List data={subData} /></Block>);
   }
 
   return <Layout id='honor-container' blocks={blocks} pathname={router.pathname} lang={lang} title={title} />;

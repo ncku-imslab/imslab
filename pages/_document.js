@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
           <meta property="og:image" content="/static/images/logo.png" />
           <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
           <link rel="stylesheet" href="/static/frame/bootstrap.min.css" />
-          <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css' />
+          <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css' />
           <link rel="stylesheet" href="/static/frame/font-awesome.min.css" />
           <Head />
         </head>

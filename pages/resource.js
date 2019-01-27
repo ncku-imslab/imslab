@@ -119,22 +119,22 @@ const Resource = ({ router }) => {
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
   let blocks = [
-    <Block title={data.doc_title} key='doc'>
+    <Block title={data.doc_title} key='doc' ref={React.createRef()}>
       <Markdown source={getDocContent(data)} linkTarget='_blank' />
     </Block>,
-    <Block title={data.jour_title} key='jour'>
+    <Block title={data.jour_title} key='jour' ref={React.createRef()}>
       <Markdown source={getJourContent()} />
     </Block>,
-    <Block title={data.conf_title} key='conf'>
+    <Block title={data.conf_title} key='conf' ref={React.createRef()}>
       {getConfContent()}
     </Block>
   ];
   if (lang !== 'en') {
     blocks = [...blocks, 
-      <Block title="推薦部落格" key='blog'>
+      <Block title="推薦部落格" key='blog' ref={React.createRef()}>
         <Markdown source={getBlogContent()} linkTarget='_blank' />
       </Block>,
-      <Block title="可申請獎項" key='apply'>
+      <Block title="可申請獎項" key='apply' ref={React.createRef()}>
         <Markdown source={getApplyContent()} linkTarget='_blank' />
       </Block>
     ];

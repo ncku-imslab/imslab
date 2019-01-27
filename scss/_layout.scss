@@ -7,6 +7,11 @@
   src: url('/static/font/NotoSansCJKtc-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/static/font/glyphicons-halflings-regular.woff') format('woff');
+}
+
 html, body {
   color: $text-color;
   font-family: 'NotoSansCJKtc-Regular', 'Noto Sans', "微軟雅黑", "Microsoft YaHei", Helvetica, 'sans-serif';

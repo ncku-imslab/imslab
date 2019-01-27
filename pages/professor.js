@@ -36,14 +36,16 @@ const Professor = ({ router }) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const blocks = [
-    <Row className='block' key='self'>
-      <Col lg={5} style={{ textAlign: 'center' }}>
-        <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />
-      </Col>
-      <Col lg={7}>
-        <Markdown source={getIntroContent()} linkTarget='_blank' />
-      </Col>
-    </Row>,
+    <Block key='self'>
+      <Row>
+        <Col lg={5} style={{ textAlign: 'center' }}>
+          <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />
+        </Col>
+        <Col lg={7}>
+          <Markdown source={getIntroContent()} linkTarget='_blank' />
+        </Col>
+      </Row>
+    </Block>,
     <Block title='Education' key='edu'>
       <Markdown source={getEduContent()} />
     </Block>,
