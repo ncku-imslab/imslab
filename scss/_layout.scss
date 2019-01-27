@@ -124,6 +124,13 @@ ul.enableOpen {
 
 ol > li ol { list-style-type: lower-alpha; }
 
+.nav-tabs-fixed-top {
+  position: fixed;
+  // TODO: adjust "82"
+  top: 82px;
+  width: 100%;
+  z-index: 1100;
+}
 .nav-tabs {
   margin: 10px auto -20px;
   padding: 0 12.5%;

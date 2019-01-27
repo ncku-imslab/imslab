@@ -5,50 +5,61 @@ import Head from "next/head";
 import dataEn from '../data/en/menu.json';
 import dataTw from '../data/zh-TW/menu.json';
 
-const Layout = ({ id, lang, pathname, blocks, noTabs }) => (
-  <div id={id}>
-    <Header pathname={pathname} lang={lang} />
-    <Grid fluid>
-      { !noTabs && <NavTab blocks={blocks} /> }
-      { blocks }
-    </Grid>
-    <Footer />
-  </div>
-);
-
-class Header extends React.Component {
+export default class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.langUrl = props.lang === 'en' ? '/en' : '';
-    this.data = props.lang === 'en' ? dataEn : dataTw;
-    this.handleScrolling = this.handleScrolling.bind(this);
+    this.navbarRef = React.createRef();
+    this.state = { fixedTop: false };
+
+    this.handleFixedTop = this.handleFixedTop.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScrolling);
+    window.addEventListener('scroll', this.handleFixedTop)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScrolling);
+    window.removeEventListener('scroll', this.handleFixedTop);
   }
 
-  handleScrolling() {
-    // TODO: handle navtop fixed while scrolling
+  handleFixedTop() {
+    const offset = window.pageYOffset || 0;
+    if(offset > this.navbarRef.current.offsetTop) this.setState({ fixedTop: true });
+    else this.setState({ fixedTop: false });
   }
 
   render() {
     return (
-      <div>
-        <div className="brand">
-          <Link href={this.langUrl + '/'} passHref><a>IMS Lab</a></Link>
-        </div>
-        <div className="brand">
-          {"Intelligent Mobile Service Laboratory | 智慧化行動服務實驗室"}
-        </div>
-        <Navbar fluid>
+      <div id={this.props.id}>
+        <Header pathname={this.props.pathname} lang={this.props.lang} 
+                fixedTop={this.state.fixedTop} navbarRef={this.navbarRef} />
+        <Grid fluid>
+          { !this.props.noTabs && <NavTab blocks={this.props.blocks} fixedTop={this.state.fixedTop} /> }
+          { this.props.blocks }
+        </Grid>
+        <Footer />
+      </div>
+    );
+  }
+};
+
+const Header = ({ lang, pathname, fixedTop, navbarRef }) => {
+  const langUrl = lang === 'en' ? '/en' : '';
+  const data = lang === 'en' ? dataEn : dataTw;
+  const fixedTopProp = { fixedTop: fixedTop };
+  return (
+    <div>
+      <div className="brand">
+        <Link href={langUrl + '/'} passHref><a>IMS Lab</a></Link>
+      </div>
+      <div className="brand">
+        {"Intelligent Mobile Service Laboratory | 智慧化行動服務實驗室"}
+      </div>
+      <div ref={navbarRef}>
+        <Navbar fluid {...fixedTopProp}>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href={this.langUrl + '/'}>
+              <a href={langUrl + '/'}>
                 <img alt="imslab" src="/static/images/logo.png" />
                 {" IMS Lab"}
               </a>
@@ -58,48 +69,48 @@ class Header extends React.Component {
           <Navbar.Collapse>
             <Nav>
               <NavItem 
-                href={this.langUrl + '/'} 
-                className={this.props.pathname === '/' ? 'active' : ''} >
-                  {this.data.home}
+                href={langUrl + '/'} 
+                className={pathname === '/' ? 'active' : ''} >
+                  {data.home}
               </NavItem>
               <NavItem
-                href={this.langUrl + "/research"}
-                className={this.props.pathname === '/research' ? 'active' : ''} >
-                  {this.data.research}
+                href={langUrl + "/research"}
+                className={pathname === '/research' ? 'active' : ''} >
+                  {data.research}
               </NavItem>
               <NavDropdown 
-                title={this.data.member} 
+                title={data.member} 
                 id="nav-member-dropdown"
-                className={this.props.pathname === '/professor' || this.props.pathname === '/member' ? 'active' : ''} >
-                <MenuItem href={this.langUrl + "/professor"}>{this.data.member_prof}</MenuItem>
-                <MenuItem href={this.langUrl + "/student"}>{this.data.member_student}</MenuItem>
-                <MenuItem href={this.langUrl + "/alumni"}>{this.data.member_alumni}</MenuItem>
+                className={pathname === '/professor' || pathname === '/member' ? 'active' : ''} >
+                <MenuItem href={langUrl + "/professor"}>{data.member_prof}</MenuItem>
+                <MenuItem href={langUrl + "/student"}>{data.member_student}</MenuItem>
+                <MenuItem href={langUrl + "/alumni"}>{data.member_alumni}</MenuItem>
               </NavDropdown>
               <NavItem 
-                href={this.langUrl + "/honor"} 
-                className={this.props.pathname === '/honor' ? 'active' : ''} >
-                  {this.data.honor}
+                href={langUrl + "/honor"} 
+                className={pathname === '/honor' ? 'active' : ''} >
+                  {data.honor}
               </NavItem>
               <NavItem
-                href={this.langUrl + "/resource"}
-                className={this.props.pathname === '/resource' ? 'active' : ''} >
-                  {this.data.resource}
+                href={langUrl + "/resource"}
+                className={pathname === '/resource' ? 'active' : ''} >
+                  {data.resource}
               </NavItem>
               <NavItem 
-                href={this.langUrl + "/contact"}
-                className={this.props.pathname === '/contact' ? 'active' : ''} >
-                  {this.data.contact}
+                href={langUrl + "/contact"}
+                className={pathname === '/contact' ? 'active' : ''} >
+                  {data.contact}
               </NavItem>
               <NavItem 
-                href={ (this.langUrl === '/en' ? '' : '/en') + this.props.pathname} >
-                  {this.data.lang}
+                href={ (langUrl === '/en' ? '' : '/en') + pathname} >
+                  {data.lang}
               </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 export const Footer = () => (
@@ -108,8 +119,9 @@ export const Footer = () => (
   </div>
 );
 
-export const NavTab = ({ blocks }) => (
-  <Tabs id='nav-tabs' defaultActiveKey={1} onSelect={handleTab}>
+export const NavTab = ({ blocks, fixedTop}) => (
+  <Tabs id="nav-tabs" className={fixedTop ? 'nav-tabs-fixed-top' : ''}
+        defaultActiveKey={1} onSelect={handleTab}>
     { blocks
         .filter(block => block.ref)
         .map((block, index) =>
@@ -120,7 +132,7 @@ export const NavTab = ({ blocks }) => (
 const scrolling = (current, dir, goal) => {
   var unit = 20;
   current += unit * dir;
-  window.scrollBy(0, unit);
+  window.scrollBy(0, unit * dir);
   if (Math.abs(current - goal) > unit) {
     setTimeout(scrolling.bind(null, current, dir, goal), 10);
   } else {
@@ -130,10 +142,9 @@ const scrolling = (current, dir, goal) => {
 
 const handleTab = ref => {
   var idTop = ref.current.offsetTop
+  // TODO: adjust "82"
   var goal = idTop - 82;
   var current = window.pageYOffset || 0;
   var dir = current > goal ? -1 : +1;
   scrolling(current, dir, goal);
 };
-
-export default Layout;
