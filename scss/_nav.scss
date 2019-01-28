@@ -23,9 +23,30 @@
   border-radius: 0;
   margin-top: 20px;
   margin-bottom: 0;
+
+  .container-fluid {
+    height: 70px;
+  }
+  
+  .nav-flag {
+    position: absolute;
+    left: calc(50% - 25px);
+    font-size: 12px;
+    text-align: center;
+    background: $bg-white;
+    width: 50px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    color: $brown;
+    visibility: hidden;
+    &:hover { opacity: 0.8; }
+  }
   
   &.navbar-fixed-top {
     margin: 0;
+    .nav-flag {
+      visibility: visible;
+    }
     .navbar-brand { 
       display: inline-block; 
       margin: 7px 0 0;
@@ -52,7 +73,7 @@
 }
 
 .navbar .navbar-collapse {
-  padding-top: 10px;
+  padding: 10px 13% 0;
   text-align: center;
   .navbar-nav {
     float: none;

@@ -126,12 +126,13 @@ ol > li ol { list-style-type: lower-alpha; }
 
 .nav-tabs-fixed-top {
   position: fixed;
-  // TODO: adjust "82"
-  top: 82px;
+  top: 20px;
   width: 100%;
   z-index: 1100;
+  ul { margin-top: 0; }
 }
 .nav-tabs {
+  height: 48px;
   margin: 10px auto -20px;
   padding: 0 12.5%;
   border-bottom: none;
