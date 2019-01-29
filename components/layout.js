@@ -166,11 +166,11 @@ export const NavTab = ({ blocks, fixedTop, activeKey}) => (
 );
 
 const scrolling = (current, dir, goal) => {
-  // TODO: adjust speed
-  var unit = 20;
+  const gap = Math.abs(current - goal);
+  const unit = gap > 100 ? gap / 10 : 10;
   current += unit * dir;
   window.scrollBy(0, unit * dir);
-  if (Math.abs(current - goal) > unit) {
+  if (gap > unit) {
     setTimeout(scrolling.bind(null, current, dir, goal), 10);
   } else {
     window.scroll(0, goal);
@@ -178,9 +178,9 @@ const scrolling = (current, dir, goal) => {
 };
 
 const handleTab = ref => {
-  var idTop = ref.current.offsetTop
-  var goal = idTop - 100;
-  var current = window.pageYOffset || 0;
-  var dir = current > goal ? -1 : +1;
+  const idTop = ref.current.offsetTop
+  const goal = idTop - 100;
+  const current = window.pageYOffset || 0;
+  const dir = current > goal ? -1 : +1;
   scrolling(current, dir, goal);
 };
