@@ -77,7 +77,7 @@ const Research = ({ router }) => {
       <Markdown source={getProjContent(data, lang)} />
     </Block>
   ];
-  return <Layout id='research-container' pathname={router.pathname} lang={lang} blocks={blocks} title={title} />;
+  return <Layout id='research-container' pathname={router.asPath} lang={lang} blocks={blocks} title={title} />;
 };
 
 export default withRouter(Research);

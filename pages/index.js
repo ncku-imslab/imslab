@@ -26,10 +26,11 @@ const Index = ({ router }) => {
 
   let blocks = [ <Block title={data.head1 + '!'} key='welcome'>{data.content1}</Block> ];
   if (lang !== 'en') {
-    blocks.push(<Block title="必看" key='mustRead'><List data={mustReadData} /></Block>);
+    blocks.push(<Block title="必看" key='mustRead'><List data={mustReadData} noOpen/></Block>);
   }
-  blocks.push((
-    <Block id="visitor" title="Visitors (since May 9th 2016)" key='visitor'>
+  blocks.push(
+    <Block title={data.head3} key='news'><List data={newsData} /></Block>,
+    (<Block id="visitor" title="Visitors (since May 9th 2016)" key='visitor'>
       <a href="http://info.flagcounter.com/WV9Z" target="_blank">
         <img src="http://s06.flagcounter.com/map/WV9Z/size_m/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0" />
       </a>
@@ -39,7 +40,7 @@ const Index = ({ router }) => {
     </Block>
   ));
 
-  return <Layout id='home-container' pathname={router.pathname} blocks={blocks} lang={lang} title={title} noTabs/>;
+  return <Layout id='home-container' pathname={router.asPath} blocks={blocks} lang={lang} title={title} noTabs/>;
 };
 
 export default withRouter(Index);

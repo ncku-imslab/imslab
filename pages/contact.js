@@ -10,7 +10,7 @@ const Contact = ({ router }) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  return (<Layout lang={lang} id='contact-container' pathname={router.pathname} title={title} blocks={[
+  return (<Layout lang={lang} id='contact-container' pathname={router.asPath} title={title} blocks={[
     <Row className='block' key='contact'>
       <Col md={4}>
         <img style={{ width: '100%' }} src='/static/images/logo.png' />

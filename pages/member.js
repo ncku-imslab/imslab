@@ -31,17 +31,38 @@ const getIndividualElm = (p, data) => (
   </Col>
 );
 
+const numberTw = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+const numberEn = ['Zero', 'First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'];
+const getTitle = (lang, title) => {
+  if (lang === 'en') {
+    switch(title[0]) {
+      case 'p': case 'm': return numberEn[title[1]] + ' year';
+      case 'g': case 'b': return 'Graduate in ' + (Number.parseInt(title.substr(1)) + 1911);
+      default: return title;
+    }
+  } else {
+    switch(title[0]) {
+      case 'p': return '博' + numberTw[title[1]];
+      case 'm': return '碩' + numberTw[title[1]];
+      case 'b': return title.substr(1) + ' 級';
+      case 'g': return title.substr(1) + ' 年畢';
+      default: return title;
+    }
+  }
+};
+
 const Member = ({ router }) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  const memberData = {...memberDataJson[router.asPath.substr(1)]};
+  const section = lang === "en" ? router.asPath.substr(4) : router.asPath.substr(1);
+  const memberData = {...memberDataJson[section]};
   const blocks = [];
   for (let key in memberData) {
     const rows = [];
     const subData = {...memberData[key]};
     for (let sub in subData) {
-      rows.push(<h3 key={sub} className='sub-title'>{sub}</h3>);
+      rows.push(<h3 key={sub} className='sub-title'>{getTitle(lang, sub)}</h3>);
       const ppls = [...subData[sub]];
       for (let i = 0; i < ppls.length; i += 3) {
         rows.push((
@@ -54,7 +75,7 @@ const Member = ({ router }) => {
     }
     blocks.push(<Block key={key} title={data[key]} ref={React.createRef()}>{rows}</Block>);
   }
-  return <Layout id='member-container' lang={lang} pathname={router.pathname} blocks={blocks} title={title} />;
+  return <Layout id='member-container' lang={lang} pathname={router.asPath} blocks={blocks} title={title} />;
 };
 
 export default withRouter(Member);

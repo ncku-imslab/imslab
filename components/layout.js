@@ -78,6 +78,7 @@ class Header extends React.Component {
     };
     const flag = this.props.noTabs ? '' : this.state.showNav ? '▲' : '▼';
     const fixedTopProp = { fixedTop: this.props.fixedTop };
+    const pathname = this.props.lang === 'en' ? this.props.pathname.substr(3) : this.props.pathname;
     return (
       <div>
         <div className="brand">
@@ -102,39 +103,39 @@ class Header extends React.Component {
               <Nav>
                 <NavItem 
                   href={this.langUrl + '/'} 
-                  className={this.props.pathname === '/' ? 'active' : ''} >
+                  className={pathname === '/' ? 'active' : ''} >
                     {this.data.home}
                 </NavItem>
                 <NavItem
                   href={this.langUrl + "/research"}
-                  className={this.props.pathname === '/research' ? 'active' : ''} >
+                  className={pathname === '/research' ? 'active' : ''} >
                     {this.data.research}
                 </NavItem>
                 <NavDropdown 
                   title={this.data.member} 
                   id="nav-member-dropdown"
-                  className={this.props.pathname === '/professor' || this.props.pathname === '/member' ? 'active' : ''} >
+                  className={pathname === '/professor' || pathname === '/student' || pathname === '/alumni' ? 'active' : ''} >
                   <MenuItem href={this.langUrl + "/professor"}>{this.data.member_prof}</MenuItem>
                   <MenuItem href={this.langUrl + "/student"}>{this.data.member_student}</MenuItem>
                   <MenuItem href={this.langUrl + "/alumni"}>{this.data.member_alumni}</MenuItem>
                 </NavDropdown>
                 <NavItem 
                   href={this.langUrl + "/honor"} 
-                  className={this.props.pathname === '/honor' ? 'active' : ''} >
+                  className={pathname === '/honor' ? 'active' : ''} >
                     {this.data.honor}
                 </NavItem>
                 <NavItem
                   href={this.langUrl + "/resource"}
-                  className={this.props.pathname === '/resource' ? 'active' : ''} >
+                  className={pathname === '/resource' ? 'active' : ''} >
                     {this.data.resource}
                 </NavItem>
                 <NavItem 
                   href={this.langUrl + "/contact"}
-                  className={this.props.pathname === '/contact' ? 'active' : ''} >
+                  className={pathname === '/contact' ? 'active' : ''} >
                     {this.data.contact}
                 </NavItem>
                 <NavItem 
-                  href={ (this.langUrl === '/en' ? '' : '/en') + this.props.pathname} >
+                  href={ (this.langUrl === '/en' ? '' : '/en') + pathname} >
                     {this.data.lang}
                 </NavItem>
               </Nav>
@@ -154,8 +155,7 @@ export const Footer = () => (
 
 export const NavTab = ({ blocks, fixedTop, activeKey}) => (
   <Tabs id="nav-tabs" className={fixedTop ? 'nav-tabs-fixed-top' : ''}
-        defaultActiveKey={blocks[0].ref || 0} onSelect={handleTab}
-        activeKey={activeKey} >
+        onSelect={handleTab} activeKey={activeKey} >
     { blocks
         .filter(block => block.ref)
         .map((block, index) =>

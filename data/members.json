@@ -146,7 +146,7 @@
   },
   "alumni": {
     "alu_master": {
-      "gra107": [
+      "g107": [
         {
           "name_ch": "吳孟庭",
           "name_en": "Mong-Ting Wu",
@@ -162,7 +162,7 @@
           "job": "群暉科技 (Synology) (研發替代役)"
         }
       ],
-      "gra106": [
+      "g106": [
         {
           "name_ch": "呂宜龍",
           "name_en": "Yi Long Lu",
@@ -178,7 +178,7 @@
           "job": "台大電機系博士班"
         }
       ],
-      "gra105": [
+      "g105": [
         {
           "name_ch": "呂尚霖",
           "name_en": "Shang-Lin Lu",
@@ -194,7 +194,7 @@
           "job": "晨星 (MStar)"
         }
       ],
-      "gra104": [
+      "g104": [
         {
           "name_ch": "蘇珮華",
           "name_en": "Pei-Hua Su",
@@ -224,7 +224,7 @@
           "job": "Trend Micro"
         }
       ],
-      "gra103": [
+      "g103": [
         {
           "name_ch": "陳冠宏",
           "name_en": "Guan-Hong Chen",
@@ -254,7 +254,7 @@
           "job": "Mozilla Taiwan 美商謀智 (研發替代役) / Google"
         }
       ],
-      "gra102": [
+      "g102": [
         {
           "name_ch": "俞中豪",
           "name_en": "Chung-Hau Yu",

@@ -56,7 +56,7 @@ const Professor = ({ router }) => {
       <Markdown source={getResearchContent()} />
     </Block>
   ];
-  return <Layout id='prof-container' blocks={blocks} lang={lang} pathname={router.pathname} title={title} noTabs/>;
+  return <Layout id='prof-container' blocks={blocks} lang={lang} pathname={router.asPath} title={title} noTabs/>;
 };
 
 export default withRouter(Professor);

@@ -139,7 +139,7 @@ const Resource = ({ router }) => {
       </Block>
     ];
   }
-  return <Layout pathname={router.pathname} blocks={blocks} lang={lang} title={title} />;
+  return <Layout id="resource-container" pathname={router.asPath} blocks={blocks} lang={lang} title={title} />;
 };
 
 export default withRouter(Resource);

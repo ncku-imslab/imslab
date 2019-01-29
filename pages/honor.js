@@ -24,7 +24,7 @@ const Honor = ({ router }) => {
     blocks.push(<Block key={key} title={data[key]} ref={React.createRef()}><List data={subData} /></Block>);
   }
 
-  return <Layout id='honor-container' blocks={blocks} pathname={router.pathname} lang={lang} title={title} />;
+  return <Layout id='honor-container' blocks={blocks} pathname={router.asPath} lang={lang} title={title} />;
 };
 
 export default withRouter(Honor);
