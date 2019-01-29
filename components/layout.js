@@ -65,18 +65,21 @@ class Header extends React.Component {
     super(props);
     this.langUrl = props.lang === 'en' ? '/en' : '';
     this.data = props.lang === 'en' ? dataEn : dataTw;
-    this.state = { showNav: this.props.noTabs || !props.fixedTop };
+    this.state = { showNav: this.props.noTabs || !props.fixedTop, isToggle: false };
   }
 
   showCollapse = () => this.setState({ showNav: !this.state.showNav });
 
+  onToggle = (isExpand) => this.setState({ showNav: true, isToggle: true });
+
   render() {
-    const zIndex = { zIndex: this.state.showNav ? 1200 : 1100 };
+    const zIndex = { zIndex: this.state.showNav && !this.state.isToggle ? 1200 : 1100 };
     const collapse = { 
       visibility: this.state.showNav ? 'visible' : 'hidden', 
-      marginTop: this.state.showNav && !this.props.noTabs && this.props.fixedTop ? '8px' : '0',
+      marginTop: this.state.showNav && !this.props.noTabs && this.props.fixedTop && !this.state.isToggle ? '8px' : '0',
     };
     const flag = this.props.noTabs ? '' : this.state.showNav ? '▲' : '▼';
+    const toggleBtn = <div className='nav-flag' onClick={this.showCollapse}>{flag}</div>;
     const fixedTopProp = { fixedTop: this.props.fixedTop };
     let pathname = this.props.lang === 'en' ? this.props.pathname.substr(3) : this.props.pathname;
     pathname = pathname.length ? pathname : '/';
@@ -90,16 +93,18 @@ class Header extends React.Component {
           {"Intelligent Mobile Service Laboratory | 智慧化行動服務實驗室"}
         </div>
         <div ref={this.props.navbarRef}>
-          <Navbar fluid {...fixedTopProp} style={zIndex}>
+          <Navbar fluid {...fixedTopProp} style={zIndex} onToggle={this.onToggle}>
             <Navbar.Header>
-              <div className='nav-flag' onClick={this.showCollapse}>{flag}</div>
+              { !this.state.isToggle && toggleBtn }
               <Navbar.Brand>
                 <a href={this.langUrl + '/'}>
                   <img alt="imslab" src="/static/images/logo.png" />
-                  {" IMS Lab"}
+                  { (!this.props.fixedTop || this.props.noTabs) && <span className="navbar-brand-text">{" IMS Lab"}</span> }
                 </a>
               </Navbar.Brand>
-              <Navbar.Toggle />
+              { this.props.fixedTop && !this.props.noTabs ?
+                <Navbar.Toggle as="<div>" className="nav-flag">{flag}</Navbar.Toggle> :
+                <Navbar.Toggle /> }
             </Navbar.Header>
             <Navbar.Collapse style={collapse}>
               <Nav>

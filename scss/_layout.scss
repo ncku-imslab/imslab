@@ -124,39 +124,50 @@ ul.enableOpen {
 
 ol > li ol { list-style-type: lower-alpha; }
 
-.nav-tabs-fixed-top {
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  z-index: 1100;
-  ul { margin-top: 0; }
-}
-.nav-tabs {
-  height: 48px;
-  margin: 10px auto -20px;
-  padding: 0 12.5%;
-  border-bottom: none;
-  & > li.active > a,
-  & > li > a:hover { 
-    background: $bg-white; 
-    border: 1px solid $bg-white;
+#nav-tabs {
+  overflow: scroll;
+  height: 58px;
+  margin: 0 12.5% -20px;
+  &.nav-tabs-fixed-top {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    z-index: 1100;
+    ul { margin-top: 0; }
   }
-  & > li > a:focus,
-  & > li.toTop > a { 
-    background: transparent; 
-    border: none;
-    color: $brown;
+
+  .nav-tabs {
+    width: max-content;
+    height: 48px;
+    margin: 10px 0 0;
+    border-bottom: none;
+    & > li.active > a,
+    & > li > a:hover { 
+      background: $bg-white; 
+      border: 1px solid $bg-white;
+    }
+    & > li > a:focus,
+    & > li.toTop > a { 
+      background: transparent; 
+      border: none;
+      color: $brown;
+    }
+    &.navbar-fixed-top {
+      margin: 0;
+      background: rgba(0,0,0,.1);
+    }
+    li.toTop { 
+      float: right; 
+      & > a::before {
+  		  font-family:'Glyphicons Halflings';
+        content: "\e253";
+      }
+    }
   }
-  &.navbar-fixed-top {
-    margin: 0;
-    background: rgba(0,0,0,.1);
-  }
-  li.toTop { 
-    float: right; 
-    & > a::before {
-		  font-family:'Glyphicons Halflings';
-      content: "\e253";
+  @media (max-width:767px) {
+    margin: 0 0 -20px 0;
+    &.nav-tabs-fixed-top {
+      margin-left: 60px;
     }
   }
 }
-
