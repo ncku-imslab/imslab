@@ -55,7 +55,8 @@ const Member = ({ router }) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const data = lang === "en" ? dataEn : dataTw;
-  const section = lang === "en" ? router.asPath.substr(4) : router.asPath.substr(1);
+  let section = lang === "en" ? router.asPath.substr(4) : router.asPath.substr(1);
+  section = section.match(/\/$/) ? section.substr(0, section.length - 1) : section;
   const memberData = {...memberDataJson[section]};
   const blocks = [];
   for (let key in memberData) {

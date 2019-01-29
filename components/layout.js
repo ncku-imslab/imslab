@@ -78,7 +78,9 @@ class Header extends React.Component {
     };
     const flag = this.props.noTabs ? '' : this.state.showNav ? '▲' : '▼';
     const fixedTopProp = { fixedTop: this.props.fixedTop };
-    const pathname = this.props.lang === 'en' ? this.props.pathname.substr(3) : this.props.pathname;
+    let pathname = this.props.lang === 'en' ? this.props.pathname.substr(3) : this.props.pathname;
+    pathname = pathname.length ? pathname : '/';
+    pathname = pathname.match(/^\/.*\/$/) ? pathname.substr(0, pathname.length - 1) : pathname;
     return (
       <div>
         <div className="brand">
