@@ -8,8 +8,9 @@
   "scripts": {
     "dev": "next",
     "pre-commit": "eslint --fix components/ pages/",
+    "start": "next start",
     "build": "next build && next export -o docs",
-    "start": "next start"
+    "publish": "git subtree split --prefix docs -b publish && git push -f origin publish:publish && git branch -D publish"
   },
   "repository": {
     "type": "git",
