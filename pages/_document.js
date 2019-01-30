@@ -1,13 +1,24 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import React from 'react';
+import Document, {Head, Main, NextScript} from 'next/document';
 
+/**
+ * MyDocument for static files
+ */
 export default class MyDocument extends Document {
+  /**
+   * @param {any} ctx
+   * @return {object}
+   */
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    return {...initialProps};
   }
 
+  /**
+   * @return {component}
+   */
   render() {
-    const host = "http://imslab.org";
+    const host = 'http://imslab.org';
     const props = this.props.__NEXT_DATA__;
     const lang = props.query && props.query.lang === 'en' ? 'en' : 'zh-tw';
     const title = props.query ? props.query.title : '';
@@ -15,7 +26,7 @@ export default class MyDocument extends Document {
       <html lang={lang}>
         <head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-          <link rel="alternate" href={host + props.page} hrefLang={lang === "en" ? "zh-tw" : "en"} />
+          <link rel="alternate" href={host + props.page} hrefLang={lang === 'en' ? 'zh-tw' : 'en'} />
           <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
           <link rel="icon" type="image/png" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

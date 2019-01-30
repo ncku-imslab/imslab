@@ -1,5 +1,7 @@
-import { Table } from 'react-bootstrap';
-import { withRouter } from 'next/router';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Table} from 'react-bootstrap';
+import {withRouter} from 'next/router';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
@@ -42,10 +44,8 @@ const getConfContent = () => {
   const confData = {...confDataJson};
   const confElms = [];
   const openLink = (e) => window.open(e.currentTarget.dataset.href);
-  let index = 0;
-  for (let key in confData) {
-    const subData = [...confData[key]];
-    confElms.push(...subData.map((d, i) => (
+  Object.entries(confData).forEach(([key, subData], index) =>
+    confElms.push(subData.map((d, i) => (
       <tr key={`${key}-${i}`}
         className={index % 2 === 0 ? 'row-inverse' : 'row-default'}
         onClick={openLink}
@@ -55,9 +55,7 @@ const getConfContent = () => {
         <td>{d.place}</td>
         <td className={d.due ? 'deleted' : 'highlight'}>{d.deadline}</td>
       </tr>
-    )));
-    ++index;
-  }
+    ))));
   return (
     <Table responsive>
       <thead className="thead-inverse"><tr>
@@ -114,10 +112,10 @@ const getApplyContent = () => `
 - [救國團 青年節表揚大專優秀青年](http://associations.cyc.org.tw/) (Deadline: 3/15)
 `;
 
-const Resource = ({ router }) => {
+const Resource = ({router}) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
-  const data = lang === "en" ? dataEn : dataTw;
+  const data = lang === 'en' ? dataEn : dataTw;
   let blocks = [
     <Block title={data.doc_title} key='doc' ref={React.createRef()}>
       <Markdown source={getDocContent(data)} linkTarget='_blank' />
@@ -127,19 +125,20 @@ const Resource = ({ router }) => {
     </Block>,
     <Block title={data.conf_title} key='conf' ref={React.createRef()}>
       {getConfContent()}
-    </Block>
+    </Block>,
   ];
   if (lang !== 'en') {
-    blocks = [...blocks, 
+    blocks = [...blocks,
       <Block title="推薦部落格" key='blog' ref={React.createRef()}>
         <Markdown source={getBlogContent()} linkTarget='_blank' />
       </Block>,
       <Block title="可申請獎項" key='apply' ref={React.createRef()}>
         <Markdown source={getApplyContent()} linkTarget='_blank' />
-      </Block>
+      </Block>,
     ];
   }
   return <Layout id="resource-container" pathname={router.asPath} blocks={blocks} lang={lang} title={title} />;
 };
+Resource.propTypes = {router: PropTypes.object.isRequired};
 
 export default withRouter(Resource);

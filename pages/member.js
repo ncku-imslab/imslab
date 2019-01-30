@@ -1,7 +1,8 @@
-import { Row, Col } from 'react-bootstrap';
-import { withRouter } from 'next/router';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Row, Col} from 'react-bootstrap';
+import {withRouter} from 'next/router';
 import Layout from '../components/layout';
-import Markdown from 'react-markdown';
 import Block from '../components/block';
 
 import '../scss/layout.scss';
@@ -11,7 +12,7 @@ import memberDataJson from '../data/members.json';
 
 const getIndividualElm = (p, data) => (
   <Col md={4}>
-    <div className='photo' style={{ backgroundImage: `url('/static/images/members/${p.image}')` }} />
+    <div className='photo' style={{backgroundImage: `url('/static/images/members/${p.image}')`}} />
     <div className='subtitle'>
       {p.name_ch} {p.comment && p.comment} <br />
       {p.name_en && '(' + p.name_en + ')'}
@@ -32,16 +33,17 @@ const getIndividualElm = (p, data) => (
 );
 
 const numberTw = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
-const numberEn = ['Zero', 'First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'];
+const numberEn =
+  ['Zero', 'First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Ninth', 'Tenth'];
 const getTitle = (lang, title) => {
   if (lang === 'en') {
-    switch(title[0]) {
+    switch (title[0]) {
       case 'p': case 'm': return numberEn[title[1]] + ' year';
       case 'g': case 'b': return 'Graduate in ' + (Number.parseInt(title.substr(1)) + 1911);
       default: return title;
     }
   } else {
-    switch(title[0]) {
+    switch (title[0]) {
       case 'p': return '博' + numberTw[title[1]];
       case 'm': return '碩' + numberTw[title[1]];
       case 'b': return title.substr(1) + ' 級';
@@ -51,32 +53,31 @@ const getTitle = (lang, title) => {
   }
 };
 
-const Member = ({ router }) => {
+const Member = ({router}) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
-  const data = lang === "en" ? dataEn : dataTw;
-  let section = lang === "en" ? router.asPath.substr(4) : router.asPath.substr(1);
+  const data = lang === 'en' ? dataEn : dataTw;
+  let section = lang === 'en' ? router.asPath.substr(4) : router.asPath.substr(1);
   section = section.match(/\/$/) ? section.substr(0, section.length - 1) : section;
   const memberData = {...memberDataJson[section]};
   const blocks = [];
-  for (let key in memberData) {
+  Object.entries(memberData).forEach(([key, subData]) => {
     const rows = [];
-    const subData = {...memberData[key]};
-    for (let sub in subData) {
+    Object.entries(subData).forEach(([sub, ppls]) => {
       rows.push(<h3 key={sub} className='sub-title'>{getTitle(lang, sub)}</h3>);
-      const ppls = [...subData[sub]];
       for (let i = 0; i < ppls.length; i += 3) {
         rows.push((
-        <Row key={sub + i} className='member-row'>
-          {getIndividualElm(ppls[i], data)}
-          {i + 1 < ppls.length && getIndividualElm(ppls[i + 1], data)}
-          {i + 2 < ppls.length && getIndividualElm(ppls[i + 2], data)}
-        </Row>));
+          <Row key={sub + i} className='member-row'>
+            {getIndividualElm(ppls[i], data)}
+            {i + 1 < ppls.length && getIndividualElm(ppls[i + 1], data)}
+            {i + 2 < ppls.length && getIndividualElm(ppls[i + 2], data)}
+          </Row>));
       }
-    }
+    });
     blocks.push(<Block key={key} title={data[key]} ref={React.createRef()}>{rows}</Block>);
-  }
+  });
   return <Layout id='member-container' lang={lang} pathname={router.asPath} blocks={blocks} title={title} />;
 };
+Member.propTypes = {router: PropTypes.object.isRequired};
 
 export default withRouter(Member);

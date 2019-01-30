@@ -1,5 +1,7 @@
-import { Row, Col } from 'react-bootstrap';
-import { withRouter } from 'next/router';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Row, Col} from 'react-bootstrap';
+import {withRouter} from 'next/router';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
@@ -19,8 +21,10 @@ const getEduContent = () => `
 - 1998 ~ 2002: B.S., Computer Science & Information Engineering, National Chiao Tung University`;
 
 const getWorkContent = () =>`
-- Associate Professor, Computer Science & Information Engineering, National Cheng Kung University, Tainan, Taiwan (2017/2 - present)
-- Assistant Professor, Computer Science & Information Engineering, National Cheng Kung University, Tainan, Taiwan (2010/9 - 2017/1)
+- Associate Professor, Computer Science & Information Engineering,
+  National Cheng Kung University, Tainan, Taiwan (2017/2 - present)
+- Assistant Professor, Computer Science & Information Engineering,
+  National Cheng Kung University, Tainan, Taiwan (2010/9 - 2017/1)
 - Visiting Scholar in USC, Los Angeles, U.S.A., (2012/7 - 2012/9)
 - Summer Intern in IBM, Taipei, (2008/7 - 2008/12)
 - Summer Intern in Otto-von-Guericke-University Magdeburg, Germany, (2006/7 - 2006/9)`;
@@ -32,14 +36,14 @@ const getResearchContent = () =>`
 - Performance Evaluation
 - Voice over IP (VoIP) Network`;
 
-const Professor = ({ router }) => {
+const Professor = ({router}) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
   const blocks = [
     <Block key='self'>
       <Row>
-        <Col lg={5} style={{ textAlign: 'center' }}>
-          <img style={{ width: '70%' }} src='/static/images/tsaimh.jpg' />
+        <Col lg={5} style={{textAlign: 'center'}}>
+          <img style={{width: '70%'}} src='/static/images/tsaimh.jpg' />
         </Col>
         <Col lg={7}>
           <Markdown source={getIntroContent()} linkTarget='_blank' />
@@ -54,9 +58,10 @@ const Professor = ({ router }) => {
     </Block>,
     <Block title='Research Interests' key='interests'>
       <Markdown source={getResearchContent()} />
-    </Block>
+    </Block>,
   ];
   return <Layout id='prof-container' blocks={blocks} lang={lang} pathname={router.asPath} title={title} noTabs/>;
 };
+Professor.propTypes = {router: PropTypes.object.isRequired};
 
 export default withRouter(Professor);

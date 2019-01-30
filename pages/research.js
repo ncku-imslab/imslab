@@ -1,4 +1,6 @@
-import { withRouter } from 'next/router';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {withRouter} from 'next/router';
 import Layout from '../components/layout';
 import Markdown from 'react-markdown';
 import Block from '../components/block';
@@ -31,8 +33,8 @@ const getTopicContent = (data) => `
 `;
 
 const getProjContent = (data, lang) => {
-  const { current, past } = projData;
-  const buildList = d => `
+  const {current, past} = projData;
+  const buildList = (d) => `
 1. ${data.proj_name}-${lang && d.name_en ? d.name_en : d.name}  
   ${data.proj_dur}-${d.duration}  
   ${data.proj_sponsor}-${lang && d.subsidy_en ? d.subsidy_en : d.subsidy}
@@ -65,19 +67,20 @@ const getProjContent = (data, lang) => {
   return res;
 };
 
-const Research = ({ router }) => {
+const Research = ({router}) => {
   const title = router.query.title;
   const lang = router.query.lang || 'zh-tw';
-  const data = lang === "en" ? dataEn : dataTw;
+  const data = lang === 'en' ? dataEn : dataTw;
   const blocks = [
     <Block title={data.head1} key={data.head1} ref={React.createRef()}>
       <Markdown source={getTopicContent(data)} />
     </Block>,
     <Block title={data.head2} id='project' key='project' ref={React.createRef()}>
       <Markdown source={getProjContent(data, lang)} />
-    </Block>
+    </Block>,
   ];
   return <Layout id='research-container' pathname={router.asPath} lang={lang} blocks={blocks} title={title} />;
 };
+Research.propTypes = {router: PropTypes.object.isRequired};
 
 export default withRouter(Research);

@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "next",
+    "pre-commit": "eslint --fix components/ pages/",
     "build": "next build && next export -o docs",
     "start": "next start"
   },
@@ -29,5 +30,11 @@
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
     "react-markdown": "^4.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-react": "^7.12.4"
   }
 }
