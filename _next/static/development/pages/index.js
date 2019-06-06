@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/resource.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/block.js":
 /*!*****************************!*\
@@ -63,6 +63,144 @@ Block.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any
 };
 /* harmony default export */ __webpack_exports__["default"] = (Block);
+
+/***/ }),
+
+/***/ "./components/data-list.js":
+/*!*********************************!*\
+  !*** ./components/data-list.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
+var _jsxFileName = "/Users/mac/Projects/imslab/components/data-list.js";
+
+
+
+var DataList = {};
+
+DataList.News = function (_ref) {
+  var data = _ref.data,
+      lang = _ref.lang;
+  var rows = [];
+  data.forEach(function (news, i) {
+    rows.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+      key: "news-".concat(i),
+      style: {
+        marginTop: '10px'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      md: 2,
+      className: "date",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, news.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      md: 1,
+      xs: 2,
+      className: "type",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, lang === 'en' ? 'grats' : news.type), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      md: 9,
+      xs: 10,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, lang === 'en' && news.description_en ? news.description_en : news.description)));
+
+    if (news.comment) {
+      rows.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+        key: "news-comment-".concat(i),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        md: 3,
+        xs: 2,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+        md: 9,
+        xs: 10,
+        className: "comment",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, lang === 'en' && news.comment_en ? news.comment_en : news.comment)));
+    }
+  });
+  return rows;
+};
+
+DataList.News.propTypes = {
+  lang: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array.isRequired
+};
+
+DataList.Honor = function (_ref2) {
+  var data = _ref2.data,
+      lang = _ref2.lang;
+  return data.map(function (d, i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+      key: "honor-".concat(i),
+      style: {
+        margin: '5px -15px'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      md: 3,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, lang === 'en' && d.name_en ? d.name_en : d.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      md: 9,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, lang === 'en' && d.content_en ? d.content_en : d.content));
+  });
+};
+
+DataList.Honor.propTypes = {
+  lang: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (DataList);
 
 /***/ }),
 
@@ -652,14 +790,155 @@ var handleTab = function handleTab(ref) {
 
 /***/ }),
 
-/***/ "./data/conference.json":
-/*!******************************!*\
-  !*** ./data/conference.json ***!
-  \******************************/
-/*! exports provided: ACM SIGCOMM, GlobeCom, INFOCOM, ICC, ICDCS, default */
+/***/ "./components/list.js":
+/*!****************************!*\
+  !*** ./components/list.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return List; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/mac/Projects/imslab/components/list.js";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+/**
+ * List component
+ */
+
+var List =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(List, _React$Component);
+
+  /**
+   * @constructor
+   * @param {object} props
+   */
+  function List(props) {
+    var _this;
+
+    _classCallCheck(this, List);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(List).call(this, props));
+    _this.toggleList = _this.toggleList.bind(_assertThisInitialized(_this));
+    _this.list = [];
+    Object.entries(props.data).forEach(function (_ref, i) {
+      var _ref2 = _slicedToArray(_ref, 2),
+          key = _ref2[0],
+          content = _ref2[1];
+
+      return _this.list.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        id: "list-".concat(i),
+        key: "list-".concat(i),
+        className: i || props.noOpen ? '' : 'active',
+        onClick: _this.toggleList,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, key), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "content-".concat(i),
+        key: "content-".concat(i),
+        className: "list-content ".concat(i || props.noOpen ? '' : 'active'),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, props.data[key]));
+    });
+    return _this;
+  }
+  /**
+   * @param {Event} e
+   */
+
+
+  _createClass(List, [{
+    key: "toggleList",
+    value: function toggleList(e) {
+      var $list = e.currentTarget;
+      var num = $list.id.substr(5);
+      var $content = $list.parentElement.querySelector('#content-' + num);
+
+      if ($content) {
+        $list.classList.toggle('active');
+        $content.classList.toggle('active');
+        window.location.hash = 'go-' + $list.id;
+      }
+    }
+    /**
+     * @return {component}
+     */
+
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "enableOpen",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }, this.list);
+    }
+  }]);
+
+  return List;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+;
+List.propTypes = {
+  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
+  noOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
+};
+
+/***/ }),
+
+/***/ "./data/en/home.json":
+/*!***************************!*\
+  !*** ./data/en/home.json ***!
+  \***************************/
+/*! exports provided: head1, content1, head3, default */
 /***/ (function(module) {
 
-module.exports = {"ACM SIGCOMM":[{"date":"2019, August 19-23","place":"Beijing, China","deadline":"2019, January 31","due":true,"link":"https://conferences.sigcomm.org/sigcomm/2019/"},{"date":"2018, August 20-25","place":"Budapest, Hungary","deadline":"2018, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2018/"},{"date":"2017, August 21-25","place":"UCLA campus, Los Angeles, CA, USA","deadline":"2017, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2017/"},{"date":"2016, August 22-26","place":"Salvador, Brazil","deadline":"2016, January 22","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2016/"},{"date":"2015, August 17-21","place":"London, UK","deadline":"2015, January 30","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2015/"},{"date":"2014, August 17-22","place":"Chicago, USA","deadline":"2014, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2014/"},{"date":"2013, August 12-16","place":"Hong Kong, China","deadline":"2013, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2013/"},{"date":"2012, August 13-17","place":"Helsinki, Finland","deadline":"2012, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2012/"},{"date":"2011, August 15-19","place":"Toronto, Ontario, Canada","deadline":"2011, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2011/"}],"GlobeCom":[{"date":"2020, December 7-11","place":"Taipei, Taiwan","deadline":"TBD","due":false,"link":"https://www.comsoc.org/conferences-events/ieee-global-communications-conference-2020"},{"date":"2019, December 9-13","place":"Hawaii, USA","deadline":"2019, May 10","due":true,"link":"https://globecom2019.ieee-globecom.org/"},{"date":"2018, December 9-13","place":"Abu Dhabi, UAE","deadline":"2018, April 30","due":true,"link":"http://www.ieee-globecom.org/2018/"},{"date":"2017, December 4-8","place":"Singapore","deadline":"2017, April 15","due":true,"link":"http://www.ieee-globecom.org/2017/"},{"date":"2016, December 6-10","place":"Washington DC, USA","deadline":"2016, April 15","due":true,"link":"http://www.ieee-globecom.org/2016/"},{"date":"2015, December 6-10","place":"San Diego, CA, USA","deadline":"2015, April 1","due":true,"link":"http://www.ieee-globecom.org/2015/"},{"date":"2014, December 8-12","place":"Austin, Texas, USA","deadline":"2014, April 1","due":true,"link":"http://www.ieee-globecom.org/2014/"},{"date":"2013, December 9-13","place":"Atlanta, Georgia, USA","deadline":"2013, March 15","due":true,"link":"http://www.ieee-globecom.org/2013/"},{"date":"2012, December 3-7","place":"Disneyland Hotel, Anaheim, California, USA","deadline":"2012, March 15","due":true,"link":"http://www.ieee-globecom.org/2012/"},{"date":"2011, December 5-9","place":"Houston,Texas, USA","deadline":"2011, April 5","due":true,"link":"http://www.ieee-globecom.org/2011/"}],"INFOCOM":[{"date":"2020, April 27-30","place":"Beijing, China","deadline":"2019, July 31","due":false,"link":"https://infocom2020.ieee-infocom.org/"},{"date":"2019, April 29- May 2","place":"Paris, France","deadline":"2018, July 31","due":true,"link":"http://www.ieee-infocom.org/2019"},{"date":"2018, April 15-19","place":"Honolulu, HI, USA","deadline":"2017, July 31","due":true,"link":"http://www.ieee-infocom.org/2018"},{"date":"2017, May 1-4","place":"Atlanta, GA, USA","deadline":"2016, July 29","due":true,"link":"http://www.ieee-infocom.org/2017"},{"date":"2016, April 10-15","place":"San Francisco, CA, USA","deadline":"2015, July 31","due":true,"link":"http://www.ieee-infocom.org/2016"},{"date":"2015, April 26-May 1","place":"Hong Kong, China","deadline":"2014, July 23","due":true,"link":"http://www.ieee-infocom.org/2015"},{"date":"2014, April 27-May 2","place":"Toronto, Canada","deadline":"2013, July 28","due":true,"link":"http://www.ieee-infocom.org/2014"},{"date":"2013, April 14-19","place":"Turin, Italy","deadline":"2012, July 27","due":true,"link":"http://www.ieee-infocom.org/2013"},{"date":"2012, March 25-30","place":"Orlando, Florida, USA","deadline":"2011, July 29","due":true,"link":"http://www.ieee-infocom.org/2012"},{"date":"2011, April 10-15","place":"Shanghai, China","deadline":"2010, July 30","due":true,"link":"http://www.ieee-infocom.org/2011"}],"ICC":[{"date":"2020, June 7-11","place":"Dublin, Ireland","deadline":"TBD","due":false,"link":"http://icc2019.ieee-icc.org"},{"date":"2019, May 20-24","place":"Shanghai, China","deadline":"2018, October 14","due":true,"link":"http://icc2019.ieee-icc.org"},{"date":"2018, May 20-24","place":"Kansas City, MO, USA","deadline":"2017, October 15","due":true,"link":"http://icc2018.ieee-icc.org/"},{"date":"2017, May 21-25","place":"Paris, France","deadline":"2016, October 14","due":true,"link":"http://icc2017.ieee-icc.org/"},{"date":"2016, May 23-27","place":"Kuala Lumpur, Malaysia","deadline":"2015, October 16","due":true,"link":"http://www.ieee-icc.org/2016/"},{"date":"2015, June 8-12","place":"London, UK","deadline":"2014, September 15","due":true,"link":"http://www.ieee-icc.org/2015/"},{"date":"2014, June 10-14","place":"Sydney, Australia","deadline":"2013, September 15","due":true,"link":"http://www.ieee-icc.org/2014/"},{"date":"2013, June 9-13","place":"Budapest, Hungary","deadline":"2012, September 16","due":true,"link":"http://www.ieee-icc.org/2013/"},{"date":"2012, June 10-15","place":"Ottawa, Canada","deadline":"2011, September 28","due":true,"link":"http://www.ieee-icc.org/2012/"},{"date":"2011, June 5-9","place":"Kyoto, Japan","deadline":"2010, September 20","due":true,"link":"http://www.ieee-icc.org/2011/"}],"ICDCS":[{"date":"2019, July 7-10","place":"Texas,USA","deadline":"2019, January 5","due":true,"link":"http://theory.utdallas.edu/ICDCS2019/"},{"date":"2018, July 2-5","place":"Vienna, Austria","deadline":"2017, December 12","due":true,"link":"http://icdcs2018.ocg.at"},{"date":"2017, June 5-8","place":"Atlanta, Georgia, USA","deadline":"2016, December 12","due":true,"link":"http://icdcs2017.gatech.edu/"},{"date":"2016, June 27-30","place":"Nara, Japan","deadline":"2015, December 11","due":true,"link":"http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/"},{"date":"2015, June 29-July 2","place":"Columbus, Ohio, USA","deadline":"2014, December 12","due":true,"link":"http://icdcs-2015.cse.ohio-state.edu/"},{"date":"2014, June 30-July 3","place":"Madrid, Spain","deadline":"2013, December 5","due":true,"link":"http://lsd.ls.fi.upm.es/icdcs2014/"},{"date":"2013, July 8-11","place":"Philadelphia, USA","deadline":"2012, November 12","due":true,"link":"http://www.temple.edu/cis/icdcs2013/"},{"date":"2012, June 18-21","place":"Macau, China","deadline":"2011, November 8","due":true,"link":"http://icdcs-2012.org/"},{"date":"2011, June 21-24","place":"Minnesapolis, USA","deadline":"2010, November 15","due":true,"link":"http://www.seas.gwu.edu/~cheng/ICDCS2011/index.html"}]};
+module.exports = {"head1":"Welcome to join us!","content1":"Students who are interested in mobile network (4G/5G), Internet of Things (IoT), software defined networking (SDN) and network performance evaluation are welcome to join us. Ph.D., master and undergraduate students are all welcome.","head3":"News"};
 
 /***/ }),
 
@@ -674,14 +953,42 @@ module.exports = {"home":"Home","research":"Research","member":"Members","member
 
 /***/ }),
 
-/***/ "./data/en/resource.json":
-/*!*******************************!*\
-  !*** ./data/en/resource.json ***!
-  \*******************************/
-/*! exports provided: doc_header, doc_title, doc_subtitle2, doc_list2_1, doc_list2_2, doc_list2_3, doc_subtitle3, doc_list3_1, doc_list3_2, doc_list3_3, jour_header, jour_title, conf_header, conf_title, default */
+/***/ "./data/must-read.js":
+/*!***************************!*\
+  !*** ./data/must-read.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var mustReadData = {
+  '找老師寫推薦信注意事項(大四甄試研究適用)': "\n### \u6E96\u5099\u5DE5\u4F5C\n1. \u4ED4\u7D30\u770B\u7C21\u7AE0\u4E0A\u7684\u8981\u6C42, \u5305\u62EC\u5C01\u6578/\u683C\u5F0F\u7B49\u7B49\n2. \u601D\u8003\u8981\u627E\u7684\u8001\u5E2B\u3002\u6709\u5E7E\u500B\u601D\u8003\u7684\u9762\u5411: \n    1. \u9664\u975E\u6709\u7279\u6B8A\u539F\u56E0, \u5426\u5247\u5C08\u984C\u8001\u5E2B\u4E00\u5B9A\u8981\u627E\n    2. \u6700\u719F\u6089\u4F60\u7684\u8001\u5E2B, \u6BD4\u65B9\u8AAA\u4E0A\u8AB2\u6216\u4E0B\u8AB2\u6703\u53BB\u554F\u984C\u7684\n    3. \u8003\u8A66\u6216\u4F5C\u696D\u6709\u5091\u51FA\u8868\u73FE\u79D1\u76EE\u7684\u6388\u8AB2\u8001\u5E2B  \n       (\u4EC0\u9EBC\u53EB\u5091\u51FA? \u5169\u5E74\u904E\u5F8C\u52A9\u6559\u548C\u8001\u5E2B\u9084\u6709\u5370\u8C61\u5C31\u53EB\u5091\u51FA!)  \n       \u4E0D\u8981\u4EE5\u70BA\u627E\u9AD8\u5206\u79D1\u76EE\u7684\u8001\u5E2B\u5E6B\u4F60\u5BEB\u5C31\u6703\u52A0\u5206, \u6709\u6642\u5019\u627E\u4F4E\u5206\u79D1\u76EE\u7684\u8001\u5E2B\u5E6B\u4F60\u8B49\u660E\u4F60\u5176\u5BE6\u6709 100 \u5206\u7684\u5BE6\u529B, \u53CD\u800C\u66F4\u6709\u52A0\u5206\u6548\u679C  \n       (\u5982\u679C\u60F3\u7834\u4E86\u982D\u90FD\u60F3\u4E0D\u5230\u61C9\u8A72\u627E\u8AB0\u5BEB, \u90A3\u4F60\u6191\u4EC0\u9EBC\u7504\u8A66? \u6191\u4EC0\u9EBC\u8981\u4EBA\u5BB6\u63A8\u85A6\u4F60?)\n3. \u61C9\u6E96\u5099\u7684\u6587\u4EF6: (\u7F3A\u4E00\u6A23\u6216\u4E0D\u5B8C\u6574\u5C31\u5225\u60F3\u9032\u5165\u4E0B\u4E00\u968E\u6BB5)\n    1. \u5099\u5BE9\u8CC7\u6599\n    2. \u6210\u7E3E\u55AE\n    3. \u5C08\u984C\u5831\u544A (\u6B64\u6642\u5C08\u984C\u81F3\u5C11\u61C9\u5B8C\u6210 70% \u5BE6\u4F5C)\n    4. \u7279\u6B8A\u8868\u73FE\u6E05\u55AE (\u503C\u5F97\u88AB\u5BEB\u5728\u63A8\u85A6\u4FE1\u4E2D\u7684\u4E8B\u8E5F; \u81F3\u5C11\u4E09\u9EDE)\n    5. \u63A8\u85A6\u4FE1 (\u4E0A\u65B9\u7684\u57FA\u672C\u8CC7\u6599\u5148\u586B\u597D)\n\n---\n\n### \u5BC4\u4FE1\u7D66\u8001\u5E2B\n1. \u7B2C\u4E00\u5C01\u4FE1\u662F\u8A62\u554F\u8001\u5E2B\u662F\u5426\u9858\u610F\u5E6B\u5FD9\u5BEB\u63A8\u85A6\u4FE1, \u4FE1\u4E2D\u5FC5\u9808\u63D0\u4F9B\u5B8C\u6574\u8CC7\u8A0A, \u5305\u62EC:\n    1. \u6211\u662F\u8AB0? \u6211\u548C\u8001\u5E2B\u7684\u95DC\u806F\u662F?\n    2. \u9810\u8A08\u8981\u7504\u8A66\u7684\u6821\u7CFB, \u672A\u4F86\u60F3\u5F9E\u4E8B\u7684\u7814\u7A76\u65B9\u5411\n    3. \u60F3\u8ACB\u8001\u5E2B\u5E6B\u5FD9\u63A8\u85A6\u7684\u4E8B\u7531 (\u61C9\u70BA\u7279\u6B8A\u8868\u73FE\u6E05\u55AE\u7684\u5B50\u96C6\u5408)\n    4. \u5099\u5BE9\u8CC7\u6599\u96FB\u5B50\u6A94\n    5. \u6210\u7E3E\u55AE\u6383\u7784\u6A94\n    6. \u5C08\u984C\u5831\u544A\u96FB\u5B50\u6A94\n    7. \u63A8\u85A6\u4FE1\u96FB\u5B50\u6A94 (\u5DF2\u586B\u597D\u57FA\u672C\u8CC7\u6599)\n    8. \u4E0A\u8FF0\u8CC7\u6599\u82E5\u672A\u5305\u542B\u7167\u7247, \u61C9\u53E6\u9644\u7167\u7247\u65BC\u4FE1\u4E2D, \u6216\u63D0\u4F9B\u4EFB\u4F55\u65B9\u4FBF\u8001\u5E2B\u62FE\u56DE\u5C0D\u4F60\u7684\u8A18\u61B6\u7684\u8CC7\u8A0A (\u5982 Facebook \u5E33\u865F)\u4E0D\u8981\u671F\u671B\u8001\u5E2B\u770B\u5230\u540D\u5B57\u5C31\u77E5\u9053\u4F60\u662F\u8AB0\n2. \u7B49\u8001\u5E2B\u56DE\u4FE1\u8AAA\u9858\u610F\u5E6B\u4F60\u5BEB\u4E4B\u5F8C, \u624D\u53EF\u4EE5\u5BEB\u7B2C\u4E8C\u4FE1\u8DDF\u8001\u5E2B\u7D04\u6642\u9593, \u5207\u5FCC\u4E0D\u8981\u76F4\u63A5\u554F \"\u8001\u5E2B\u4EC0\u9EBC\u6642\u5019\u6709\u7A7A?\", \u5982\u679C\u8001\u5E2B\u8AAA\u4E86\u4E00\u500B\u6642\u9593, \u4F46\u4F60\u537B\u6C92\u7A7A, \u8C48\u4E0D\u7CD7\u54C9? \u6BD4\u8F03\u597D\u7684\u4F5C\u6CD5\u662F\u628A\u8AB2\u8868\u7D66\u8001\u5E2B,\u6216\u662F\u628A\u6709\u7A7A\u7684\u5340\u6BB5\u90FD\u5217\u51FA, \u8B93\u8001\u5E2B\u53EF\u4EE5\u5F88\u5FEB\u901F\u5730\u9078\u6642\u6BB5  \n      \u6709\u4E9B\u8001\u5E2B\u6703\u53EB\u4F60\u5148\u5BEB\u597D\u7D66\u4ED6\u6539, \u9019\u6642\u5019\u4E0D\u8981\u6025\u7D04\u6642\u9593, \u5148\u900F\u904E email \u5F80\u8FD4\u63A8\u85A6\u4FE1\u7684\u5167\u5BB9, \u78BA\u5B9A\u8001\u5E2B\u8AAA OK \u4E86\u518D\u7D04\u6642\u9593\u3002 \u5BC4\u51FA\u7B2C\u4E00\u5C01\u4FE1\u4E4B\u5F8C, \u4E00\u76F4\u5230\u62FF\u5230\u63A8\u85A6\u4FE1\u70BA\u6B62, \u8981\u591A\u6AA2\u67E5\u4FE1\u7BB1\u3002 \u8001\u5E2B\u96A8\u6642\u53EF\u80FD\u6703\u554F\u4F60\u554F\u984C, \u8981\u4F60\u88DC\u8CC7\u6599\u3002  \n      \u5982\u679C\u4F60\u5E0C\u671B\u8001\u5E2B \"\u91CD\u8996\" \u4F60\u7684\u63A8\u85A6\u4FE1, \u4F60\u5FC5\u9808 \"\u975E\u5E38\u91CD\u8996\" \u8207\u8001\u5E2B\u9593\u7684\u4E92\u52D5\u3002  \n      \u81F3\u65BC\u5230\u5E95\u8981\u591A\u5E38\u6AA2\u67E5\u4FE1\u7BB1? **Clean up your mail before you go to bed!**\n\n---\n\n### \u53BB\u62FF\u63A8\u85A6\u4FE1\n\u9664\u975E\u8001\u5E2B\u660E\u78BA\u5730\u8AAA\u4ED6\u6703\u5F9E\u4ED6\u90A3\u908A\u5370, \u5426\u5247\u4E00\u5B9A\u8981\u81EA\u5DF1\u5370\u4E86\u5E36\u53BB \u5207\u5FCC\u5E36\u4E00\u5F35\u7A7A\u767D\u7684\u63A8\u85A6\u4FE1\u53BB\u627E\u8001\u5E2B (\u4E0A\u9762\u7684\u57FA\u672C\u8CC7\u6599\u4E00\u5B9A\u8981\u5148\u586B\u597D)\n\n---\n\n### \u653E\u699C\u4E4B\u5F8C\n\u8A18\u5F97\u8981\u5BC4\u4FE1\u8DDF\u8001\u5E2B\u8AAA\u4E0A\u699C\u7684\u60C5\u6CC1, \u9019\u662F\u57FA\u672C\u7684\u79AE\u8C8C, \u672A\u4F86\u82E5\u6709\u6A5F\u6703\u518D\u8ACB\u540C\u4E00\u4F4D\u8001\u5E2B\u5BEB\u63A8\u85A6\u4FE1, \u8001\u5E2B\u6703\u6BD4\u8F03\u9858\u610F\u518D\u5E6B\u4F60\u5BEB\n",
+  '怎麼找專題實驗室？ (大一 / 大二生適用)': "\n\u6C92\u6709\u721B\u8001\u5E2B/\u721B\u5B78\u751F, \u53EA\u6709\u9069\u5408/\u4E0D\u9069\u5408\u7684\u5E2B\u751F\u95DC\u4FC2, \u71B1\u9580\u7684\u8001\u5E2B\u4E0D\u4E00\u5B9A\u9069\u5408\u4F60, \u8ACB\u7528\u5FC3\u627E\u6700\u9069\u5408\u4F60 (\u4F60\u4E5F\u9069\u5408\u4ED6) \u7684\u6307\u5C0E\u8001\u5E2B!!!\n\n---\n\n## \u524D\u8A00\n\u6210\u5927\u8CC7\u8A0A\u7CFB\u5728\u5927\u4E09\u4E0A\u3001\u4E0B\u5169\u5B78\u671F\u6709\u9580\u5FC5\u4FEE\u8AB2 \"\u8CC7\u8A0A\u5C08\u984C(\u4E00)\" \u53CA \"\u8CC7\u8A0A\u5C08\u984C(\u4E8C)\", \u662F\u8CC7\u8A0A\u7CFB\u5B78\u751F\u9032\u5165\u67D0\u500B\u5C08\u696D\u9818\u57DF\u7684\u4E3B\u8981\u65B9\u5F0F\u4E4B\u4E00\u3002\n\n> \u6B64\u8AB2\u7A0B\u4E3B\u8981\u5728\u57F9\u990A\u5927\u5B78\u90E8\u5B78\u751F\u52D5\u624B\u5BE6\u4F5C\u4E00\u500B\u8CC7\u8A0A\u5C0F\u7CFB\u7D71\u6216\u5C0F\u6A21\u7D44\u7684\u80FD\u529B\u3002\u8CC7\u8A0A\u7CFB\u5B78\u751F\u5728\u5927\u4E00\u3001\u5927\u4E8C\uFF0C\u548C\u5927\u4E09\u4E0A\u5B78\u671F\u5DF2\u4FEE\u7FD2\u4E86\u5F88\u591A\u8CC7\u8A0A\u9818\u57DF\u7684\u57FA\u790E\u548C\u5C08\u696D\u77E5\u8B58\uFF0C\u4E5F\u5DF2\u5177\u5099\u8EDF/\u786C\u9AD4\u7A0B\u5F0F\u7684\u80FD\u529B\u3002\u5728\u4FEE\u7FD2\u8CC7\u8A0A\u5C08\u984C\u6B64\u9580\u8AB2\u4E4B\u524D\uFF0C\u5B78\u751F\u7A0B\u5F0F\u80FD\u529B\u7684\u57F9\u990A\u662F\u5960\u57FA\u5728\u5C08\u696D\u8AB2\u7A0B\u4E2D\u7684\u7A0B\u5F0F\u6027\u4F5C\u696D\uFF0C\u5C1A\u672A\u6709\u91DD\u5C0D\u67D0\u500B\u8CC7\u8A0A\u61C9\u7528\u7CFB\u7D71\u6216\u6A21\u7D44\u6574\u5408\u6027\u7A0B\u5F0F\u80FD\u529B\u57F9\u990A\u3002__\u6B64\u9580\u8AB2\u5C07\u7531\u5B78\u751F\u6839\u64DA\u81EA\u5DF1\u7684\u8208\u8DA3\u548C\u8001\u5E2B\u7684\u5C08\u696D\u53CA\u7814\u7A76\u65B9\u5411\uFF0C\u7531\u5B78\u751F\u4E3B\u52D5\u627E\u8001\u5E2B__\uFF0C\u8001\u5E2B\u5E36\u6578\u4F4D\u5B78\u751F\uFF0C\u9032\u884C\u67D0\u4E00\u500B\u8CC7\u8A0A\u61C9\u7528\u7CFB\u7D71\u6216\u6A21\u7D44\u7684\u5C08\u984C\u7814\u7A76\uFF0C\u4E26\u5C07\u5176\u7531\u7A0B\u5F0F\u5316\u5BE6\u73FE\u4E4B\u3002  \n> *-- [\u8CC7\u8A0A\u5C08\u984C(\u4E00)](http://course-query.acad.ncku.edu.tw/crm/course_map/course.php?dept=F7&cono=F730210) \u7684\u6982\u8FF0*\n\n\u554F\u984C\u662F, \u627E\u54EA\u4F4D\u8001\u5E2B? \u61C9\u8A72\u4F55\u6642\u627E? \u600E\u9EBC\u627E?\n\n---\n\n## \u672C\u6587\u5728\u9019\u88E1\n### \u627E\u54EA\u4F4D\u8001\u5E2B?\n  - **\u6211\u624D\u5927\u4E00/\u5927\u4E8C, \u6211\u4E0D\u77E5\u9053\u8981\u627E\u54EA\u4F4D\u8001\u5E2B\uFF1F**  \n    \u8AB2\u7A0B\u7DB1\u8981\u4E2D\u6709\u63D0\u5230 \"\u6839\u64DA\u81EA\u5DF1\u7684\u8208\u8DA3\u548C\u8001\u5E2B\u7684\u5C08\u696D\u53CA\u7814\u7A76\u65B9\u5411\"\u3002\n  - **\u4F46\u6211\u600E\u9EBC\u77E5\u9053\u6211\u5C0D\u4EC0\u9EBC\u9818\u57DF\u6709\u8208\u8DA3\uFF1F**  \n    \u65BD\u4E3B, \u9019\u500B\u554F\u984C\u5C31\u8981\u554F\u4F60\u81EA\u5DF1\u4E86\u3002\u8208\u8DA3\u5225\u4EBA\u7121\u6CD5\u5E6B\u4F60\u6C7A\u5B9A\u3002\u5982\u679C\u771F\u7684\u5B8C\u5168\u7121\u6CD5\u627E\u5230\u8208\u8DA3\uFF0C\u90A3\u5C31\u9078\u500B\u6BD4\u8F03\u4E0D\u8A0E\u53AD\u7684\uFF01\n  - **\u6211\u77E5\u9053\u6211\u8208\u8DA3\u5728\u54EA, \u4F46\u6211\u61C9\u8A72\u627E\u54EA\u4F4D\u8001\u5E2B\u5462\uFF1F**  \n    \u9996\u5148\u4F60\u61C9\u8A72\u700F\u89BD\u7CFB\u4E0A\u7DB2\u9801 \"[\u5B78\u8853\u7814\u7A76 -> \u7814\u7A76\u7FA4](http://www.csie.ncku.edu.tw/ncku_csie/research/groups)\" \u770B\u770B\u4F60\u6709\u8208\u8DA3\u7684\u7814\u7A76\u7FA4\u4E2D\u6709\u54EA\u4E9B\u8001\u5E2B\u3002   \n    \u7136\u5F8C\u5230 \"[\u7CFB\u6240\u6210\u54E1 -> \u5E2B\u8CC7\u9663\u5BB9](http://www.csie.ncku.edu.tw/ncku_csie/depmember/teacher)\" \u53BB\u627E\u9019\u5E7E\u4F4D\u8001\u5E2B\u7684\u500B\u4EBA\u7DB2\u9801\u53CA\u5BE6\u9A57\u5BA4\u7DB2\u9801, \u88E1\u9762\u6703\u6709\u66F4\u7D30\u76E1\u7684\u8CC7\u8A0A\u3002\n  - **\u8001\u5E2B\u8DDF\u5BE6\u9A57\u5BA4\u7684\u7DB2\u9801\u6211\u90FD\u770B\u4E0D\u61C2\u600E\u9EBC\u8FA6\uFF1F**  \n    \u4E00\u958B\u59CB\u770B\u4E0D\u61C2\u662F\u6B63\u5E38\u7684, \u4F60\u9700\u8981\u505A\u529F\u8AB2!! Google \u662F\u4F60\u7684\u597D\u670B\u53CB! \u53E6\u5916, \u61C9\u8A72\u53BB\u67E5\u4E00\u4E0B\u6709\u8208\u8DA3\u7684\u8001\u5E2B\u6307\u5C0E\u7814\u7A76\u751F\u7684\u7562\u696D\u8AD6\u6587, \u9084\u6709\u8FD1\u5E7E\u5E74\u6307\u5C0E\u7684\u5C08\u984C\u984C\u76EE\u3002 (\u78A9\u535A\u58EB\u8AD6\u6587\u53EF\u81F3[\u81FA\u7063\u535A\u78A9\u58EB\u8AD6\u6587\u77E5\u8B58\u52A0\u503C\u7CFB\u7D71](http://ndltd.ncl.edu.tw/)\u67E5, \u7CFB\u4E0A\u8FD1\u5E7E\u5E74\u5C08\u984C\u984C\u76EE\u53EF\u4EE5\u5230[\u9019\u88E1](http://www.csie.ncku.edu.tw/ncku_csie/student/bachelor#tab2)\u67E5\u8A62)\n  - **\u9084\u662F\u770B\u7684\u9727\u715E\u715E\u600E\u8FA6?**  \n    \u5728\u9396\u5B9A\u5E7E\u4F4D\u8001\u5E2B\u4E4B\u5F8C, \u4F60\u61C9\u8A72\u8D81\u6BCF\u5E74\u7684\u5C08\u984C\u5C55\u53BB\u770B\u770B\u90A3\u5E7E\u4F4D\u8001\u5E2B\u6307\u5C0E\u7684\u5B78\u9577\u59CA\u7684\u4F5C\u54C1, \u591A\u554F\u554F\u984C, \u554F\u5230\u4F60\u61C2\u70BA\u6B62! \u7576\u7136\u4E5F\u53EF\u4EE5\u79C1\u4E0B\u8ACB\u6559, \u4E0D\u9700\u8981\u7B49\u5230\u5C08\u984C\u5C55\u3002\n  - **\u6703\u4E0D\u6703\u9078\u4E86\u4E4B\u5F8C\u624D\u5F8C\u6094\uFF1F**  \n    \u7576\u7136\u6709\u53EF\u80FD\uFF01\u627E\u8001\u5E2B\u8DDF\u627E\u8001\u5A46\u4E00\u6A23\uFF0C\u5982\u679C\u65E9\u4E0A\u624D\u525B\u8A8D\u8B58\uFF0C\u4E0B\u5348\u5C31\u885D\u53BB\u767B\u8A18\u7D50\u5A5A\uFF0C\u4F60\u89BA\u5F97\u5F8C\u6094\u7684\u6A5F\u7387\u5927\u4E0D\u5927\uFF1F\u529F\u8AB2\u505A\u7684\u6108\u8DB3\uFF0C\u5F8C\u6094\u7684\u6A5F\u7387\u5C31\u6108\u5C0F\uFF01\n  - **\u529F\u8AB2\u505A\u8DB3\u4E86\u5C31\u4E00\u5B9A\u4E0D\u6703\u5F8C\u6094\u55CE\uFF1F**  \n    \u9084\u662F\u6709\u53EF\u80FD\u6703\u5F8C\u6094\uFF01\u6709\u4E0D\u5C11\u4EBA\u5728\u505A\u5B8C\u5C08\u984C\u4E4B\u5F8C\u624D\u767C\u73FE\u9019\u500B\u9818\u57DF\u5176\u5BE6\u6C92\u90A3\u9EBC\u6709\u8DA3 (\u6216\u505A\u4E0D\u4F86)\uFF0C\u7814\u7A76\u6240\u5C31\u63DB\u9818\u57DF\u4E86\uFF01 \u9019\u5F88\u6B63\u5E38\uFF01\u9019\u5F88\u6B63\u5E38\uFF01\u9019\u5F88\u6B63\u5E38\uFF01 \u4F46\u4F60\u4E00\u5B9A\u8981\u78BA\u5B9A\u5728\u4F5C\u9078\u64C7\u7684\u7576\u4E0B\uFF0C\u4F60\u5C0D\u9019\u500B\u9818\u57DF\u662F\u4E0D\u6392\u65A5\u7684\u3002\u672A\u4F86\u7684\u4E8B\u8AB0\u4E5F\u8AAA\u4E0D\u6E96\uFF0C\u505A\u4E86\u624D\u6703\u77E5\u9053\uFF01  \n    \u53E6\u5916\uFF0C\u4F60\u61C9\u8A72\u57F9\u990A\u4E00\u500B\u80FD\u529B\uFF1A\u5373\u4F7F\u5728\u9014\u4E2D\u767C\u73FE\u6C92\u8208\u8DA3\u4E86\uFF0C\u4F60\u4E5F\u80FD\u6301\u7E8C\u8A8D\u771F\u505A\u5230\u6700\u5F8C\u4E00\u523B\uFF0C\u7562\u7ADF\u4EBA\u751F\u4E2D\u4E0D\u662F\u6BCF\u4EF6\u5DE5\u4F5C\u90FD\u80FD\u525B\u597D\u7B26\u5408\u8208\u8DA3\u7684\u3002\n  \n### \u61C9\u8A72\u4F55\u6642\u627E\u8001\u5E2B\uFF1F\n  - **\u5C08\u984C\u5927\u4E09\u4E0A\u624D\u958B\u59CB, \u6211\u662F\u4E0D\u662F\u5927\u4E09\u4E0A\u958B\u5B78\u4E4B\u5F8C\u518D\u627E\u5C31\u597D?**  \n    \u4E0D\u662F\u4E0D\u884C, \u4F46\u6BCF\u4F4D\u8001\u5E2B\u7684\u6642\u9593\u548C\u5BE6\u9A57\u5BA4\u8CC7\u6E90\u6709\u9650, \u7121\u6CD5\u60F3\u6536\u5E7E\u4F4D\u5C31\u6536\u5E7E\u4F4D, \u5982\u679C\u4F60\u5DF2\u7D93\u628A\u4E0A\u8FF0\u7684\u529F\u8AB2\u4F5C\u8DB3, \u4E26\u4E14\u5F88\u78BA\u5B9A\u60F3\u8981\u627E\u7684\u8001\u5E2B\u662F\u8AB0, \u64C7\u65E5\u4E0D\u5982\u649E\u65E5! \u6839\u64DA\u7D93\u9A57, \u5927\u90E8\u5206\u7684\u5B78\u751F\u6703\u5728\u5C08\u984C\u958B\u59CB\u524D\u4E00\u500B\u5B78\u671F (\u4E5F\u5C31\u662F\u5927\u4E8C\u4E0B) \u627E\u5230\u6307\u5C0E\u8001\u5E2B\u3002\n  - **\u540C\u5B78\u90FD\u597D\u65E9\u5C31\u958B\u59CB\u627E, \u5982\u679C\u6211\u60F3\u627E\u7684\u8001\u5E2B\u4E00\u4E0B\u5C31\u6536\u6EFF\u4E86\u600E\u9EBC\u8FA6?**  \n    \u9650\u91CF\u662F\u6B98\u9177\u7684 (\u8336)\u3002\u4F46\u8ACB\u4E0D\u8981\u4EC0\u9EBC\u529F\u8AB2\u90FD\u6C92\u505A\u5C31\u63D0\u65E9\u4E82\u627E, \u5982\u679C 100 \u4F4D\u540C\u5B78\u6BCF\u4F4D\u90FD\u4F86\u82B1\u6211 10 \u5206\u9418\u6642\u9593, \u6211\u8981\u82B1 16 \u5C0F\u6642!!\n  - **\u6211\u9084\u662F\u4E0D\u77E5\u9053\u6211\u7684\u8208\u8DA3\u5728\u54EA, \u6211\u89BA\u5F97\u6211\u505A\u4EC0\u9EBC\u90FD\u53EF\u4EE5,\u90A3\u6211\u80FD\u4E0D\u80FD\u5927\u4E09\u4E0A\u958B\u5B78\u5F8C\u7531\u7CFB\u8FA6\u5E6B\u6211\u6C7A\u5B9A?**  \n    \u7CFB\u8FA6\u7121\u6CD5\u5E6B\u4F60\u6C7A\u5B9A, \u53EA\u80FD\u544A\u8A34\u4F60\u54EA\u4E9B\u8001\u5E2B \"\u53EF\u80FD\" \u9084\u6C92\u6536\u6EFF, \u4F60\u9084\u662F\u8981\u81EA\u5DF1\u53BB\u627E\u8001\u5E2B!\n\n### \u600E\u9EBC\u627E\uFF1F\n  - **\u6211\u5DF2\u7D93\u505A\u597D\u529F\u8AB2, \u5F88\u78BA\u5B9A\u5C31\u662F\u60F3\u627E XX \u8001\u5E2B, \u63A5\u4E0B\u4F86\u600E\u9EBC\u8FA6\uFF1F**  \n    \u5728\u8207\u8001\u5E2B\u806F\u7D61\u4E4B\u524D, \u8ACB \"\u52D9\u5FC5\" \u5148\u53BB\u8A62\u554F\u8A72\u8001\u5E2B\u7684\u5B78\u751F, \u4E00\u4F86\u78BA\u8A8D\u81EA\u5DF1\u4E4B\u524D\u505A\u7684\u529F\u8AB2\u7406\u89E3\u7121\u8AA4, \u4E8C\u4F86\u61C9\u8A72\u554F\u4E00\u4E0B\u8001\u5E2B\u5E36\u5B78\u751F\u7684\u65B9\u5F0F, \u78BA\u8A8D\u662F\u4E0D\u662F\u81EA\u5DF1\u60F3\u8981\u7684\u65B9\u5F0F\u3002\u5982\u679C\u90FD\u78BA\u5B9A\u4E86, \u5C31\u53EF\u4EE5\u5BEB\u4FE1\u8DDF\u8001\u5E2B\u7D04\u6642\u9593, \u5728\u4FE1\u4E2D\u52D9\u5FC5\u8981\u63D0\u5230:\n    1. \u6211\u662F\u8AB0, \u4E4B\u524D\u548C\u8001\u5E2B\u7684\u4EA4\u96C6 (\u4FEE\u904E\u8AB2, \u554F\u904E\u554F\u984C, ...)\n    2. \u505A\u904E\u4EC0\u9EBC\u529F\u8AB2 (\u53C3\u89C0\u5C08\u984C\u5C55, \u700F\u89BD\u904E\u7DB2\u9801, \u770B\u904E\u8001\u5E2B\u7684\u8AD6\u6587, ...)\n    3. \u60F3\u505A\u4EC0\u9EBC\u984C\u76EE, \u4EE5\u53CA\u627E\u9019\u4F4D\u8001\u5E2B\u6307\u5C0E\u7684\u78BA\u5207\u7406\u7531 (\u8ACB\u4E0D\u8981\u5BEB \"\u56E0\u70BA\u8001\u5E2B\u4EBA\u5F88\u5E25\" \u6216 \"\u56E0\u70BA\u8001\u5E2B\u4EBA\u5F88\u597D\", \u90A3\u6A23\u8868\u793A\u4F60\u6C92\u6709\u505A\u904E\u529F\u8AB2!)\n    4. \u66FE\u7D93\u8A62\u554F\u904E\u54EA\u4E00\u4F4D (\u6216\u54EA\u5E7E\u4F4D) \u5B78\u9577\u59CA  \n\n    \u82E5\u4F60\u6709\u6253\u7B97\u7814\u7A76\u6240\u7E7C\u7E8C\u7559\u5728\u7CFB\u4E0A\u5FF5\uFF0C\u627E\u8001\u5E2B\u9762\u8AC7\u7684\u6642\u5019\u53EF\u4EE5\u8DDF\u8001\u5E2B\u8AAA\uFF0C\u8001\u5E2B\u6BD4\u8F03\u80FD\u5EFA\u8B70\u4E00\u4E9B\u8F03\u6709\u5EF6\u7E8C\u6027\u7684\u984C\u76EE,\u8B93\u4F60\u7814\u7A76\u6240\u53EF\u4EE5\u7E7C\u7E8C\u505A\u3002\n\n---\n\n## \u5F8C\u8A18\n\u5B78\u751F\u6C92\u505A\u529F\u8AB2\u5C31\u4E82\u627E\uFF0C\u5E38\u5E38\u8B93\u6211\u54ED\u7B11\u4E0D\u5F97\u3002\u66FE\u7D93\u6709\u5B78\u751F(\u9084\u662F\u500B\u5377\u54E5)\u4F86\u627E\u6211\u8AC7\u4E4B\u5F8C\uFF0C\u767C\u73FE\u6211\u539F\u4F86\u662F\u505A\u7DB2\u8DEF\u7684\uFF0C\u8AAA\u4E86\u4E00\u53E5 \"\u8001\u5E2B\uFF0C\u539F\u4F86\u4F60\u4E0D\u662F\u7814\u7A76 C++ \u7684\u554A?\"\u3002\n\n\u53E6\u5916\uFF0C\u5B78\u751F\u559C\u6B61\u5728 email \u88E1\u7528\u4E00\u884C\u6587\uFF0C\u8B93\u4EBA\u4E5F\u53EA\u597D\u56DE\u4ED6\u4E00\u884C\u6587\u3002\u4E0B\u9762\u7BC0\u9304\u4E00\u6BB5\u6211\u8207\u5B78\u751F email \u5F80\u8FD4\u7684\u5167\u5BB9 (\u4E0D\u662F\u5373\u6642\u901A\u8A0A)  \n> \u751F\uFF1A\u60F3\u8DDF\u8001\u5E2B\u7D04\u6642\u9593\uFF0C\u4E86\u89E3\u4E00\u4E0B\u5C08\u984C\u5167\u5BB9  \n> \u5E2B\uFF1A\u76EE\u524D\u5C0D\u6211\u5BE6\u9A57\u5BA4\u77E5\u9053\u591A\u5C11\uFF1F  \n> \u751F\uFF1A\u884C\u52D5\u7DB2\u8DEF\u76F8\u95DC\u7684 \u7814\u7A76\u4E3B\u984C,\u8A08\u756B\u5305\u62EC \u901A\u8A0A \u5B9A\u4F4D \u5BEC\u983B\u7DB2\u8DEF \u7B49\u7B49  \n> \u5E2B\uFF1A\u6709\u554F\u904E\u6211\u7684\u54EA\u500B\u5B78\u751F\u55CE?  \n> \u751F\uFF1A\u9084\u6C92\u6709\u554F\u904E  \n> \u5E2B\uFF1A\u4F60\u5148\u627E\u6211\u5B78\u751F\u8AC7\uFF0C\u78BA\u5B9A\u6709\u8208\u8DA3\u518D\u627E\u6211  \n> \u751F\uFF1A\u597D~\u8B1D\u8B1D  \n\n\u7136\u5F8C\u5C31\u6C92\u6D88\u606F\u4E86\u3002  \n\u5B78\u751F\u90FD\u5F88\u611B\u76F4\u63A5\u627E\u8001\u5E2B\uFF0C\u4EE5\u70BA\u8001\u5E2B\u6703\u544A\u8A34\u4ED6\u63A5\u4E0B\u4F86\u6BCF\u4E00\u6B65\u8981\u600E\u9EBC\u505A, \u6240\u4EE5\u5148\u898B\u4E86\u518D\u8AAA\u3002\u6211\u500B\u4EBA\u7684\u7D93\u9A57\uFF0C\u8D85\u904E\u4E00\u534A\u4EE5\u4E0A\u7684\u4FE1\u90FD\u662F\u53EA\u6709\u4E00\u5169\u53E5\u8A71\uFF0C\u76F4\u63A5\u7834\u984C\u8981\u898B\u8001\u5E2B\u3002\n\n\u4E0D\u662F\u8001\u5E2B\u611B\u800D\u5927\u724C\uFF0C\u800C\u662F\u56E0\u70BA\u5F88\u591A\u5B78\u751F\u4F86\u8FA6\u516C\u5BA4\u627E\u6211\u6642\uFF0C\u904E\u7A0B\u5F80\u5F80\u90FD\u662F\uFF1A  \n> \u751F\uFF1A\u8001\u5E2B\uFF0C\u6211\u5011\u60F3\u4F86\u554F\u5C08\u984C\u3002  \n> \u5E2B\uFF1A\u597D\uFF0C\u8ACB\u5750\u3002  \n> (\u975C~) (\u5B78\u751F\u7E3D\u662F\u8981\u7B49\u8001\u5E2B\u5148\u958B\u53E3\uFF1F)  \n> \u5E2B\uFF1A\u4F60\u53EB\u4EC0\u9EBC\u540D\u5B57\uFF1F  \n> \u751F\uFF1AXXX\u3002  \n> \u5E2B\uFF1A\u4F60\u4F86\u627E\u6211\uFF0C\u60F3\u5FC5\u4F60\u662F\u5C0D\u7DB2\u8DEF\u6709\u8208\u8DA3\u56C9\uFF1F  \n> \u751F\uFF1A\u311C...\u5176\u5BE6\u6211\u4E0D\u77E5\u9053\u3002  \n> \u5E2B\uFF1A\u90A3\u4F60\u4F86\u627E\u6211\u7684\u539F\u56E0\u662F\uFF1F  \n> (\u975C~)  \n> \u5E2B\uFF1A\u597D\u5427\uFF0C\u6211\u5927\u6982\u8AAA\u4E00\u4E0B\u6211\u5BE6\u9A57\u5BA4\u5728\u505A\u4EC0\u9EBC...  \n> (\u4E94\u5206\u9418\u904E\u53BB~)  \n> \u5E2B\uFF1A\u9019\u6A23\u807D\u5B8C\u4E4B\u5F8C\uFF0C\u5C0D\u6211\u5BE6\u9A57\u5BA4\u9084\u6709\u8208\u8DA3\u55CE\uFF1F  \n> \u751F\uFF1A\u311C...\u6211\u4E0D\u77E5\u9053\uFF0C\u6211\u8981\u56DE\u53BB\u60F3\u4E00\u4E0B\u3002\u8B1D\u8B1D\u8001\u5E2B\u3002  \n> (\u5B78\u751F\u8D77\u8EAB\u5C31\u8D70\uFF0C\u611F\u89BA\u60F3\u8D95\u5FEB\u9003\u96E2\u73FE\u5834)  \n"
+};
+/* harmony default export */ __webpack_exports__["default"] = (mustReadData);
+
+/***/ }),
+
+/***/ "./data/news.json":
+/*!************************!*\
+  !*** ./data/news.json ***!
+  \************************/
+/*! exports provided: year 2018, year 2017, year 2016, year 2015, year 2014, year 2013, year 2012, default */
 /***/ (function(module) {
 
-module.exports = {"doc_header":"Tech. Doc.","doc_title":"Related Technical Documents","doc_subtitle2":"Frequency Allocations","doc_list2_1":"Table of Frequency Allocations of Republic of China (Taiwan), MOTC","doc_list2_2":"Frequency Allocations of Republic of China (Taiwan) ","doc_list2_3":"NCC Frequency Allocations searching system","doc_subtitle3":"Open Course Ware","doc_list3_1":"National Taiwan University","doc_list3_2":"National Chiao Tung University","doc_list3_3":"National Tsing Hua University","jour_header":"Journals","jour_title":"Related Journals","conf_header":"Conferences","conf_title":"Related Conferences"};
+module.exports = {"year 2018":[{"date":"2018-09-04","type":"賀","description":"恭喜 108 級專題生 劉俊林 獲得 成大資工系 108 級專題展 第二名 !!","description_en":"Chan Lam Lao has won The 2nd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"},{"date":"2018-09-04","type":"賀","description":"恭喜 108 級專題生 梁祐承 謝耀賢 獲得 成大資工系 108 級專題展 第三名 !!","description_en":"You-Cheng Liang and Y.-S. Hsieh have won The 3rd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"},{"date":"2018-06-18","type":"賀","description":"恭喜 108 級專題生 劉俊林 通過科技部大專學生研究計畫 !!!"},{"date":"2018-05-14","type":"賀","description":"恭喜 專題生 廖其忻 獲得 台達電子 實習機會!!","description_en":"Cayon Liow KeeiYann get internship opportunities of Delta Electronics, Inc.!!"},{"date":"2018-05-3","type":"賀","description":"恭喜 博士生 蔡昀展 專題生 方鈞麒 獲得 工研院 實習機會!!","description_en":"Yun-Zhan Cai and Chun-Chi Fang get internship opportunities of !!"},{"date":"2018-04-10","type":"狂賀","description":"恭喜 碩班 張鶴騰 獲得中華民國資訊學會最佳碩博士論文獎!!","description_en":"He-Teng Chang's paper has won the IICM Master Thesis Award!!"},{"date":"2018-03-17","type":"賀","description":"恭喜 博班 林佳瑩 獲得 Linux Foundation Scholarship (受邀前往 ONS North America 2018)!!","description_en":"Chia-Ying Lin got Linux Foundation Scholarship (with invitation to attend Open Networking Summit North America 2018) !!"},{"date":"2018-02-21","type":"賀","description":"恭喜 博士生 林佳瑩 獲得 Google Code Jam for Women 全球第 118 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2018!!"},{"date":"2018-02-13","type":"賀","description":"恭喜 博班 林佳瑩 獲得 女性科技人才-高通全球學者 (WeTech-Qualcomm Global Scholars)!!","description_en":"Chia-Ying Lin is honored as one of the WeTech-Qualcomm Global Scholars!!"},{"date":"2018-01-09","type":"賀","description":"恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!","comment":"恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!"},{"date":"2018-01-06","type":"賀","description":"恭喜 博班 張蕙玲  的論文被接受!!","comment":"恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-A Network\" 被 IEEE Access 接受"}],"year 2017":[{"date":"2017-11-30","type":"賀","description":"恭喜 博士生 張蕙玲 林佳瑩 獲得科技部 「補助博士生赴國外研究」 獎助 !!!"},{"date":"2017-10-26","type":"賀","description":"恭喜 碩班 呂宜龍 博班 林佳瑩 張蕙玲  的論文被接受!!","comment":"恭喜 論文 \"Utilization-based Parking Space Suggestion in Smart City\" 被 IEEE CCNC 接受"},{"date":"2017-10-07","type":"狂賀","description":"恭喜 碩班 張鶴騰 獲得台灣電機電子工程學會最佳碩博士論文獎!!","comment":"恭喜 論文 \"利用互斥對稱與內部節點的非確切投射布林配對\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"},{"date":"2017-08-18","type":"賀","description":"恭喜 106 級專題生 蔡昀展 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"},{"date":"2017-07-25","type":"賀","description":"恭喜 107 級專題生 方鈞麒 陳珞安 趙珮均 108 級專題生 劉俊林 廖其忻  的論文被接受!!","comment":"恭喜 論文 \"基於 SDN 之網路服務品質優化機制\", \"整合智慧衣與語音通話之醫療照護應用開發\" 及 \"基於SDN網路對抗DDoS攻擊之新型解決方案研究\" 被 第二十二屆行動計算研討會 接受"},{"date":"2017-06-27","type":"賀","description":"恭喜 108級專題生 劉俊林 獲得 香港大學 短期研究機會!!","description_en":"Chan Lam Lao gets an opportunity of short-term academic visit to Hong Kong University (HKU)I!!"},{"date":"2017-06-23","type":"賀","description":"恭喜 碩士生 謝忠穎 陳蓓蓓 獲得 工研院資通所 實習機會!!","description_en":"Chung-Ying Hsieh and Pei-Pei Chen get internship opportunities of ITRI!!"},{"date":"2017-06-12","type":"賀","description":"恭喜 107 級專題生 方鈞麒  陳珞安 通過科技部大專學生研究計畫 !!!"},{"date":"2017-06-11","type":"賀","description":"恭喜 碩士生 王俞婷 獲得 威聯通科技 實習機會!!","description_en":"Yu-Ting Wang gets internship opportunity of QNAP Systems, Inc.!!"},{"date":"2017-06-02","type":"賀","description":"恭喜 碩士生 林賢哲 獲得 思銳科技 實習機會!!","description_en":"Sian-Jhe Lin gets internship opportunity of EstiNet Technologies Inc.!!"},{"date":"2017-05-11","type":"賀","description":"恭喜 博士生 林佳瑩 獲得 GHC 獎學金(Google 提供)，受邀前往美國參加  <a href=\"https://ghc.anitaborg.org/2017-student-academic/2017-scholarships/ghc-17-scholars/\">Grace Hopper Celebration of Women in Computing</a> !!","description_en":"Chia-Ying Lin gets GHC Scholarship (by Google) with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"},{"date":"2017-04-21","type":"賀","description":"恭喜 楊靜妃 朱宥繐 謝忠穎 林佳瑩 張蕙玲 的論文被接受!!","description_en":"Ching-Fei Yang, You-Huei Ju, Chung-Ying Hsieh, Chia-Ying Lin and Hui-Ling Chang's paper was accepted","comment":"恭喜 論文 \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" 被 Vehicular Communications 接受","comment_en":"The paper \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" was accepted by Vehicular Communications"},{"date":"2017-04-07","type":"賀","description":"恭喜 碩士生 張鶴騰 獲得 瑞昱科技 暑期實習機會!!","description_en":"He-Teng Chang gets internship opportunity of RealTek!!"},{"date":"2017-04-06","type":"賀","description":"恭喜 博士生 林佳瑩 獲得德國 RWTH Aachen University     短期訪問機會!!","description_en":"Chia-Ying Lin gets invitation of short-term academic visit to RWTH Aachen University (in Germany )!!"},{"date":"2017-02-21","type":"狂賀","description":"恭喜 碩班 呂尚霖 獲得中華民國資訊學會最佳碩博士論文獎!!","description_en":"Shang-Lin Lu's paper has won the IICM Master Thesis Award!!","comment":"恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 中華民國資訊學會碩博士最佳論文獎","comment_en":"The thesis \"Optimistic DRX for Machine-type\" has won the IICM Master Thesis Award!!"},{"date":"2017-01-06","type":"賀","description":"恭喜 106 級專題生 蔡昀展 陸勇盛 獲得 成大資工系 106 級專題展 佳作 !!","description_en":"Yun-Zhan Cai and Y.-S. Lu have won Honorable Poster Award in 2017 NCKU CSIE Undergraduate Project Exhibition"}],"year 2016":[{"date":"2016-12-28","type":"賀","description":"恭喜 賴志豪 碩士 博班 張蕙玲 林佳瑩 的論文被接受!!","description_en":"Chih-Hao Lai, Hui-Ling Chang and Chia-Ying Lin's paper was accepted","comment":"恭喜 論文 \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" 被 IEEE Transactions on Vehicular Technology 接受","comment_en":"The paper \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" was accepted by IEEE Transactions on Vehicular Technology"},{"date":"2016-12-22","type":"賀","description":"恭喜 博班 林佳瑩 張蕙玲 碩班 高宏瑋 的論文被接受!!","description_en":"Hui-Ling Chang, Chia-Ying Lin and Hung-Wei Kao's paper was accepted","comment":"恭喜 論文 \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" 被 Computer Communications 接受","comment_en":"The paper \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" was accepted by Computer Communications"},{"date":"2016-12-22","type":"賀","description":"恭喜 博班 林佳瑩 碩班 蔡婉萍 專題生 蔡昀展 的論文被接受!!","description_en":"Chia-Ying Lin, Wan-Ping Tsai and Yun-Zhan Cai's paper was accepted","comment":"恭喜 論文 \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" 被 IEEE AINA 2017 接受","comment_en":"The paper \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" was accepted by IEEE AINA 2017"},{"date":"2016-12-22","type":"賀","description":"恭喜 博班 莊琮暉 碩班 蘇珮華 的論文被接受!!","comment":"恭喜 論文 \"Residual Size-based Mobile Data Offloading for File Transmission on Mobile Devices\" 被 IEEE AINA 2017 接受"},{"date":"2016-12-21","type":"賀","description":"恭喜 專題生 蔡昀展 博班 林佳瑩 的論文被接受!!","comment":"恭喜 論文 \"Application-aware Realtime Monitoring with Data Visualization in OpenFlow-based Network\" 被 IEEE WAINA 2017 接受"},{"date":"2016-12-14","type":"賀","description":"恭喜 106 級專題生 蔡昀展 獲得潘文淵獎學金 !!!"},{"date":"2016-11-16","type":"賀","description":"恭喜 碩班 張鶴騰 獲得 2016國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題 國內賽 優等!!"},{"date":"2016-11-05","type":"賀","description":"恭喜 專題生 楊靜妃 獲得國際 iGEM 競賽金牌及兩項獎項提名 !!","comment":"恭喜楊靜妃參加 international Genetically Engineered Machine (iGEM) Competition 獲得 Gold Medal 及兩項最佳表現提名：(1) Nominated for Best Diagnostics Project, (2) Nominated for Best Presentation (<a href='https://udn.com/news/story/1/2092101' target='_blank'>相關報導</a>)"},{"date":"2016-10-22","type":"賀","description":"恭喜 專題生 楊靜妃 朱宥繐 謝忠穎 博班 林佳瑩 張蕙玲 的論文被接受!!","comment":"恭喜 論文 \"iParking -- Real-Time Parking Space Monitor and Guiding System with Cloud Service\" 被 IOV 2016 接受"},{"date":"2016-10-07","type":"狂賀","description":"恭喜 碩班 呂尚霖 獲得台灣電機電子工程學會最佳碩博士論文獎!!","comment":"恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"},{"date":"2016-09-20","type":"賀","description":"恭喜 博班 張蕙玲 林佳瑩 碩班 王正綱 吳孟庭 的論文被接受!!","comment":"恭喜 論文 \"Gateway-assisted Retransmission for Lightweight and Reliable IoT\" 被 Sensors 接受"},{"date":"2016-08-03","type":"賀","description":"恭喜 105 級專題生 朱宥繐 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"},{"date":"2016-07-29","type":"賀","description":"恭喜 106 級專題生 蔡昀展 陸勇盛 徐朝逸 瞿旭民 的論文被接受!!","comment":"恭喜 論文 \"OpenFlow 為基礎之視覺化網路即時路況監測\" 及 \"透過Qt 實作跨系統的自動編譯開發平台\" 被 第二十一屆行動計算研討會 接受"},{"date":"2016-06-22","type":"賀","description":"恭喜 106 級專題生 蔡昀展 陸勇盛 105 級專題生 方鈞麒 獲得 思銳科技 暑期實習機會!!"},{"date":"2016-05-30","type":"賀","description":"恭喜 106 級專題生 蔡昀展 通過科技部大專學生研究計畫 !!!"},{"date":"2016-05-23","type":"賀","description":"恭喜 碩士生 吳孟庭 獲得 德國 RWTH Aachen University 交換學生機會!!"},{"date":"2016-05-18","type":"賀","description":"恭喜 碩士生 林賢哲 獲得 Trend Micro 暑期實習機會!!"},{"date":"2016-05-04","type":"賀","description":"恭喜 碩士生 吳孟庭 獲得 Trend Micro 暑期海外(美國)實習機會!!"},{"date":"2016-04-22","type":"賀","description":"恭喜 博士生 林佳瑩 獲得 Yahoo! 暑期實習機會!!"},{"date":"2016-04-22","type":"賀","description":"恭喜 碩士生 張鶴騰 獲得 加拿大 University of Ottawa (uOttawa) 短期研究機會!!"},{"date":"2016-03-14","type":"賀","description":"恭喜 專題生 楊靜妃 碩士生 吳孟庭 獲得 Google Code Jam for Women 全球第 58 名及全球第 127 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2016!!"},{"date":"2016-02-25","type":"賀","description":"恭喜 碩士生 呂宜龍 獲得 日本 北陸先端科學技術大學院大學 (JAIST) 短期研究機會!!"},{"date":"2016-02-23","type":"賀","description":"恭喜 105 級專題生 楊靜妃 朱宥繐 謝忠穎 獲得 成大資工系 105 級專題展 優等 及 人氣獎第二名!!"},{"date":"2016-01-31","type":"賀","description":"恭喜 博士生 張蕙玲 莊琮暉 林佳瑩 及 碩士生 呂尚霖 的論文被接受!!","comment":"恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-Advanced Network\" 被 IEEE ICC 2016 接受"},{"date":"2016-01-08","type":"賀","description":"恭喜 博士生 林佳瑩 榮獲 Garmin 獎學金!!!!!"}],"year 2015":[{"date":"2015-12-30","type":"賀","description":"恭喜 專題生 楊靜妃 榮獲洪肇奎博士獎助學金!!!!!"},{"date":"2015-11-26","type":"賀","description":"恭喜 碩二 張鶴騰 呂宜龍 獲得 2015國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題佳作!!"},{"date":"2015-09-17","type":"賀","description":"恭喜 106 級專題生 劉心慈 錄取第 13 屆新世紀領袖菁英培育班!!"},{"date":"2015-08-18","type":"賀","description":"恭喜 碩一 張鶴騰 獲得聯詠獎學金!!"},{"date":"2015-08-01","type":"賀","description":"恭喜 碩零 黃筱涵 林賢哲 105 級專題生 楊靜妃 朱宥繐 謝忠穎 的論文被接受!!","comment":"恭喜 論文 \"Android 系統中基於修改 framework 實現錄製與重播觸控行為之方法\" 及 \"愛停車 -- 雲端停車格即時監控暨引導系統\" 被 第二十屆行動計算研討會 接受"},{"date":"2015-08-01","type":"賀","description":"恭喜 105 級專題生 林季伯 的論文被接受!!","comment":"恭喜 論文 \"PCF Shadow Mapping Enhancement by Post-blurring Shadow Buffer\" 被 CVGIP 2015 接受"},{"date":"2015-06-29","type":"賀","description":"恭喜 105 級專題生 楊靜妃 獲得 教育部全國大學校院IC競賽 可程式邏輯設計組 特優 (陳培殷老師指導)"},{"date":"2015-06-24","type":"賀","description":"恭喜 碩一 張蕙玲 碩零 林佳瑩 吳孟庭 林賢哲 黃筱涵 蘇容德 大三 楊靜妃 獲得暑期實習機會!!!可喜可賀!!!","comment":"恭喜 碩一 張蕙玲 碩零 蘇容德 獲得 聯發科(MTK) 暑期實習機會!<br/>恭喜 碩零 林佳瑩 獲得 宏達電(hTC) 暑期實習機會!<br/>恭喜 碩零 吳孟庭 林賢哲 黃筱涵 獲得 工研院(ITRI) 暑期實習機會!<br/>恭喜 大三 楊靜妃 獲得 美國 iwNetworks 暑期實習機會!"},{"date":"2015-06-05","type":"賀","description":"恭喜 碩班 蘇佩華 榮膺 斐陶斐榮譽學會 榮譽會員!!"},{"date":"2015-06-02","type":"賀","description":"恭喜 105 級專題生 楊靜妃 謝忠穎 獲得預研生資格"},{"date":"2015-05-28","type":"賀","description":"恭喜 105 級專題生 朱宥繐 林季伯 通過科技部大專學生研究計畫 !!!"},{"date":"2015-04-27","type":"賀","description":"恭喜 碩零 林佳瑩 獲得 <a href='http://www.cie.org.tw/cms/UpLoad/files/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/104%E5%B9%B4%E5%BA%A6%20%E5%90%84%E7%8D%8E%E9%A0%85%E5%BE%97%E7%8D%8E%E4%BA%BA.pdf' target='_blank'>104 年度 中國工程師學會 優秀工程學生獎學金</a>!!"},{"date":"2015-04-17","type":"賀","description":"恭喜 碩零 林佳瑩 獲得 成電文教基金會64級系友獎學金!!"},{"date":"2015-04-17","type":"賀","description":"恭喜 專題生 楊靜妃 獲得 <a href='http://modernweb.tw/student-plan.html' target='_blank'>Modern Web 2015</a> 學生獎勵!!","comment":"恭喜 楊靜妃 獲得 Modern Web 2015 獎勵, 將出席 2015/5/15~2015/5/16 在中研院舉辦之 Modern Web 大會"},{"date":"2015-03-31","type":"賀","description":"恭喜 碩零 林賢哲 的論文被推薦到 International Journal of Science and Engineering!!","comment":"恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 推薦至 International Journal of Science and Engineering"},{"date":"2015-03-21","type":"賀","description":"恭喜 博士生 莊琮暉 獲得 國立成功大學 邁向頂尖大學計畫 出席國際會議補助!!"},{"date":"2015-01-10","type":"賀","description":"恭喜 高宏瑋 碩士 及 專題生 朱宥繐 的論文被接受!!","comment":"恭喜 論文 \"Two-Stage Radio Access for Group-Based Machine Type Communication in LTE-A\" 被 IEEE ICC 2015 接受"}],"year 2014":[{"date":"2014-12-30","type":"賀","description":"恭喜 專題生 林佳瑩 榮獲洪肇奎博士獎助學金!!!!!","description_en":"Chia-Ying Lin gets the Dr. Hung Scholarships !!"},{"date":"2014-12-26","type":"賀","description":"恭喜 博班 莊琮暉 的論文被接受!!","comment":"恭喜 論文 \"Group-Based Uplink Scheduling for Machine-Type Communications in LTE-Advanced Networks\" 被 IEEE WAINA 2015 接受"},{"date":"2014-11-24","type":"賀","description":"恭喜 碩班 呂尚霖 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎 ！！可喜可賀！！！","description_en":"Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!","comment":"恭喜 \"Call Me Back 請回電\" 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎","comment_en":"Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!"},{"date":"2014-11-12","type":"狂賀","description":"Hung-Wei Kao's paper has won the IICM Master Thesis Award!!","comment":"恭喜 論文 \"LTE-A 中基於分群之MTC 兩階段無線電存取\" 獲得 2014 中華民國資訊學會碩博士最佳論文獎","comment_en":"The paper \"Two-Stage Radio Access for Group-based Machine Type Communication in LTE-A\" has won the IICM Master Thesis Award!!"},{"date":"2014-11-03","type":"賀","description":"恭喜 碩班 陳冠宏 博班 莊琮暉 的論文被接受!!","comment":"恭喜 論文 \"Inter-cell Interference through Cognitive Radio for LTE-Advanced Downlink Transmission in Heterogeneous Network\" 被 ICONI 2014 接受"},{"date":"2014-11-03","type":"賀","description":"恭喜 105 級專題生 楊靜妃 獲得 2014 晨鐘獎學金!!"},{"date":"2014-09-04","type":"賀","description":"恭喜 105 級專題生 楊靜妃 錄取第 12 屆新世紀領袖菁英培育班!!"},{"date":"2014-08-01","type":"賀","description":"恭喜 104 級專題生 林賢哲 的論文被接受!!","comment":"恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 接受"},{"date":"2014-08-01","type":"賀","description":"恭喜 104 級專題生 林佳瑩 蘇容德 碩一 蔡婉萍 的論文被接受!!","comment":"恭喜 論文 \"Finding Nearby Available Roadside Parking Spot\" 被 CVGIP 2014 接受"},{"date":"2014-07-15","type":"賀","description":"恭喜 碩一 賴志豪 獲得 美國 Temple 大學 交換學生機會!!!可喜可賀!!!"},{"date":"2014-07-15","type":"賀","description":"恭喜 碩二 蘇珮華 獲得 北京清華大學 交換學生機會!!!可喜可賀!!!"},{"date":"2014-07-04","type":"賀","description":"恭喜 碩一 賴志豪 獲得 聯發科(MTK) 暑期實習機會!!!可喜可賀!!!"},{"date":"2014-07-04","type":"賀","description":"恭喜 碩一 蔡婉萍 獲得 <a href='http://womany.net/?ref=logo' target='_blank'>Womany</a> 暑期實習機會!!!可喜可賀!!!"},{"date":"2014-07-04","type":"賀","description":"恭喜 碩一 李思穎 獲得 趨勢科技 暑期實習機會!!!可喜可賀!!!"},{"date":"2014-07-04","type":"賀","description":"恭喜 碩零 呂宜龍 獲得 昱泉科技 暑期實習機會!!!可喜可賀!!!"},{"date":"2014-06-03","type":"賀","description":"恭喜 104 級專題生 林佳瑩 蘇容德 林賢哲 黃筱涵 獲得預研生資格"},{"date":"2014-01-13","type":"賀","description":"恭喜 碩一 蔡婉萍 的論文被接受!!","comment":"恭喜 論文 \"IROL: A Humanoid Mobility Model for Mobile Ad Hoc Network\" 被 IEEE ICC 2014 接受"}],"year 2013":[{"date":"2013-08-15","type":"賀","description":"恭喜 碩二 俞中豪, 碩一 蘇珮華 和 碩零 賴志豪 的論文被接受!!","comment":"恭喜 論文 \"A Novel Semi-Static Interference Coordination Scheme for LTE Uplink\" 被 ICICS 2013 接受"},{"date":"2013-08-02","type":"賀","description":"恭喜 103 級專題生 陳冠宇 和 碩一 蔡婉萍 的論文被接受!!","comment":"恭喜 論文 \"管你停哪裡－適地性停車格引導服務\" 被 第十八屆行動計算研討會 接受"},{"date":"2013-06-20","type":"賀","description":"恭喜 103 級專題生 陳冠宇 張釗銘 蘇偉嘉 獲得預研生資格"},{"date":"2013-06-03","type":"賀","description":"恭喜 碩零 賴志豪 獲得 IBM 暑期實習機會!!!"},{"date":"2013-05-30","type":"賀","description":"恭喜 103 級專題生 陳冠宇 通過國科會大專學生研究計畫 !!!"},{"date":"2013-05-11","type":"賀","description":"恭喜 碩一 高宏瑋 獲得 IBM 暑期實習機會!!!"},{"date":"2013-04-12","type":"賀","description":"恭喜 碩一 蘇珮華 獲得 IBM 暑期實習機會!!!可喜可賀!!!"}],"year 2012":[{"date":"2012-12-12","type":"賀","description":"恭喜 四位同學 獲得 IBM 大型主機競賽前 20 名","comment":"恭喜 碩一 高宏瑋 李冠賢 陳彥誠 及 大三 陳冠宇 獲得 IBM 大型主機競賽前 20 名!!<br/>今年該競賽共有 887 人參加, 僅有 77 位能完成第二階段, 前 20 名受邀至 IBM 領獎 (成大共佔 9 位)<br/><img src='./images/ibm_zMaster_2012_ceremony.jpg' style='width:80%'>"},{"date":"2012-07-11","type":"賀","description":"恭喜 碩零 高宏瑋 和 李冠賢 的論文被接受!!","comment":"恭喜 論文 \"Two-Phase Online Memory Leak Detection\" 被 APNOMS 2012 接受"},{"date":"2012-07-05","type":"賀","description":"恭喜 碩零 李冠賢 獲得台積電暑期實習機會"},{"date":"2012-06-26","type":"賀","description":"恭喜 102 級專題生 賴志豪 獲得預研生資格"}]};
+
+/***/ }),
+
+/***/ "./data/zh-TW/home.json":
+/*!******************************!*\
+  !*** ./data/zh-TW/home.json ***!
+  \******************************/
+/*! exports provided: head1, content1, head3, default */
+/***/ (function(module) {
+
+module.exports = {"head1":"歡迎加入本實驗室","content1":"本實驗室成立於 2010 年 9 月，目前約有 12~15 位博碩士及大學部 專題生 , 歡迎對 行動網路 (4G/5G)、物聯網 (IoT)、軟體定義網路 (SDN) 及 網路分析理論 有興趣之 專題生、碩士生及博士生加入我們","head3":"最新消息"};
 
 /***/ }),
 
@@ -693,17 +1000,6 @@ module.exports = {"doc_header":"Tech. Doc.","doc_title":"Related Technical Docum
 /***/ (function(module) {
 
 module.exports = {"home":"首頁","research":"研究","member":"成員","member_prof":"指導教授","member_student":"學生","member_alumni":"學成下山","honor":"榮譽","resource":"相關資源","contact":"聯絡我們","lang":"English"};
-
-/***/ }),
-
-/***/ "./data/zh-TW/resource.json":
-/*!**********************************!*\
-  !*** ./data/zh-TW/resource.json ***!
-  \**********************************/
-/*! exports provided: doc_header, doc_title, doc_subtitle2, doc_list2_1, doc_list2_2, doc_list2_3, doc_subtitle3, doc_list3_1, doc_list3_2, doc_list3_3, jour_header, jour_title, conf_header, conf_title, default */
-/***/ (function(module) {
-
-module.exports = {"doc_header":"技術文件","doc_title":"相關技術文件","doc_subtitle2":"頻譜分配","doc_list2_1":"交通部 我國無線電頻率分配表","doc_list2_2":"NCC 頻率資料庫查詢系統","doc_list2_3":"中華民國頻率分配圖","doc_subtitle3":"開放式課程","doc_list3_1":"台灣大學","doc_list3_2":"交通大學","doc_list3_3":"清華大學","jour_header":"期刊","jour_title":"相關期刊","conf_header":"研討會","conf_title":"相關研討會"};
 
 /***/ }),
 
@@ -39092,10 +39388,10 @@ function extend() {
 
 /***/ }),
 
-/***/ "./pages/resource.js":
-/*!***************************!*\
-  !*** ./pages/resource.js ***!
-  \***************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39105,30 +39401,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/block */ "./components/block.js");
-/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../scss/layout.scss */ "./scss/layout.scss");
-/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_scss_layout_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/en/resource.json */ "./data/en/resource.json");
-var _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/en/resource.json */ "./data/en/resource.json", 1);
-/* harmony import */ var _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/zh-TW/resource.json */ "./data/zh-TW/resource.json");
-var _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/zh-TW/resource.json */ "./data/zh-TW/resource.json", 1);
-/* harmony import */ var _data_conference_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../data/conference.json */ "./data/conference.json");
-var _data_conference_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/conference.json */ "./data/conference.json", 1);
-var _jsxFileName = "/Users/mac/Projects/imslab/pages/resource.js";
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/block */ "./components/block.js");
+/* harmony import */ var _components_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/list */ "./components/list.js");
+/* harmony import */ var _components_data_list__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/data-list */ "./components/data-list.js");
+/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../scss/layout.scss */ "./scss/layout.scss");
+/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_layout_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _data_en_home_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/en/home.json */ "./data/en/home.json");
+var _data_en_home_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/en/home.json */ "./data/en/home.json", 1);
+/* harmony import */ var _data_zh_TW_home_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../data/zh-TW/home.json */ "./data/zh-TW/home.json");
+var _data_zh_TW_home_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/zh-TW/home.json */ "./data/zh-TW/home.json", 1);
+/* harmony import */ var _data_news_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../data/news.json */ "./data/news.json");
+var _data_news_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/news.json */ "./data/news.json", 1);
+/* harmony import */ var _data_must_read__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../data/must-read */ "./data/must-read.js");
+var _jsxFileName = "/Users/mac/Projects/imslab/pages/index.js";
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
@@ -39154,235 +39444,156 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var getDocContent = function getDocContent(data) {
-  return "\n### 3GPP LTE/LTE-Adv\n- [3G and 4G Wireless Blog](http://blog.3g4g.co.uk/)\n- [4G-Portal](http://4g-portal.com/)\n\n---\n\n### ".concat(data.doc_subtitle2, "\n- [").concat(data.doc_list2_1, "](http://www.motc.gov.tw/post/home.jsp?id=364&parentpath=0)\n- [").concat(data.doc_list2_2, "](http://freqdbo.ncc.gov.tw/Portal/index.aspx)\n- [").concat(data.doc_list2_3, "](http://freqdbo.ncc.gov.tw/upload/FILESAVE/080724081215.pdf)\n\n---\n\n### ").concat(data.doc_subtitle3, "\n- [").concat(data.doc_list3_1, "](http://ocw.aca.ntu.edu.tw/ntu-ocw/)\n- [").concat(data.doc_list3_2, "](http://ocw.nctu.edu.tw/)\n- [").concat(data.doc_list3_3, "](http://ocw.nthu.edu.tw/ocw/)\n");
-};
 
-var getJourContent = function getJourContent() {
-  return "\n- IEEE Wireless Communications Magazine\n- IEEE Communications Magazine        \n- IEEE Network\n- IEEE Communications Letter\n- IEEE Journal on Selected Areas in Communications\n- IEEE Transactions on Mobile Computing\n- IEEE Transactions on Wireless Communications";
-};
 
-var getConfContent = function getConfContent() {
-  var confData = _objectSpread({}, _data_conference_json__WEBPACK_IMPORTED_MODULE_10__);
-
-  var confElms = [];
-
-  var openLink = function openLink(e) {
-    return window.open(e.currentTarget.dataset.href);
-  };
-
-  Object.entries(confData).forEach(function (_ref, index) {
-    var _ref2 = _slicedToArray(_ref, 2),
-        key = _ref2[0],
-        subData = _ref2[1];
-
-    return confElms.push(subData.map(function (d, i) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-        key: "".concat(key, "-").concat(i),
-        className: index % 2 === 0 ? 'row-inverse' : 'row-default',
-        onClick: openLink,
-        "data-href": d.link,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, !i && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: "td-title",
-        rowSpan: subData.length,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, key), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, d.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, d.place), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: d.due ? 'deleted' : 'highlight',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }, d.deadline));
-    }));
-  });
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Table"], {
-    responsive: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
-    className: "thead-inverse",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "Conference"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, "Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, "Place"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }, "Submission Deadline"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, confElms));
-};
-
-var getBlogContent = function getBlogContent() {
-  return "\n- [\u6797\u4E00\u5E73\u90E8\u843D\u683C](http://blog.bs2.to/liny)\n- [\u6559\u66F8\u5320\u7684\u5922\u60F3](http://blog.xuite.net/ycedu/blog)\n- [\u6E05\u5927\u5F6D\u660E\u8F1D\u7684\u90E8\u843D\u683C](http://mhperng.blogspot.com/)\n- [vgod's blog](http://blog.vgod.tw/)";
-};
-
-var getApplyContent = function getApplyContent() {
-  return "\n### \u51FA\u570B\u53C3\u52A0\u7814\u8A0E\u6703\u88DC\u52A9\n- [\u5091\u51FA\u4EBA\u624D\u767C\u5C55\u57FA\u91D1\u6703](http://www.faos.org.tw/Application/index.asp)\n\n---\n\n### \u78A9\u535A\u58EB\u8AD6\u6587\u734E\n- [\u4E2D\u83EF\u6C11\u570B\u8CC7\u8A0A\u5B78\u6703 \u78A9\u535A\u58EB\u6700\u4F73\u8AD6\u6587\u734E](http://www.iicm.org.tw/) (Deadline: 8/15)\n- [\u4E2D\u570B\u96FB\u6A5F\u5DE5\u7A0B\u5B78\u6703 \u9752\u5E74\u8AD6\u6587\u734E](http://www.ciee.org.tw/) (Deadline: 8/1)\n- [\u53F0\u7063\u96FB\u6A5F\u96FB\u5B50\u5DE5\u7A0B\u5B78\u6703 \u6700\u4F73\u535A\u78A9\u58EB\u8AD6\u6587\u734E](https://sites.google.com/site/tieeeorg/Home) (Deadline: 8/31)\n\n---\n\n### \u5927\u5B78\u751F\u53EF\u7533\u8ACB\u734E\u9805\n- [\u570B\u79D1\u6703\u5927\u5C08\u5B78\u751F\u7814\u7A76\u8A08\u756B](http://web1.nsc.gov.tw/lp.aspx?CtNode=343&CtUnit=488&BaseDSD=5&mp=1) (Deadline: \u4E8C\u6708\u4E2D)\n- [\u4E2D\u570B\u5DE5\u7A0B\u5E2B\u5B78\u6703 \u512A\u79C0\u5DE5\u7A0B\u5B78\u751F\u734E\u5B78\u91D1](http://www.cie.org.tw/awards_selection_detail.php?id=11) (Deadline: 3/15)\n- [\u4E2D\u570B\u5DE5\u7A0B\u5E2B\u5B78\u6703 \u5B78\u751F\u5206\u6703 \u5DE5\u7A0B\u8AD6\u6587\u7AF6\u8CFD](http://www.cie.org.tw/news_detail.php?id=33)\n\n---\n\n### \u6BD4\u8CFD\n- [Google Summer of Code](http://summerofcode.withgoogle.com/about/) (Deadline: \u56DB\u6708\u521D)\n- [\u7D93\u6FDF\u90E8 \u6436\u9BAE\u5927\u8CFD](http://www.getfresh.org.tw/index.aspx) (Deadline: \u4E94\u6708\u4E2D)\n- [\u4E2D\u83EF\u96FB\u4FE1 \u96FB\u4FE1\u5275\u65B0\u61C9\u7528\u5927\u8CFD](http://telsoft.hinet.net/) (Deadline: \u516B\u6708\u521D)\n- [\u7D93\u6FDF\u90E8\u5DE5\u696D\u5C40 \u901A\u8A0A\u5927\u8CFD](http://www.mobilehero.com/) (Deadline: \u4E5D\u6708\u521D)\n- [\u7D93\u6FDF\u90E8\u5DE5\u696D\u5C40 \u8CC7\u8A0A\u61C9\u7528\u670D\u52D9\u5275\u65B0\u7AF6\u8CFD](http://innoserve.tca.org.tw/) (Deadline: \u5341\u6708\u4E2D)\n- [\u6559\u80B2\u90E8 \u5927\u5B78\u6821\u9662\u7DB2\u8DEF\u901A\u8A0A\u8EDF\u9AD4\u8207\u5275\u610F\u61C9\u7528\u7AF6\u8CFD](http://ncsiac.csie.ncu.edu.tw/) (Deadline: \u5341\u4E00\u6708\u5E95)\n\n---\n\n### \u5176\u4ED6\n- [\u6210\u529F\u5927\u5B78\u734E\u5B78\u91D1\u67E5\u8A62](http://sgd.adm.ncku.edu.tw/scholarship/)\n- [\u6551\u570B\u5718 \u9752\u5E74\u7BC0\u8868\u63DA\u5927\u5C08\u512A\u79C0\u9752\u5E74](http://associations.cyc.org.tw/) (Deadline: 3/15)\n";
-};
-
-var Resource = function Resource(_ref3) {
-  var router = _ref3.router;
+var Index = function Index(_ref) {
+  var router = _ref.router;
   var title = router.query.title;
   var lang = router.query.lang || 'zh-tw';
-  var data = lang === 'en' ? _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8__ : _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9__;
-  var blocks = [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.doc_title,
-    key: "doc",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
+  var data = lang === 'en' ? _data_en_home_json__WEBPACK_IMPORTED_MODULE_9__ : _data_zh_TW_home_json__WEBPACK_IMPORTED_MODULE_10__;
+
+  var newsData = _objectSpread({}, _data_news_json__WEBPACK_IMPORTED_MODULE_11__);
+
+  var mustReadData = _objectSpread({}, _data_must_read__WEBPACK_IMPORTED_MODULE_12__["default"]);
+
+  Object.entries(newsData).forEach(function (_ref2) {
+    var _ref3 = _slicedToArray(_ref2, 1),
+        key = _ref3[0];
+
+    return newsData[key] = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_data_list__WEBPACK_IMPORTED_MODULE_7__["default"].News, {
+      data: newsData[key],
+      lang: lang,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    });
+  });
+  Object.entries(mustReadData).forEach(function (_ref4) {
+    var _ref5 = _slicedToArray(_ref4, 1),
+        key = _ref5[0];
+
+    return mustReadData[key] = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      source: mustReadData[key],
+      linkTarget: "_blank",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    });
+  });
+  var blocks = [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: data.head1 + '!',
+    key: "welcome",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 27
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    source: getDocContent(data),
-    linkTarget: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.jour_title,
-    key: "jour",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    source: getJourContent(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.conf_title,
-    key: "conf",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }, getConfContent())];
+  }, data.content1)];
 
   if (lang !== 'en') {
-    blocks = [].concat(_toConsumableArray(blocks), [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      title: "\u63A8\u85A6\u90E8\u843D\u683C",
-      key: "blog",
-      ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
+    blocks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      title: "\u5FC5\u770B",
+      key: "mustRead",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132
+        lineNumber: 29
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      source: getBlogContent(),
-      linkTarget: "_blank",
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      data: mustReadData,
+      noOpen: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 29
       },
       __self: this
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      title: "\u53EF\u7533\u8ACB\u734E\u9805",
-      key: "apply",
-      ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 135
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      source: getApplyContent(),
-      linkTarget: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 136
-      },
-      __self: this
-    }))]);
+    })));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    id: "resource-container",
+  blocks.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: data.head3,
+    key: "news",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    data: newsData,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    id: "visitor",
+    title: "Visitors (since May 9th 2016)",
+    key: "visitor",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://info.flagcounter.com/WV9Z",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "http://s06.flagcounter.com/map/WV9Z/size_m/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/",
+    alt: "Flag Counter",
+    border: "0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://s05.flagcounter.com/more/AX",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "http://s05.flagcounter.com/count2/AX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_30/viewers_0/labels_1/pageviews_1/flags_0/percent_0/",
+    alt: "Flag Counter",
+    border: "0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }))));
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: "home-container",
     pathname: router.asPath,
     blocks: blocks,
     lang: lang,
     title: title,
+    noTabs: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 45
     },
     __self: this
   });
 };
 
-Resource.propTypes = {
+Index.propTypes = {
   router: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(Resource));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(Index));
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -39399,21 +39610,21 @@ Resource.propTypes = {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/resource")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 5:
-/*!*********************************!*\
-  !*** multi ./pages/resource.js ***!
-  \*********************************/
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/resource', function() {
-module.exports = __webpack_require__(/*! ./pages/resource.js */"./pages/resource.js");
+__NEXT_REGISTER_PAGE('/', function() {
+module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
 return { page: module.exports.default }});
 
@@ -39430,5 +39641,5 @@ module.exports = dll_c7268871b5d23a759f52;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
-//# sourceMappingURL=resource.js.map
+},[[3,"static/runtime/webpack.js","styles"]]]));;
+//# sourceMappingURL=index.js.map

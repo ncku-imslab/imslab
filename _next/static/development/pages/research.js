@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/resource.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/research.js"],{
 
 /***/ "./components/block.js":
 /*!*****************************!*\
@@ -652,17 +652,6 @@ var handleTab = function handleTab(ref) {
 
 /***/ }),
 
-/***/ "./data/conference.json":
-/*!******************************!*\
-  !*** ./data/conference.json ***!
-  \******************************/
-/*! exports provided: ACM SIGCOMM, GlobeCom, INFOCOM, ICC, ICDCS, default */
-/***/ (function(module) {
-
-module.exports = {"ACM SIGCOMM":[{"date":"2019, August 19-23","place":"Beijing, China","deadline":"2019, January 31","due":true,"link":"https://conferences.sigcomm.org/sigcomm/2019/"},{"date":"2018, August 20-25","place":"Budapest, Hungary","deadline":"2018, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2018/"},{"date":"2017, August 21-25","place":"UCLA campus, Los Angeles, CA, USA","deadline":"2017, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2017/"},{"date":"2016, August 22-26","place":"Salvador, Brazil","deadline":"2016, January 22","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2016/"},{"date":"2015, August 17-21","place":"London, UK","deadline":"2015, January 30","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2015/"},{"date":"2014, August 17-22","place":"Chicago, USA","deadline":"2014, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2014/"},{"date":"2013, August 12-16","place":"Hong Kong, China","deadline":"2013, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2013/"},{"date":"2012, August 13-17","place":"Helsinki, Finland","deadline":"2012, January 27","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2012/"},{"date":"2011, August 15-19","place":"Toronto, Ontario, Canada","deadline":"2011, January 31","due":true,"link":"http://conferences.sigcomm.org/sigcomm/2011/"}],"GlobeCom":[{"date":"2020, December 7-11","place":"Taipei, Taiwan","deadline":"TBD","due":false,"link":"https://www.comsoc.org/conferences-events/ieee-global-communications-conference-2020"},{"date":"2019, December 9-13","place":"Hawaii, USA","deadline":"2019, May 10","due":true,"link":"https://globecom2019.ieee-globecom.org/"},{"date":"2018, December 9-13","place":"Abu Dhabi, UAE","deadline":"2018, April 30","due":true,"link":"http://www.ieee-globecom.org/2018/"},{"date":"2017, December 4-8","place":"Singapore","deadline":"2017, April 15","due":true,"link":"http://www.ieee-globecom.org/2017/"},{"date":"2016, December 6-10","place":"Washington DC, USA","deadline":"2016, April 15","due":true,"link":"http://www.ieee-globecom.org/2016/"},{"date":"2015, December 6-10","place":"San Diego, CA, USA","deadline":"2015, April 1","due":true,"link":"http://www.ieee-globecom.org/2015/"},{"date":"2014, December 8-12","place":"Austin, Texas, USA","deadline":"2014, April 1","due":true,"link":"http://www.ieee-globecom.org/2014/"},{"date":"2013, December 9-13","place":"Atlanta, Georgia, USA","deadline":"2013, March 15","due":true,"link":"http://www.ieee-globecom.org/2013/"},{"date":"2012, December 3-7","place":"Disneyland Hotel, Anaheim, California, USA","deadline":"2012, March 15","due":true,"link":"http://www.ieee-globecom.org/2012/"},{"date":"2011, December 5-9","place":"Houston,Texas, USA","deadline":"2011, April 5","due":true,"link":"http://www.ieee-globecom.org/2011/"}],"INFOCOM":[{"date":"2020, April 27-30","place":"Beijing, China","deadline":"2019, July 31","due":false,"link":"https://infocom2020.ieee-infocom.org/"},{"date":"2019, April 29- May 2","place":"Paris, France","deadline":"2018, July 31","due":true,"link":"http://www.ieee-infocom.org/2019"},{"date":"2018, April 15-19","place":"Honolulu, HI, USA","deadline":"2017, July 31","due":true,"link":"http://www.ieee-infocom.org/2018"},{"date":"2017, May 1-4","place":"Atlanta, GA, USA","deadline":"2016, July 29","due":true,"link":"http://www.ieee-infocom.org/2017"},{"date":"2016, April 10-15","place":"San Francisco, CA, USA","deadline":"2015, July 31","due":true,"link":"http://www.ieee-infocom.org/2016"},{"date":"2015, April 26-May 1","place":"Hong Kong, China","deadline":"2014, July 23","due":true,"link":"http://www.ieee-infocom.org/2015"},{"date":"2014, April 27-May 2","place":"Toronto, Canada","deadline":"2013, July 28","due":true,"link":"http://www.ieee-infocom.org/2014"},{"date":"2013, April 14-19","place":"Turin, Italy","deadline":"2012, July 27","due":true,"link":"http://www.ieee-infocom.org/2013"},{"date":"2012, March 25-30","place":"Orlando, Florida, USA","deadline":"2011, July 29","due":true,"link":"http://www.ieee-infocom.org/2012"},{"date":"2011, April 10-15","place":"Shanghai, China","deadline":"2010, July 30","due":true,"link":"http://www.ieee-infocom.org/2011"}],"ICC":[{"date":"2020, June 7-11","place":"Dublin, Ireland","deadline":"TBD","due":false,"link":"http://icc2019.ieee-icc.org"},{"date":"2019, May 20-24","place":"Shanghai, China","deadline":"2018, October 14","due":true,"link":"http://icc2019.ieee-icc.org"},{"date":"2018, May 20-24","place":"Kansas City, MO, USA","deadline":"2017, October 15","due":true,"link":"http://icc2018.ieee-icc.org/"},{"date":"2017, May 21-25","place":"Paris, France","deadline":"2016, October 14","due":true,"link":"http://icc2017.ieee-icc.org/"},{"date":"2016, May 23-27","place":"Kuala Lumpur, Malaysia","deadline":"2015, October 16","due":true,"link":"http://www.ieee-icc.org/2016/"},{"date":"2015, June 8-12","place":"London, UK","deadline":"2014, September 15","due":true,"link":"http://www.ieee-icc.org/2015/"},{"date":"2014, June 10-14","place":"Sydney, Australia","deadline":"2013, September 15","due":true,"link":"http://www.ieee-icc.org/2014/"},{"date":"2013, June 9-13","place":"Budapest, Hungary","deadline":"2012, September 16","due":true,"link":"http://www.ieee-icc.org/2013/"},{"date":"2012, June 10-15","place":"Ottawa, Canada","deadline":"2011, September 28","due":true,"link":"http://www.ieee-icc.org/2012/"},{"date":"2011, June 5-9","place":"Kyoto, Japan","deadline":"2010, September 20","due":true,"link":"http://www.ieee-icc.org/2011/"}],"ICDCS":[{"date":"2019, July 7-10","place":"Texas,USA","deadline":"2019, January 5","due":true,"link":"http://theory.utdallas.edu/ICDCS2019/"},{"date":"2018, July 2-5","place":"Vienna, Austria","deadline":"2017, December 12","due":true,"link":"http://icdcs2018.ocg.at"},{"date":"2017, June 5-8","place":"Atlanta, Georgia, USA","deadline":"2016, December 12","due":true,"link":"http://icdcs2017.gatech.edu/"},{"date":"2016, June 27-30","place":"Nara, Japan","deadline":"2015, December 11","due":true,"link":"http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/"},{"date":"2015, June 29-July 2","place":"Columbus, Ohio, USA","deadline":"2014, December 12","due":true,"link":"http://icdcs-2015.cse.ohio-state.edu/"},{"date":"2014, June 30-July 3","place":"Madrid, Spain","deadline":"2013, December 5","due":true,"link":"http://lsd.ls.fi.upm.es/icdcs2014/"},{"date":"2013, July 8-11","place":"Philadelphia, USA","deadline":"2012, November 12","due":true,"link":"http://www.temple.edu/cis/icdcs2013/"},{"date":"2012, June 18-21","place":"Macau, China","deadline":"2011, November 8","due":true,"link":"http://icdcs-2012.org/"},{"date":"2011, June 21-24","place":"Minnesapolis, USA","deadline":"2010, November 15","due":true,"link":"http://www.seas.gwu.edu/~cheng/ICDCS2011/index.html"}]};
-
-/***/ }),
-
 /***/ "./data/en/menu.json":
 /*!***************************!*\
   !*** ./data/en/menu.json ***!
@@ -674,14 +663,25 @@ module.exports = {"home":"Home","research":"Research","member":"Members","member
 
 /***/ }),
 
-/***/ "./data/en/resource.json":
+/***/ "./data/en/research.json":
 /*!*******************************!*\
-  !*** ./data/en/resource.json ***!
+  !*** ./data/en/research.json ***!
   \*******************************/
-/*! exports provided: doc_header, doc_title, doc_subtitle2, doc_list2_1, doc_list2_2, doc_list2_3, doc_subtitle3, doc_list3_1, doc_list3_2, doc_list3_3, jour_header, jour_title, conf_header, conf_title, default */
+/*! exports provided: head1, des1_1, des1_2, subtitle1_1, subtitle1_2, head2, subtitle2_1, subtitle2_2, proj_name, proj_dur, proj_sponsor, PI, co_PI, default */
 /***/ (function(module) {
 
-module.exports = {"doc_header":"Tech. Doc.","doc_title":"Related Technical Documents","doc_subtitle2":"Frequency Allocations","doc_list2_1":"Table of Frequency Allocations of Republic of China (Taiwan), MOTC","doc_list2_2":"Frequency Allocations of Republic of China (Taiwan) ","doc_list2_3":"NCC Frequency Allocations searching system","doc_subtitle3":"Open Course Ware","doc_list3_1":"National Taiwan University","doc_list3_2":"National Chiao Tung University","doc_list3_3":"National Tsing Hua University","jour_header":"Journals","jour_title":"Related Journals","conf_header":"Conferences","conf_title":"Related Conferences"};
+module.exports = {"head1":"Research Topics","des1_1":"Major research areas in this lab include ","des1_2":"mobile network design and analysis, wireless communications and cloud computing","subtitle1_1":"Current research topics include","subtitle1_2":"Research topics in recent five years include","head2":"Research Projects","subtitle2_1":"Current Projects","subtitle2_2":"Past Projects","proj_name":"Project Name","proj_dur":"Duration","proj_sponsor":"Sponsor","PI":"Projects with Prof. Tsai as PI","co_PI":"Projects with Prof. Tsai as co-PI"};
+
+/***/ }),
+
+/***/ "./data/projects.json":
+/*!****************************!*\
+  !*** ./data/projects.json ***!
+  \****************************/
+/*! exports provided: current, past, default */
+/***/ (function(module) {
+
+module.exports = {"current":{"independent":[{"name":"5G系統中以SDN為基礎之雲端無線存取網路資源管理","duration":"2018/8 ~ 2019/7","subsidy":"科技部 (107-2221-E-006-062 -)","subsidy_en":"MOST (107-2221-E-006-062 -)"}],"cooperation":[{"name":"AIOT+SDN整合平台之前瞻邊緣交換機上的物聯網設備網路行為正常性分析技術研發","duration":"2019/5 ~ 2020/04","subsidy":"思銳科技"},{"name":"農業行動網之網路切片技術與惡意入侵偵測研究","duration":"2019/1 ~ 2019/12","subsidy":"國立台南大學"},{"name":"分項三：可程式化交換機之技術研發","duration":"2019/1 ~ 2019/12","subsidy":"國立交通大學開源智能聯網研究中心"}]},"past":{"independent":[{"name":"VoLTE與VoWiFi之交遞研究","duration":"2017/8 ~ 2018/7","subsidy":"科技部 (106-2221-E-006-007-)","subsidy_en":"MOST (106-2221-E-006-007-)"},{"name":"基於SDN之網路服務品質優化機制 (科技部大專學生研究計畫; 方鈞麒)","duration":"2017/7 ~ 2018/2","subsidy":"科技部 (106-2813-C-006-084-E)","subsidy_en":"MOST (106-2813-C-006-084-E)"},{"name":"LTE-A中 MTC 之省電機制","duration":"2016/8 ~ 2017/7","subsidy":"科技部 (105-2221-E-006-186-)","subsidy_en":"MOST (105-2221-E-006-186-)"},{"name":"以OpenFlow為基礎之視覺化網路即時路況監測 (科技部大專學生研究計畫; 蔡昀展)","duration":"2016/7 ~ 2017/2","subsidy":"科技部 (105-2815-C-006-108-E)","subsidy_en":"MOST (105-2815-C-006-108-E)"},{"name":"LTE-Advanced 網路中 D2D 與 LIPA 之交遞研究","duration":"2015/8 ~ 2016/7","subsidy":"科技部 (104-2221-E-006-041-)","subsidy_en":"MOST (104-2221-E-006-041-)"},{"name":"愛停車 -- 雲端停車格即時監控暨引導系統 (科技部大專學生研究計畫; 朱宥繐)","duration":"2015/7 ~ 2016/2","subsidy":"科技部 (104-2815-C-006-029-E)","subsidy_en":"MOST (104-2815-C-006-029-E)"},{"name":"行動寬頻網路與應用—小細胞基站 (small cell)","duration":"2015/4 ~ 2016/3","subsidy":"教育部","subsidy_en":"Ministry of Education Republic of China (Taiwan)"},{"name":"基於錄製與重播原理之雲端檔案系統應用","duration":"2014/12 ~ 2015/12","subsidy":"工研院","subsidy_en":"Industrial Technology Research"},{"name":"LTE-Advanced 網路之資源管理","duration":"2013/8 ~ 2015/7","subsidy":"國科會 (102-2221-E-006-113-MY2)"},{"name":"管你停哪裡－適地性停車格引導服務 (國科會大專學生研究計畫; 陳冠宇)","duration":"2013/7 ~ 2014/2","subsidy":"國科會 (NSC 102-2815-C-006-021-E)"},{"name":"即時街景資訊擷取與分享之行動雲端計算平台與系統","duration":"2012/8 ~ 2013/7","subsidy":"國科會 (NSC 101-2221-E-006-235-)"},{"name":"主動偵測/隔離/終止應用層系統資源不當使用之方法","duration":"2011/9 ~ 2012/9","subsidy":"中華電信研究所"},{"name":"IMS緊急服務於救災之應用","duration":"2011/1 ~ 2012/7","subsidy":"國科會 (NSC 100-2218-E-006-015-MY2)"}],"cooperation":[{"name":"適用於異構網路之網路切片技術研究","duration":"2018/1 ~ 2018/12","subsidy":"國立台南大學"},{"name":"5G開放平台與物聯網整合服務研究","duration":"2017/1 ~ 2017/12","subsidy":"資策會"},{"name":"通訊系統開源軟體虛擬化技術研究與推廣","duration":"2017/3 ~ 2017/12","subsidy":"工研院"},{"name":"通訊系統開源軟體運作機制","duration":"2016/5 ~ 2016/12","subsidy":"工研院"},{"name":"教育部扎根高中職資訊科學教育計畫","duration":"2015/7 ~ 2016/6","subsidy":"教育部"},{"name":"健康相關資料加值與應用模式開發先導計畫","duration":"2012/3 ~ 2013/3","subsidy":"國科會 (NSC 101-3114-Y-006-001)"}]}};
 
 /***/ }),
 
@@ -696,14 +696,14 @@ module.exports = {"home":"首頁","research":"研究","member":"成員","member_
 
 /***/ }),
 
-/***/ "./data/zh-TW/resource.json":
+/***/ "./data/zh-TW/research.json":
 /*!**********************************!*\
-  !*** ./data/zh-TW/resource.json ***!
+  !*** ./data/zh-TW/research.json ***!
   \**********************************/
-/*! exports provided: doc_header, doc_title, doc_subtitle2, doc_list2_1, doc_list2_2, doc_list2_3, doc_subtitle3, doc_list3_1, doc_list3_2, doc_list3_3, jour_header, jour_title, conf_header, conf_title, default */
+/*! exports provided: head1, des1_1, des1_2, subtitle1_1, subtitle1_2, head2, subtitle2_1, subtitle2_2, proj_name, proj_dur, proj_sponsor, PI, co_PI, default */
 /***/ (function(module) {
 
-module.exports = {"doc_header":"技術文件","doc_title":"相關技術文件","doc_subtitle2":"頻譜分配","doc_list2_1":"交通部 我國無線電頻率分配表","doc_list2_2":"NCC 頻率資料庫查詢系統","doc_list2_3":"中華民國頻率分配圖","doc_subtitle3":"開放式課程","doc_list3_1":"台灣大學","doc_list3_2":"交通大學","doc_list3_3":"清華大學","jour_header":"期刊","jour_title":"相關期刊","conf_header":"研討會","conf_title":"相關研討會"};
+module.exports = {"head1":"研究方向","des1_1":"本實驗室的研究主軸為","des1_2":"行動網路設計與分析","subtitle1_1":"目前本實驗室之研究主題包括","subtitle1_2":"近五年之研究主題包括","head2":"研究計畫","subtitle2_1":"本實驗室正在執行中之計畫","subtitle2_2":"本實驗室過去執行過之計畫","proj_name":"計畫名稱","proj_dur":"執行期間","proj_sponsor":"補助單位","PI":"蔡孟勳教授擔任主持人之計劃","co_PI":"蔡孟勳教授擔任共同主持人或協同主持人之計劃"};
 
 /***/ }),
 
@@ -39092,9 +39092,9 @@ function extend() {
 
 /***/ }),
 
-/***/ "./pages/resource.js":
+/***/ "./pages/research.js":
 /*!***************************!*\
-  !*** ./pages/resource.js ***!
+  !*** ./pages/research.js ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -39105,42 +39105,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_block__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/block */ "./components/block.js");
-/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../scss/layout.scss */ "./scss/layout.scss");
-/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_scss_layout_scss__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/en/resource.json */ "./data/en/resource.json");
-var _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/en/resource.json */ "./data/en/resource.json", 1);
-/* harmony import */ var _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/zh-TW/resource.json */ "./data/zh-TW/resource.json");
-var _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/zh-TW/resource.json */ "./data/zh-TW/resource.json", 1);
-/* harmony import */ var _data_conference_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../data/conference.json */ "./data/conference.json");
-var _data_conference_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/conference.json */ "./data/conference.json", 1);
-var _jsxFileName = "/Users/mac/Projects/imslab/pages/resource.js";
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_block__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/block */ "./components/block.js");
+/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/layout.scss */ "./scss/layout.scss");
+/* harmony import */ var _scss_layout_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_layout_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _data_en_research_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../data/en/research.json */ "./data/en/research.json");
+var _data_en_research_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/en/research.json */ "./data/en/research.json", 1);
+/* harmony import */ var _data_zh_TW_research_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../data/zh-TW/research.json */ "./data/zh-TW/research.json");
+var _data_zh_TW_research_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/zh-TW/research.json */ "./data/zh-TW/research.json", 1);
+/* harmony import */ var _data_projects_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../data/projects.json */ "./data/projects.json");
+var _data_projects_json__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/projects.json */ "./data/projects.json", 1);
+var _jsxFileName = "/Users/mac/Projects/imslab/pages/research.js";
 
 
 
@@ -39152,237 +39131,110 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
-
-var getDocContent = function getDocContent(data) {
-  return "\n### 3GPP LTE/LTE-Adv\n- [3G and 4G Wireless Blog](http://blog.3g4g.co.uk/)\n- [4G-Portal](http://4g-portal.com/)\n\n---\n\n### ".concat(data.doc_subtitle2, "\n- [").concat(data.doc_list2_1, "](http://www.motc.gov.tw/post/home.jsp?id=364&parentpath=0)\n- [").concat(data.doc_list2_2, "](http://freqdbo.ncc.gov.tw/Portal/index.aspx)\n- [").concat(data.doc_list2_3, "](http://freqdbo.ncc.gov.tw/upload/FILESAVE/080724081215.pdf)\n\n---\n\n### ").concat(data.doc_subtitle3, "\n- [").concat(data.doc_list3_1, "](http://ocw.aca.ntu.edu.tw/ntu-ocw/)\n- [").concat(data.doc_list3_2, "](http://ocw.nctu.edu.tw/)\n- [").concat(data.doc_list3_3, "](http://ocw.nthu.edu.tw/ocw/)\n");
+var getTopicContent = function getTopicContent(data) {
+  return "\n## ".concat(data.des1_1, " ").concat(data.des1_2, "\n\n### ").concat(data.subtitle1_1, "\n- Software Defined Network (SDN) and Network Function Virtualization (NFV) (\u8EDF\u9AD4\u5B9A\u7FA9\u7DB2\u8DEF/\u7DB2\u8DEF\u529F\u80FD\u865B\u64EC\u5316)\n- Machine-to-Machine (M2M) Communication / Machine-type Communication (MTC) (\u6A5F\u5668\u985E\u578B\u901A\u8A0A)\n- Local IP Access (LIPA)\n- Device-to-Device (D2D) Communication\n- Cloud Radio Access Network (C-RAN)\n- Narrow Band IoT (NBIoT)\n\n---\n\n### ").concat(data.subtitle1_2, "\n- enhanced Inter-Cell Interference Coordination (eICIC)\n- Positioning Methods in Cellular Network (\u884C\u52D5\u5B9A\u4F4D\u6280\u8853)\n- Emergency Communications (\u7DCA\u6025\u901A\u8A0A\u6280\u8853)\n- System Design for Telecom-grade Information System (\u96FB\u4FE1\u4F01\u696D\u7B49\u7D1A\u8CC7\u8A0A\u7CFB\u7D71\u8A2D\u8A08)\n- IP Multimedia Subsystem (IMS; IP \u591A\u5A92\u9AD4\u5B50\u7CFB\u7D71)\n- Voice Call Continuity (VCC; \u8A9E\u97F3\u901A\u8A71\u9023\u7E8C\u6027)\n");
 };
 
-var getJourContent = function getJourContent() {
-  return "\n- IEEE Wireless Communications Magazine\n- IEEE Communications Magazine        \n- IEEE Network\n- IEEE Communications Letter\n- IEEE Journal on Selected Areas in Communications\n- IEEE Transactions on Mobile Computing\n- IEEE Transactions on Wireless Communications";
-};
+var getProjContent = function getProjContent(data, lang) {
+  var current = _data_projects_json__WEBPACK_IMPORTED_MODULE_9__.current,
+      past = _data_projects_json__WEBPACK_IMPORTED_MODULE_9__.past;
 
-var getConfContent = function getConfContent() {
-  var confData = _objectSpread({}, _data_conference_json__WEBPACK_IMPORTED_MODULE_10__);
-
-  var confElms = [];
-
-  var openLink = function openLink(e) {
-    return window.open(e.currentTarget.dataset.href);
+  var buildList = function buildList(d) {
+    return "\n1. ".concat(data.proj_name, "-").concat(lang && d.name_en ? d.name_en : d.name, "  \n  ").concat(data.proj_dur, "-").concat(d.duration, "  \n  ").concat(data.proj_sponsor, "-").concat(lang && d.subsidy_en ? d.subsidy_en : d.subsidy, "\n");
   };
 
-  Object.entries(confData).forEach(function (_ref, index) {
-    var _ref2 = _slicedToArray(_ref, 2),
-        key = _ref2[0],
-        subData = _ref2[1];
+  var res = '';
 
-    return confElms.push(subData.map(function (d, i) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-        key: "".concat(key, "-").concat(i),
-        className: index % 2 === 0 ? 'row-inverse' : 'row-default',
-        onClick: openLink,
-        "data-href": d.link,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 49
-        },
-        __self: this
-      }, !i && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: "td-title",
-        rowSpan: subData.length,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, key), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
-      }, d.date), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }, d.place), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        className: d.due ? 'deleted' : 'highlight',
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }, d.deadline));
-    }));
-  });
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Table"], {
-    responsive: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
-    className: "thead-inverse",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "Conference"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, "Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, "Place"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  }, "Submission Deadline"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, confElms));
-};
+  if (current) {
+    res += "## ".concat(data.subtitle2_1, " \n");
 
-var getBlogContent = function getBlogContent() {
-  return "\n- [\u6797\u4E00\u5E73\u90E8\u843D\u683C](http://blog.bs2.to/liny)\n- [\u6559\u66F8\u5320\u7684\u5922\u60F3](http://blog.xuite.net/ycedu/blog)\n- [\u6E05\u5927\u5F6D\u660E\u8F1D\u7684\u90E8\u843D\u683C](http://mhperng.blogspot.com/)\n- [vgod's blog](http://blog.vgod.tw/)";
-};
+    if (current.independent) {
+      res += "### ".concat(data.PI);
+      res += current.independent.map(buildList).join('');
+    }
 
-var getApplyContent = function getApplyContent() {
-  return "\n### \u51FA\u570B\u53C3\u52A0\u7814\u8A0E\u6703\u88DC\u52A9\n- [\u5091\u51FA\u4EBA\u624D\u767C\u5C55\u57FA\u91D1\u6703](http://www.faos.org.tw/Application/index.asp)\n\n---\n\n### \u78A9\u535A\u58EB\u8AD6\u6587\u734E\n- [\u4E2D\u83EF\u6C11\u570B\u8CC7\u8A0A\u5B78\u6703 \u78A9\u535A\u58EB\u6700\u4F73\u8AD6\u6587\u734E](http://www.iicm.org.tw/) (Deadline: 8/15)\n- [\u4E2D\u570B\u96FB\u6A5F\u5DE5\u7A0B\u5B78\u6703 \u9752\u5E74\u8AD6\u6587\u734E](http://www.ciee.org.tw/) (Deadline: 8/1)\n- [\u53F0\u7063\u96FB\u6A5F\u96FB\u5B50\u5DE5\u7A0B\u5B78\u6703 \u6700\u4F73\u535A\u78A9\u58EB\u8AD6\u6587\u734E](https://sites.google.com/site/tieeeorg/Home) (Deadline: 8/31)\n\n---\n\n### \u5927\u5B78\u751F\u53EF\u7533\u8ACB\u734E\u9805\n- [\u570B\u79D1\u6703\u5927\u5C08\u5B78\u751F\u7814\u7A76\u8A08\u756B](http://web1.nsc.gov.tw/lp.aspx?CtNode=343&CtUnit=488&BaseDSD=5&mp=1) (Deadline: \u4E8C\u6708\u4E2D)\n- [\u4E2D\u570B\u5DE5\u7A0B\u5E2B\u5B78\u6703 \u512A\u79C0\u5DE5\u7A0B\u5B78\u751F\u734E\u5B78\u91D1](http://www.cie.org.tw/awards_selection_detail.php?id=11) (Deadline: 3/15)\n- [\u4E2D\u570B\u5DE5\u7A0B\u5E2B\u5B78\u6703 \u5B78\u751F\u5206\u6703 \u5DE5\u7A0B\u8AD6\u6587\u7AF6\u8CFD](http://www.cie.org.tw/news_detail.php?id=33)\n\n---\n\n### \u6BD4\u8CFD\n- [Google Summer of Code](http://summerofcode.withgoogle.com/about/) (Deadline: \u56DB\u6708\u521D)\n- [\u7D93\u6FDF\u90E8 \u6436\u9BAE\u5927\u8CFD](http://www.getfresh.org.tw/index.aspx) (Deadline: \u4E94\u6708\u4E2D)\n- [\u4E2D\u83EF\u96FB\u4FE1 \u96FB\u4FE1\u5275\u65B0\u61C9\u7528\u5927\u8CFD](http://telsoft.hinet.net/) (Deadline: \u516B\u6708\u521D)\n- [\u7D93\u6FDF\u90E8\u5DE5\u696D\u5C40 \u901A\u8A0A\u5927\u8CFD](http://www.mobilehero.com/) (Deadline: \u4E5D\u6708\u521D)\n- [\u7D93\u6FDF\u90E8\u5DE5\u696D\u5C40 \u8CC7\u8A0A\u61C9\u7528\u670D\u52D9\u5275\u65B0\u7AF6\u8CFD](http://innoserve.tca.org.tw/) (Deadline: \u5341\u6708\u4E2D)\n- [\u6559\u80B2\u90E8 \u5927\u5B78\u6821\u9662\u7DB2\u8DEF\u901A\u8A0A\u8EDF\u9AD4\u8207\u5275\u610F\u61C9\u7528\u7AF6\u8CFD](http://ncsiac.csie.ncu.edu.tw/) (Deadline: \u5341\u4E00\u6708\u5E95)\n\n---\n\n### \u5176\u4ED6\n- [\u6210\u529F\u5927\u5B78\u734E\u5B78\u91D1\u67E5\u8A62](http://sgd.adm.ncku.edu.tw/scholarship/)\n- [\u6551\u570B\u5718 \u9752\u5E74\u7BC0\u8868\u63DA\u5927\u5C08\u512A\u79C0\u9752\u5E74](http://associations.cyc.org.tw/) (Deadline: 3/15)\n";
-};
+    if (current.cooperation) {
+      res += "### ".concat(data.co_PI, " \n");
+      res += current.cooperation.map(buildList).join('');
+    }
 
-var Resource = function Resource(_ref3) {
-  var router = _ref3.router;
-  var title = router.query.title;
-  var lang = router.query.lang || 'zh-tw';
-  var data = lang === 'en' ? _data_en_resource_json__WEBPACK_IMPORTED_MODULE_8__ : _data_zh_TW_resource_json__WEBPACK_IMPORTED_MODULE_9__;
-  var blocks = [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.doc_title,
-    key: "doc",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    source: getDocContent(data),
-    linkTarget: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.jour_title,
-    key: "jour",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    source: getJourContent(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: data.conf_title,
-    key: "conf",
-    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126
-    },
-    __self: this
-  }, getConfContent())];
-
-  if (lang !== 'en') {
-    blocks = [].concat(_toConsumableArray(blocks), [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      title: "\u63A8\u85A6\u90E8\u843D\u683C",
-      key: "blog",
-      ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 132
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      source: getBlogContent(),
-      linkTarget: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 133
-      },
-      __self: this
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      title: "\u53EF\u7533\u8ACB\u734E\u9805",
-      key: "apply",
-      ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 135
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      source: getApplyContent(),
-      linkTarget: "_blank",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 136
-      },
-      __self: this
-    }))]);
+    res += "\n---\n";
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    id: "resource-container",
+  if (past) {
+    res += "## ".concat(data.subtitle2_2, " \n");
+
+    if (past.independent) {
+      res += "### ".concat(data.PI);
+      res += past.independent.map(buildList).join('');
+    }
+
+    if (past.cooperation) {
+      res += "### ".concat(data.co_PI, " \n");
+      res += past.cooperation.map(buildList).join('');
+    }
+  }
+
+  return res;
+};
+
+var Research = function Research(_ref) {
+  var router = _ref.router;
+  var title = router.query.title;
+  var lang = router.query.lang || 'zh-tw';
+  var data = lang === 'en' ? _data_en_research_json__WEBPACK_IMPORTED_MODULE_7__ : _data_zh_TW_research_json__WEBPACK_IMPORTED_MODULE_8__;
+  var blocks = [react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: data.head1,
+    key: data.head1,
+    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    source: getTopicContent(data),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: data.head2,
+    id: "project",
+    key: "project",
+    ref: react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef(),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    source: getProjContent(data, lang),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }))];
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    id: "research-container",
     pathname: router.asPath,
-    blocks: blocks,
     lang: lang,
+    blocks: blocks,
     title: title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 82
     },
     __self: this
   });
 };
 
-Resource.propTypes = {
+Research.propTypes = {
   router: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_3__["withRouter"])(Resource));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(Research));
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -39399,21 +39251,21 @@ Resource.propTypes = {
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/resource")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/research")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*********************************!*\
-  !*** multi ./pages/resource.js ***!
+  !*** multi ./pages/research.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/resource', function() {
-module.exports = __webpack_require__(/*! ./pages/resource.js */"./pages/resource.js");
+__NEXT_REGISTER_PAGE('/research', function() {
+module.exports = __webpack_require__(/*! ./pages/research.js */"./pages/research.js");
 
 return { page: module.exports.default }});
 
@@ -39430,5 +39282,5 @@ module.exports = dll_c7268871b5d23a759f52;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
-//# sourceMappingURL=resource.js.map
+},[[6,"static/runtime/webpack.js","styles"]]]));;
+//# sourceMappingURL=research.js.map
