@@ -1,5 +1,6 @@
 # IMS Lab
 [![Build Status](https://travis-ci.com/jingfei/imslab.svg?branch=reactapp)](https://travis-ci.com/jingfei/imslab)
+
 ## Data
 
 Data is in [`./data`](data) directory with JSON format.
@@ -21,5 +22,3 @@ Data is in [`./data`](data) directory with JSON format.
 - Start dynamic app test on port 3000: `$ npm run dev`
 - Eslint js code check before pushing on `reactapp` branch: `$ npm run pre-commit`
 - Build app & export (output to `./docs` directory): `$ npm run build`
-- Publish `./docs`: `$ npm run publish`  
-  (Do note that `npm run build`, and add commit with `docs/` change is necessary before publish)
