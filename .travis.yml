@@ -1,0 +1,27 @@
+dist: xenial
+language: node_js
+branches:
+  only:
+  - reactapp
+before_install:
+  - nvm install 11.6.0
+  - nvm use 11.6.0
+  - npm install npm@6.5.0
+  - node -v
+  - npm -v
+install:
+  - npm install
+script:
+  - npm run build  
+after_success:
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  - rm -rf .git
+  - cd docs
+  - git clone --bare --single-branch --branch publish https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
+  - mv $(echo ${TRAVIS_REPO_SLUG} | cut -d / -f 2).git .git
+  - git init
+  - git add --all
+  - dateAndMonth=`date "+%Y %b %d %H:%M"`
+  - git commit -m "Update docs at $dateAndMonth"
+  - git push origin publish
