@@ -1,5 +1,5 @@
 # IMS Lab
-
+[![Build Status](https://travis-ci.com/jingfei/imslab.svg?branch=reactapp)](https://travis-ci.com/jingfei/imslab)
 ## Data
 
 Data is in [`./data`](data) directory with JSON format.
