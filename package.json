@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jingfei/imslab.git"
+    "url": "git+https://github.com/ncku-imslab/imslab.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jingfei/imslab/issues"
+    "url": "https://github.com/ncku-imslab/imslab/issues"
   },
   "homepage": "http://imslab.org",
   "dependencies": {
