@@ -1,566 +1,579 @@
 {
-  "year 2018": [
-    {
-      "date": "2018-09-04",
-      "type": "賀",
-      "description": "恭喜 108 級專題生 劉俊林 獲得 成大資工系 108 級專題展 第二名 !!",
-      "description_en": "Chan Lam Lao has won The 2nd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
-    },
-    {
-      "date": "2018-09-04",
-      "type": "賀",
-      "description": "恭喜 108 級專題生 梁祐承 謝耀賢 獲得 成大資工系 108 級專題展 第三名 !!",
-      "description_en": "You-Cheng Liang and Y.-S. Hsieh have won The 3rd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
-    },
-    {
-      "date": "2018-06-18",
-      "type": "賀",
-      "description": "恭喜 108 級專題生 劉俊林 通過科技部大專學生研究計畫 !!!"
-    },
-    {
-      "date": "2018-05-14",
-      "type": "賀",
-      "description": "恭喜 專題生 廖其忻 獲得 台達電子 實習機會!!",
-      "description_en": "Cayon Liow KeeiYann get internship opportunities of Delta Electronics, Inc.!!"
-    },
-    {
-      "date": "2018-05-3",
-      "type": "賀",
-      "description": "恭喜 博士生 蔡昀展 專題生 方鈞麒 獲得 工研院 實習機會!!",
-      "description_en": "Yun-Zhan Cai and Chun-Chi Fang get internship opportunities of !!"
-    },
-    {
-      "date": "2018-04-10",
-      "type": "狂賀",
-      "description": "恭喜 碩班 張鶴騰 獲得中華民國資訊學會最佳碩博士論文獎!!",
-      "description_en": "He-Teng Chang's paper has won the IICM Master Thesis Award!!"
-    },
-    {
-      "date": "2018-03-17",
-      "type": "賀",
-      "description": "恭喜 博班 林佳瑩 獲得 Linux Foundation Scholarship (受邀前往 ONS North America 2018)!!",
-      "description_en": "Chia-Ying Lin got Linux Foundation Scholarship (with invitation to attend Open Networking Summit North America 2018) !!"
-    },
-    {
-      "date": "2018-02-21",
-      "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 獲得 Google Code Jam for Women 全球第 118 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2018!!"
-    },
-    {
-      "date": "2018-02-13",
-      "type": "賀",
-      "description": "恭喜 博班 林佳瑩 獲得 女性科技人才-高通全球學者 (WeTech-Qualcomm Global Scholars)!!",
-      "description_en": "Chia-Ying Lin is honored as one of the WeTech-Qualcomm Global Scholars!!"
-    },
-    {
-      "date": "2018-01-09",
-      "type": "賀",
-      "description": "恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!",
-      "comment": "恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!"
-    },
-    {
-      "date": "2018-01-06",
-      "type": "賀",
-      "description": "恭喜 博班 張蕙玲  的論文被接受!!",
-      "comment": "恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-A Network\" 被 IEEE Access 接受"
-    }
-  ],
-  "year 2017": [
-    {
-      "date": "2017-11-30",
-      "type": "賀",
-      "description": "恭喜 博士生 張蕙玲 林佳瑩 獲得科技部 「補助博士生赴國外研究」 獎助 !!!"
-    },
-    {
-      "date": "2017-10-26",
-      "type": "賀",
-      "description": "恭喜 碩班 呂宜龍 博班 林佳瑩 張蕙玲  的論文被接受!!",
-      "comment": "恭喜 論文 \"Utilization-based Parking Space Suggestion in Smart City\" 被 IEEE CCNC 接受"
-    },
-    {
-      "date": "2017-10-07",
-      "type": "狂賀",
-      "description": "恭喜 碩班 張鶴騰 獲得台灣電機電子工程學會最佳碩博士論文獎!!",
-      "comment": "恭喜 論文 \"利用互斥對稱與內部節點的非確切投射布林配對\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"
-    },
-    {
-      "date": "2017-08-18",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"
-    },
-    {
-      "date": "2017-07-25",
-      "type": "賀",
-      "description": "恭喜 107 級專題生 方鈞麒 陳珞安 趙珮均 108 級專題生 劉俊林 廖其忻  的論文被接受!!",
-      "comment": "恭喜 論文 \"基於 SDN 之網路服務品質優化機制\", \"整合智慧衣與語音通話之醫療照護應用開發\" 及 \"基於SDN網路對抗DDoS攻擊之新型解決方案研究\" 被 第二十二屆行動計算研討會 接受"
-    },
-    {
-      "date": "2017-06-27",
-      "type": "賀",
-      "description": "恭喜 108級專題生 劉俊林 獲得 香港大學 短期研究機會!!",
-      "description_en": "Chan Lam Lao gets an opportunity of short-term academic visit to Hong Kong University (HKU)I!!"
-    },
-    {
-      "date": "2017-06-23",
-      "type": "賀",
-      "description": "恭喜 碩士生 謝忠穎 陳蓓蓓 獲得 工研院資通所 實習機會!!",
-      "description_en": "Chung-Ying Hsieh and Pei-Pei Chen get internship opportunities of ITRI!!"
-    },
-    {
-      "date": "2017-06-12",
-      "type": "賀",
-      "description": "恭喜 107 級專題生 方鈞麒  陳珞安 通過科技部大專學生研究計畫 !!!"
-    },
-    {
-      "date": "2017-06-11",
-      "type": "賀",
-      "description": "恭喜 碩士生 王俞婷 獲得 威聯通科技 實習機會!!",
-      "description_en": "Yu-Ting Wang gets internship opportunity of QNAP Systems, Inc.!!"
-    },
-    {
-      "date": "2017-06-02",
-      "type": "賀",
-      "description": "恭喜 碩士生 林賢哲 獲得 思銳科技 實習機會!!",
-      "description_en": "Sian-Jhe Lin gets internship opportunity of EstiNet Technologies Inc.!!"
-    },
-    {
-      "date": "2017-05-11",
-      "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金(Google 提供)，受邀前往美國參加  <a href=\"https://ghc.anitaborg.org/2017-student-academic/2017-scholarships/ghc-17-scholars/\">Grace Hopper Celebration of Women in Computing</a> !!",
-      "description_en": "Chia-Ying Lin gets GHC Scholarship (by Google) with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"
-    },
-    {
-      "date": "2017-04-21",
-      "type": "賀",
-      "description": "恭喜 楊靜妃 朱宥繐 謝忠穎 林佳瑩 張蕙玲 的論文被接受!!",
-      "description_en": "Ching-Fei Yang, You-Huei Ju, Chung-Ying Hsieh, Chia-Ying Lin and Hui-Ling Chang's paper was accepted",
-      "comment": "恭喜 論文 \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" 被 Vehicular Communications 接受",
-      "comment_en": "The paper \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" was accepted by Vehicular Communications"
-    },
-    {
-      "date": "2017-04-07",
-      "type": "賀",
-      "description": "恭喜 碩士生 張鶴騰 獲得 瑞昱科技 暑期實習機會!!",
-      "description_en": "He-Teng Chang gets internship opportunity of RealTek!!"
-    },
-    {
-      "date": "2017-04-06",
-      "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 獲得德國 RWTH Aachen University     短期訪問機會!!",
-      "description_en": "Chia-Ying Lin gets invitation of short-term academic visit to RWTH Aachen University (in Germany )!!"
-    },
-    {
-      "date": "2017-02-21",
-      "type": "狂賀",
-      "description": "恭喜 碩班 呂尚霖 獲得中華民國資訊學會最佳碩博士論文獎!!",
-      "description_en": "Shang-Lin Lu's paper has won the IICM Master Thesis Award!!",
-      "comment": "恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 中華民國資訊學會碩博士最佳論文獎",
-      "comment_en": "The thesis \"Optimistic DRX for Machine-type\" has won the IICM Master Thesis Award!!"
-    },
-    {
-      "date": "2017-01-06",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 獲得 成大資工系 106 級專題展 佳作 !!",
-      "description_en": "Yun-Zhan Cai and Y.-S. Lu have won Honorable Poster Award in 2017 NCKU CSIE Undergraduate Project Exhibition"
-    }
-  ],
-  "year 2016": [
-    {
-      "date": "2016-12-28",
-      "type": "賀",
-      "description": "恭喜 賴志豪 碩士 博班 張蕙玲 林佳瑩 的論文被接受!!",
-      "description_en": "Chih-Hao Lai, Hui-Ling Chang and Chia-Ying Lin's paper was accepted",
-      "comment": "恭喜 論文 \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" 被 IEEE Transactions on Vehicular Technology 接受",
-      "comment_en": "The paper \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" was accepted by IEEE Transactions on Vehicular Technology"
-    },
-    {
-      "date": "2016-12-22",
-      "type": "賀",
-      "description": "恭喜 博班 林佳瑩 張蕙玲 碩班 高宏瑋 的論文被接受!!",
-      "description_en": "Hui-Ling Chang, Chia-Ying Lin and Hung-Wei Kao's paper was accepted",
-      "comment": "恭喜 論文 \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" 被 Computer Communications 接受",
-      "comment_en": "The paper \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" was accepted by Computer Communications"
-    },
-    {
-      "date": "2016-12-22",
-      "type": "賀",
-      "description": "恭喜 博班 林佳瑩 碩班 蔡婉萍 專題生 蔡昀展 的論文被接受!!",
-      "description_en": "Chia-Ying Lin, Wan-Ping Tsai and Yun-Zhan Cai's paper was accepted",
-      "comment": "恭喜 論文 \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" 被 IEEE AINA 2017 接受",
-      "comment_en": "The paper \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" was accepted by IEEE AINA 2017"
-    },
-    {
-      "date": "2016-12-22",
-      "type": "賀",
-      "description": "恭喜 博班 莊琮暉 碩班 蘇珮華 的論文被接受!!",
-      "comment": "恭喜 論文 \"Residual Size-based Mobile Data Offloading for File Transmission on Mobile Devices\" 被 IEEE AINA 2017 接受"
-    },
-    {
-      "date": "2016-12-21",
-      "type": "賀",
-      "description": "恭喜 專題生 蔡昀展 博班 林佳瑩 的論文被接受!!",
-      "comment": "恭喜 論文 \"Application-aware Realtime Monitoring with Data Visualization in OpenFlow-based Network\" 被 IEEE WAINA 2017 接受"
-    },
-    {
-      "date": "2016-12-14",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 獲得潘文淵獎學金 !!!"
-    },
-    {
-      "date": "2016-11-16",
-      "type": "賀",
-      "description": "恭喜 碩班 張鶴騰 獲得 2016國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題 國內賽 優等!!"
-    },
-    {
-      "date": "2016-11-05",
-      "type": "賀",
-      "description": "恭喜 專題生 楊靜妃 獲得國際 iGEM 競賽金牌及兩項獎項提名 !!",
-      "comment": "恭喜楊靜妃參加 international Genetically Engineered Machine (iGEM) Competition 獲得 Gold Medal 及兩項最佳表現提名：(1) Nominated for Best Diagnostics Project, (2) Nominated for Best Presentation (<a href='https://udn.com/news/story/1/2092101' target='_blank'>相關報導</a>)"
-    },
-    {
-      "date": "2016-10-22",
-      "type": "賀",
-      "description": "恭喜 專題生 楊靜妃 朱宥繐 謝忠穎 博班 林佳瑩 張蕙玲 的論文被接受!!",
-      "comment": "恭喜 論文 \"iParking -- Real-Time Parking Space Monitor and Guiding System with Cloud Service\" 被 IOV 2016 接受"
-    },
-    {
-      "date": "2016-10-07",
-      "type": "狂賀",
-      "description": "恭喜 碩班 呂尚霖 獲得台灣電機電子工程學會最佳碩博士論文獎!!",
-      "comment": "恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"
-    },
-    {
-      "date": "2016-09-20",
-      "type": "賀",
-      "description": "恭喜 博班 張蕙玲 林佳瑩 碩班 王正綱 吳孟庭 的論文被接受!!",
-      "comment": "恭喜 論文 \"Gateway-assisted Retransmission for Lightweight and Reliable IoT\" 被 Sensors 接受"
-    },
-    {
-      "date": "2016-08-03",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 朱宥繐 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"
-    },
-    {
-      "date": "2016-07-29",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 徐朝逸 瞿旭民 的論文被接受!!",
-      "comment": "恭喜 論文 \"OpenFlow 為基礎之視覺化網路即時路況監測\" 及 \"透過Qt 實作跨系統的自動編譯開發平台\" 被 第二十一屆行動計算研討會 接受"
-    },
-    {
-      "date": "2016-06-22",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 105 級專題生 方鈞麒 獲得 思銳科技 暑期實習機會!!"
-    },
-    {
-      "date": "2016-05-30",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 蔡昀展 通過科技部大專學生研究計畫 !!!"
-    },
-    {
-      "date": "2016-05-23",
-      "type": "賀",
-      "description": "恭喜 碩士生 吳孟庭 獲得 德國 RWTH Aachen University 交換學生機會!!"
-    },
-    {
-      "date": "2016-05-18",
-      "type": "賀",
-      "description": "恭喜 碩士生 林賢哲 獲得 Trend Micro 暑期實習機會!!"
-    },
-    {
-      "date": "2016-05-04",
-      "type": "賀",
-      "description": "恭喜 碩士生 吳孟庭 獲得 Trend Micro 暑期海外(美國)實習機會!!"
-    },
-    {
-      "date": "2016-04-22",
-      "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 獲得 Yahoo! 暑期實習機會!!"
-    },
-    {
-      "date": "2016-04-22",
-      "type": "賀",
-      "description": "恭喜 碩士生 張鶴騰 獲得 加拿大 University of Ottawa (uOttawa) 短期研究機會!!"
-    },
-    {
-      "date": "2016-03-14",
-      "type": "賀",
-      "description": "恭喜 專題生 楊靜妃 碩士生 吳孟庭 獲得 Google Code Jam for Women 全球第 58 名及全球第 127 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2016!!"
-    },
-    {
-      "date": "2016-02-25",
-      "type": "賀",
-      "description": "恭喜 碩士生 呂宜龍 獲得 日本 北陸先端科學技術大學院大學 (JAIST) 短期研究機會!!"
-    },
-    {
-      "date": "2016-02-23",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 楊靜妃 朱宥繐 謝忠穎 獲得 成大資工系 105 級專題展 優等 及 人氣獎第二名!!"
-    },
-    {
-      "date": "2016-01-31",
-      "type": "賀",
-      "description": "恭喜 博士生 張蕙玲 莊琮暉 林佳瑩 及 碩士生 呂尚霖 的論文被接受!!",
-      "comment": "恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-Advanced Network\" 被 IEEE ICC 2016 接受"
-    },
-    {
-      "date": "2016-01-08",
-      "type": "賀",
-      "description": "恭喜 博士生 林佳瑩 榮獲 Garmin 獎學金!!!!!"
-    }
-  ],
-  "year 2015": [
-    {
-      "date": "2015-12-30",
-      "type": "賀",
-      "description": "恭喜 專題生 楊靜妃 榮獲洪肇奎博士獎助學金!!!!!"
-    },
-    {
-      "date": "2015-11-26",
-      "type": "賀",
-      "description": "恭喜 碩二 張鶴騰 呂宜龍 獲得 2015國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題佳作!!"
-    },
-    {
-      "date": "2015-09-17",
-      "type": "賀",
-      "description": "恭喜 106 級專題生 劉心慈 錄取第 13 屆新世紀領袖菁英培育班!!"
-    },
-    {
-      "date": "2015-08-18",
-      "type": "賀",
-      "description": "恭喜 碩一 張鶴騰 獲得聯詠獎學金!!"
-    },
-    {
-      "date": "2015-08-01",
-      "type": "賀",
-      "description": "恭喜 碩零 黃筱涵 林賢哲 105 級專題生 楊靜妃 朱宥繐 謝忠穎 的論文被接受!!",
-      "comment": "恭喜 論文 \"Android 系統中基於修改 framework 實現錄製與重播觸控行為之方法\" 及 \"愛停車 -- 雲端停車格即時監控暨引導系統\" 被 第二十屆行動計算研討會 接受"
-    },
-    {
-      "date": "2015-08-01",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 林季伯 的論文被接受!!",
-      "comment": "恭喜 論文 \"PCF Shadow Mapping Enhancement by Post-blurring Shadow Buffer\" 被 CVGIP 2015 接受"
-    },
-    {
-      "date": "2015-06-29",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 楊靜妃 獲得 教育部全國大學校院IC競賽 可程式邏輯設計組 特優 (陳培殷老師指導)"
-    },
-    {
-      "date": "2015-06-24",
-      "type": "賀",
-      "description": "恭喜 碩一 張蕙玲 碩零 林佳瑩 吳孟庭 林賢哲 黃筱涵 蘇容德 大三 楊靜妃 獲得暑期實習機會!!!可喜可賀!!!",
-      "comment": "恭喜 碩一 張蕙玲 碩零 蘇容德 獲得 聯發科(MTK) 暑期實習機會!<br/>恭喜 碩零 林佳瑩 獲得 宏達電(hTC) 暑期實習機會!<br/>恭喜 碩零 吳孟庭 林賢哲 黃筱涵 獲得 工研院(ITRI) 暑期實習機會!<br/>恭喜 大三 楊靜妃 獲得 美國 iwNetworks 暑期實習機會!"
-    },
-    {
-      "date": "2015-06-05",
-      "type": "賀",
-      "description": "恭喜 碩班 蘇佩華 榮膺 斐陶斐榮譽學會 榮譽會員!!"
-    },
-    {
-      "date": "2015-06-02",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 楊靜妃 謝忠穎 獲得預研生資格"
-    },
-    {
-      "date": "2015-05-28",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 朱宥繐 林季伯 通過科技部大專學生研究計畫 !!!"
-    },
-    {
-      "date": "2015-04-27",
-      "type": "賀",
-      "description": "恭喜 碩零 林佳瑩 獲得 <a href='http://www.cie.org.tw/cms/UpLoad/files/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/104%E5%B9%B4%E5%BA%A6%20%E5%90%84%E7%8D%8E%E9%A0%85%E5%BE%97%E7%8D%8E%E4%BA%BA.pdf' target='_blank'>104 年度 中國工程師學會 優秀工程學生獎學金</a>!!"
-    },
-    {
-      "date": "2015-04-17",
-      "type": "賀",
-      "description": "恭喜 碩零 林佳瑩 獲得 成電文教基金會64級系友獎學金!!"
-    },
-    {
-      "date": "2015-04-17",
-      "type": "賀",
-      "description": "恭喜 專題生 楊靜妃 獲得 <a href='http://modernweb.tw/student-plan.html' target='_blank'>Modern Web 2015</a> 學生獎勵!!",
-      "comment": "恭喜 楊靜妃 獲得 Modern Web 2015 獎勵, 將出席 2015/5/15~2015/5/16 在中研院舉辦之 Modern Web 大會"
-    },
-    {
-      "date": "2015-03-31",
-      "type": "賀",
-      "description": "恭喜 碩零 林賢哲 的論文被推薦到 International Journal of Science and Engineering!!",
-      "comment": "恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 推薦至 International Journal of Science and Engineering"
-    },
-    {
-      "date": "2015-03-21",
-      "type": "賀",
-      "description": "恭喜 博士生 莊琮暉 獲得 國立成功大學 邁向頂尖大學計畫 出席國際會議補助!!"
-    },
-    {
-      "date": "2015-01-10",
-      "type": "賀",
-      "description": "恭喜 高宏瑋 碩士 及 專題生 朱宥繐 的論文被接受!!",
-      "comment": "恭喜 論文 \"Two-Stage Radio Access for Group-Based Machine Type Communication in LTE-A\" 被 IEEE ICC 2015 接受"
-    }
-  ],
-  "year 2014": [
-    {
-      "date": "2014-12-30",
-      "type": "賀",
-      "description": "恭喜 專題生 林佳瑩 榮獲洪肇奎博士獎助學金!!!!!",
-      "description_en": "Chia-Ying Lin gets the Dr. Hung Scholarships !!"
-    },
-    {
-      "date": "2014-12-26",
-      "type": "賀",
-      "description": "恭喜 博班 莊琮暉 的論文被接受!!",
-      "comment": "恭喜 論文 \"Group-Based Uplink Scheduling for Machine-Type Communications in LTE-Advanced Networks\" 被 IEEE WAINA 2015 接受"
-    },
-    {
-      "date": "2014-11-24",
-      "type": "賀",
-      "description": "恭喜 碩班 呂尚霖 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎 ！！可喜可賀！！！",
-      "description_en": "Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!",
-      "comment": "恭喜 \"Call Me Back 請回電\" 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎",
-      "comment_en": "Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!"
-    },
-    {
-      "date": "2014-11-12",
-      "type": "狂賀",
-      "description": "恭喜 碩班 高宏瑋 獲得中華民國資訊學會最佳碩博士論文獎!!",
-      "description": "Hung-Wei Kao's paper has won the IICM Master Thesis Award!!",
-      "comment": "恭喜 論文 \"LTE-A 中基於分群之MTC 兩階段無線電存取\" 獲得 2014 中華民國資訊學會碩博士最佳論文獎",
-      "comment_en": "The paper \"Two-Stage Radio Access for Group-based Machine Type Communication in LTE-A\" has won the IICM Master Thesis Award!!"
-    },
-    {
-      "date": "2014-11-03",
-      "type": "賀",
-      "description": "恭喜 碩班 陳冠宏 博班 莊琮暉 的論文被接受!!",
-      "comment": "恭喜 論文 \"Inter-cell Interference through Cognitive Radio for LTE-Advanced Downlink Transmission in Heterogeneous Network\" 被 ICONI 2014 接受"
-    },
-    {
-      "date": "2014-11-03",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 楊靜妃 獲得 2014 晨鐘獎學金!!"
-    },
-    {
-      "date": "2014-09-04",
-      "type": "賀",
-      "description": "恭喜 105 級專題生 楊靜妃 錄取第 12 屆新世紀領袖菁英培育班!!"
-    },
-    {
-      "date": "2014-08-01",
-      "type": "賀",
-      "description": "恭喜 104 級專題生 林賢哲 的論文被接受!!",
-      "comment": "恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 接受"
-    },
-    {
-      "date": "2014-08-01",
-      "type": "賀",
-      "description": "恭喜 104 級專題生 林佳瑩 蘇容德 碩一 蔡婉萍 的論文被接受!!",
-      "comment": "恭喜 論文 \"Finding Nearby Available Roadside Parking Spot\" 被 CVGIP 2014 接受"
-    },
-    {
-      "date": "2014-07-15",
-      "type": "賀",
-      "description": "恭喜 碩一 賴志豪 獲得 美國 Temple 大學 交換學生機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-07-15",
-      "type": "賀",
-      "description": "恭喜 碩二 蘇珮華 獲得 北京清華大學 交換學生機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-07-04",
-      "type": "賀",
-      "description": "恭喜 碩一 賴志豪 獲得 聯發科(MTK) 暑期實習機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-07-04",
-      "type": "賀",
-      "description": "恭喜 碩一 蔡婉萍 獲得 <a href='http://womany.net/?ref=logo' target='_blank'>Womany</a> 暑期實習機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-07-04",
-      "type": "賀",
-      "description": "恭喜 碩一 李思穎 獲得 趨勢科技 暑期實習機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-07-04",
-      "type": "賀",
-      "description": "恭喜 碩零 呂宜龍 獲得 昱泉科技 暑期實習機會!!!可喜可賀!!!"
-    },
-    {
-      "date": "2014-06-03",
-      "type": "賀",
-      "description": "恭喜 104 級專題生 林佳瑩 蘇容德 林賢哲 黃筱涵 獲得預研生資格"
-    },
-    {
-      "date": "2014-01-13",
-      "type": "賀",
-      "description": "恭喜 碩一 蔡婉萍 的論文被接受!!",
-      "comment": "恭喜 論文 \"IROL: A Humanoid Mobility Model for Mobile Ad Hoc Network\" 被 IEEE ICC 2014 接受"
-    }
-  ],
-  "year 2013": [
-    {
-      "date": "2013-08-15",
-      "type": "賀",
-      "description": "恭喜 碩二 俞中豪, 碩一 蘇珮華 和 碩零 賴志豪 的論文被接受!!",
-      "comment": "恭喜 論文 \"A Novel Semi-Static Interference Coordination Scheme for LTE Uplink\" 被 ICICS 2013 接受"
-    },
-    {
-      "date": "2013-08-02",
-      "type": "賀",
-      "description": "恭喜 103 級專題生 陳冠宇 和 碩一 蔡婉萍 的論文被接受!!",
-      "comment": "恭喜 論文 \"管你停哪裡－適地性停車格引導服務\" 被 第十八屆行動計算研討會 接受"
-    },
-    {
-      "date": "2013-06-20",
-      "type": "賀",
-      "description": "恭喜 103 級專題生 陳冠宇 張釗銘 蘇偉嘉 獲得預研生資格"
-    },
-    {
-      "date": "2013-06-03",
-      "type": "賀",
-      "description": "恭喜 碩零 賴志豪 獲得 IBM 暑期實習機會!!!"
-    },
-    {
-      "date": "2013-05-30",
-      "type": "賀",
-      "description": "恭喜 103 級專題生 陳冠宇 通過國科會大專學生研究計畫 !!!"
-    },
-    {
-      "date": "2013-05-11",
-      "type": "賀",
-      "description": "恭喜 碩一 高宏瑋 獲得 IBM 暑期實習機會!!!"
-    },
-    {
-      "date": "2013-04-12",
-      "type": "賀",
-      "description": "恭喜 碩一 蘇珮華 獲得 IBM 暑期實習機會!!!可喜可賀!!!"
-    }
-  ],
-  "year 2012": [
-    {
-      "date": "2012-12-12",
-      "type": "賀",
-      "description": "恭喜 四位同學 獲得 IBM 大型主機競賽前 20 名",
-      "comment": "恭喜 碩一 高宏瑋 李冠賢 陳彥誠 及 大三 陳冠宇 獲得 IBM 大型主機競賽前 20 名!!<br/>今年該競賽共有 887 人參加, 僅有 77 位能完成第二階段, 前 20 名受邀至 IBM 領獎 (成大共佔 9 位)<br/><img src='./images/ibm_zMaster_2012_ceremony.jpg' style='width:80%'>"
-    },
-    {
-      "date": "2012-07-11",
-      "type": "賀",
-      "description": "恭喜 碩零 高宏瑋 和 李冠賢 的論文被接受!!",
-      "comment": "恭喜 論文 \"Two-Phase Online Memory Leak Detection\" 被 APNOMS 2012 接受"
-    },
-    {
-      "date": "2012-07-05",
-      "type": "賀",
-      "description": "恭喜 碩零 李冠賢 獲得台積電暑期實習機會"
-    },
-    {
-      "date": "2012-06-26",
-      "type": "賀",
-      "description": "恭喜 102 級專題生 賴志豪 獲得預研生資格"
-    }
-  ]
+    "year 2019": [{
+            "date": "2019-06-14",
+            "type": "賀",
+            "description": "恭喜 博士生 王俞婷 獲得 日本金澤大學暑期短期訪問計畫!!",
+            "description_en": "Yu-Ting Wang gets invitation of short-term academic visit to Kanazawa University (in Japan )!!"
+        },
+        {
+            "date": "2019-01-15",
+            "type": "賀",
+            "description": "恭喜 博班 王俞婷 蔡昀展 陳珞安 碩班 林賢哲 的論文被接受!!",
+            "description_en": "The paper \"Backhaul-based Cooperative Caching in Small Cell Network\" was accepted by AINA 2019",
+            "comment": "恭喜 論文 \" Backhaul - based Cooperative Caching in Small Cell Network \" 被 AINA 2019 接受"
+        }
+    ],
+    "year 2018": [{
+            "date": "2018-12-03",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 張蕙玲 碩班 吳孟庭 博班 蔡昀展 王俞婷 陳珞安 的論文被接受!!",
+            "description_en": "The paper \"Reducing Signal Overload by Disconnection Tolerant Voice Service in Heterogeneous Networks\" was accepted by IEEE Access",
+            "comment": "恭喜 論文 \" Reducing Signal Overload by Disconnection Tolerant Voice Service in Heterogeneous Networks \" 被 IEEE Access 接受"
+        }, {
+            "date": "2018-09-04",
+            "type": "賀",
+            "description": "恭喜 108 級專題生 劉俊林 獲得 成大資工系 108 級專題展 第二名 !!",
+            "description_en": "Chan Lam Lao has won The 2nd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
+        },
+        {
+            "date": "2018-09-04",
+            "type": "賀",
+            "description": "恭喜 108 級專題生 梁祐承 謝耀賢 獲得 成大資工系 108 級專題展 第三名 !!",
+            "description_en": "You-Cheng Liang and Y.-S. Hsieh have won The 3rd Place in 2018 NCKU CSIE Undergraduate Project Exhibition"
+        },
+        {
+            "date": "2018-06-18",
+            "type": "賀",
+            "description": "恭喜 108 級專題生 劉俊林 通過科技部大專學生研究計畫 !!!"
+        },
+        {
+            "date": "2018-05-14",
+            "type": "賀",
+            "description": "恭喜 專題生 廖其忻 獲得 台達電子 實習機會!!",
+            "description_en": "Cayon Liow KeeiYann get internship opportunities of Delta Electronics, Inc.!!"
+        },
+        {
+            "date": "2018-05-3",
+            "type": "賀",
+            "description": "恭喜 博士生 蔡昀展 專題生 方鈞麒 獲得 工研院 實習機會!!",
+            "description_en": "Yun-Zhan Cai and Chun-Chi Fang get internship opportunities of !!"
+        },
+        {
+            "date": "2018-04-10",
+            "type": "狂賀",
+            "description": "恭喜 碩班 張鶴騰 獲得中華民國資訊學會最佳碩博士論文獎!!",
+            "description_en": "He-Teng Chang's paper has won the IICM Master Thesis Award!!"
+        },
+        {
+            "date": "2018-03-17",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 獲得 Linux Foundation Scholarship (受邀前往 ONS North America 2018)!!",
+            "description_en": "Chia-Ying Lin got Linux Foundation Scholarship (with invitation to attend Open Networking Summit North America 2018) !!"
+        },
+        {
+            "date": "2018-02-21",
+            "type": "賀",
+            "description": "恭喜 博士生 林佳瑩 獲得 Google Code Jam for Women 全球第 118 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2018!!"
+        },
+        {
+            "date": "2018-02-13",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 獲得 女性科技人才-高通全球學者 (WeTech-Qualcomm Global Scholars)!!",
+            "description_en": "Chia-Ying Lin is honored as one of the WeTech-Qualcomm Global Scholars!!"
+        },
+        {
+            "date": "2018-01-09",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!",
+            "comment": "恭喜 博班 林佳瑩 獲得 IEEE CCNC Student Travel Grant!!"
+        },
+        {
+            "date": "2018-01-06",
+            "type": "賀",
+            "description": "恭喜 博班 張蕙玲  的論文被接受!!",
+            "comment": "恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-A Network\" 被 IEEE Access 接受"
+        }
+    ],
+    "year 2017": [{
+            "date": "2017-11-30",
+            "type": "賀",
+            "description": "恭喜 博士生 張蕙玲 林佳瑩 獲得科技部 「補助博士生赴國外研究」 獎助 !!!"
+        },
+        {
+            "date": "2017-10-26",
+            "type": "賀",
+            "description": "恭喜 碩班 呂宜龍 博班 林佳瑩 張蕙玲  的論文被接受!!",
+            "comment": "恭喜 論文 \"Utilization-based Parking Space Suggestion in Smart City\" 被 IEEE CCNC 接受"
+        },
+        {
+            "date": "2017-10-07",
+            "type": "狂賀",
+            "description": "恭喜 碩班 張鶴騰 獲得台灣電機電子工程學會最佳碩博士論文獎!!",
+            "comment": "恭喜 論文 \"利用互斥對稱與內部節點的非確切投射布林配對\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"
+        },
+        {
+            "date": "2017-08-18",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"
+        },
+        {
+            "date": "2017-07-25",
+            "type": "賀",
+            "description": "恭喜 107 級專題生 方鈞麒 陳珞安 趙珮均 108 級專題生 劉俊林 廖其忻  的論文被接受!!",
+            "comment": "恭喜 論文 \"基於 SDN 之網路服務品質優化機制\", \"整合智慧衣與語音通話之醫療照護應用開發\" 及 \"基於SDN網路對抗DDoS攻擊之新型解決方案研究\" 被 第二十二屆行動計算研討會 接受"
+        },
+        {
+            "date": "2017-06-27",
+            "type": "賀",
+            "description": "恭喜 108級專題生 劉俊林 獲得 香港大學 短期研究機會!!",
+            "description_en": "Chan Lam Lao gets an opportunity of short-term academic visit to Hong Kong University (HKU)I!!"
+        },
+        {
+            "date": "2017-06-23",
+            "type": "賀",
+            "description": "恭喜 碩士生 謝忠穎 陳蓓蓓 獲得 工研院資通所 實習機會!!",
+            "description_en": "Chung-Ying Hsieh and Pei-Pei Chen get internship opportunities of ITRI!!"
+        },
+        {
+            "date": "2017-06-12",
+            "type": "賀",
+            "description": "恭喜 107 級專題生 方鈞麒  陳珞安 通過科技部大專學生研究計畫 !!!"
+        },
+        {
+            "date": "2017-06-11",
+            "type": "賀",
+            "description": "恭喜 碩士生 王俞婷 獲得 威聯通科技 實習機會!!",
+            "description_en": "Yu-Ting Wang gets internship opportunity of QNAP Systems, Inc.!!"
+        },
+        {
+            "date": "2017-06-02",
+            "type": "賀",
+            "description": "恭喜 碩士生 林賢哲 獲得 思銳科技 實習機會!!",
+            "description_en": "Sian-Jhe Lin gets internship opportunity of EstiNet Technologies Inc.!!"
+        },
+        {
+            "date": "2017-05-11",
+            "type": "賀",
+            "description": "恭喜 博士生 林佳瑩 獲得 GHC 獎學金(Google 提供)，受邀前往美國參加  <a href=\"https://ghc.anitaborg.org/2017-student-academic/2017-scholarships/ghc-17-scholars/\">Grace Hopper Celebration of Women in Computing</a> !!",
+            "description_en": "Chia-Ying Lin gets GHC Scholarship (by Google) with invitation to attend Grace Hopper Celebration of Women in Computing (in the U.S.)!!"
+        },
+        {
+            "date": "2017-04-21",
+            "type": "賀",
+            "description": "恭喜 楊靜妃 朱宥繐 謝忠穎 林佳瑩 張蕙玲 的論文被接受!!",
+            "description_en": "Ching-Fei Yang, You-Huei Ju, Chung-Ying Hsieh, Chia-Ying Lin and Hui-Ling Chang's paper was accepted",
+            "comment": "恭喜 論文 \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" 被 Vehicular Communications 接受",
+            "comment_en": "The paper \"iParking - A Real-Time Parking Space Monitoring and Guiding System \" was accepted by Vehicular Communications"
+        },
+        {
+            "date": "2017-04-07",
+            "type": "賀",
+            "description": "恭喜 碩士生 張鶴騰 獲得 瑞昱科技 暑期實習機會!!",
+            "description_en": "He-Teng Chang gets internship opportunity of RealTek!!"
+        },
+        {
+            "date": "2017-04-06",
+            "type": "賀",
+            "description": "恭喜 博士生 林佳瑩 獲得德國 RWTH Aachen University     短期訪問機會!!",
+            "description_en": "Chia-Ying Lin gets invitation of short-term academic visit to RWTH Aachen University (in Germany )!!"
+        },
+        {
+            "date": "2017-02-21",
+            "type": "狂賀",
+            "description": "恭喜 碩班 呂尚霖 獲得中華民國資訊學會最佳碩博士論文獎!!",
+            "description_en": "Shang-Lin Lu's paper has won the IICM Master Thesis Award!!",
+            "comment": "恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 中華民國資訊學會碩博士最佳論文獎",
+            "comment_en": "The thesis \"Optimistic DRX for Machine-type\" has won the IICM Master Thesis Award!!"
+        },
+        {
+            "date": "2017-01-06",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 獲得 成大資工系 106 級專題展 佳作 !!",
+            "description_en": "Yun-Zhan Cai and Y.-S. Lu have won Honorable Poster Award in 2017 NCKU CSIE Undergraduate Project Exhibition"
+        }
+    ],
+    "year 2016": [{
+            "date": "2016-12-28",
+            "type": "賀",
+            "description": "恭喜 賴志豪 碩士 博班 張蕙玲 林佳瑩 的論文被接受!!",
+            "description_en": "Chih-Hao Lai, Hui-Ling Chang and Chia-Ying Lin's paper was accepted",
+            "comment": "恭喜 論文 \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" 被 IEEE Transactions on Vehicular Technology 接受",
+            "comment_en": "The paper \"Reducing Costs of LIPA Handover through Bearer Reservation with Preemption\" was accepted by IEEE Transactions on Vehicular Technology"
+        },
+        {
+            "date": "2016-12-22",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 張蕙玲 碩班 高宏瑋 的論文被接受!!",
+            "description_en": "Hui-Ling Chang, Chia-Ying Lin and Hung-Wei Kao's paper was accepted",
+            "comment": "恭喜 論文 \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" 被 Computer Communications 接受",
+            "comment_en": "The paper \"Gateway-Assisted Two-Stage Radio Access for Machine Type Communication in LTE-Advanced Network\" was accepted by Computer Communications"
+        },
+        {
+            "date": "2016-12-22",
+            "type": "賀",
+            "description": "恭喜 博班 林佳瑩 碩班 蔡婉萍 專題生 蔡昀展 的論文被接受!!",
+            "description_en": "Chia-Ying Lin, Wan-Ping Tsai and Yun-Zhan Cai's paper was accepted",
+            "comment": "恭喜 論文 \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" 被 IEEE AINA 2017 接受",
+            "comment_en": "The paper \"Adaptive Load-balancing Scheme Through Wireless SDN-based Association Control\" was accepted by IEEE AINA 2017"
+        },
+        {
+            "date": "2016-12-22",
+            "type": "賀",
+            "description": "恭喜 博班 莊琮暉 碩班 蘇珮華 的論文被接受!!",
+            "comment": "恭喜 論文 \"Residual Size-based Mobile Data Offloading for File Transmission on Mobile Devices\" 被 IEEE AINA 2017 接受"
+        },
+        {
+            "date": "2016-12-21",
+            "type": "賀",
+            "description": "恭喜 專題生 蔡昀展 博班 林佳瑩 的論文被接受!!",
+            "comment": "恭喜 論文 \"Application-aware Realtime Monitoring with Data Visualization in OpenFlow-based Network\" 被 IEEE WAINA 2017 接受"
+        },
+        {
+            "date": "2016-12-14",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 獲得潘文淵獎學金 !!!"
+        },
+        {
+            "date": "2016-11-16",
+            "type": "賀",
+            "description": "恭喜 碩班 張鶴騰 獲得 2016國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題 國內賽 優等!!"
+        },
+        {
+            "date": "2016-11-05",
+            "type": "賀",
+            "description": "恭喜 專題生 楊靜妃 獲得國際 iGEM 競賽金牌及兩項獎項提名 !!",
+            "comment": "恭喜楊靜妃參加 international Genetically Engineered Machine (iGEM) Competition 獲得 Gold Medal 及兩項最佳表現提名：(1) Nominated for Best Diagnostics Project, (2) Nominated for Best Presentation (<a href='https://udn.com/news/story/1/2092101' target='_blank'>相關報導</a>)"
+        },
+        {
+            "date": "2016-10-22",
+            "type": "賀",
+            "description": "恭喜 專題生 楊靜妃 朱宥繐 謝忠穎 博班 林佳瑩 張蕙玲 的論文被接受!!",
+            "comment": "恭喜 論文 \"iParking -- Real-Time Parking Space Monitor and Guiding System with Cloud Service\" 被 IOV 2016 接受"
+        },
+        {
+            "date": "2016-10-07",
+            "type": "狂賀",
+            "description": "恭喜 碩班 呂尚霖 獲得台灣電機電子工程學會最佳碩博士論文獎!!",
+            "comment": "恭喜 論文 \"機器型態通訊之樂觀DRX 節能技術\" 獲得 2016 台灣電機電子工程學會最佳碩博士論文獎"
+        },
+        {
+            "date": "2016-09-20",
+            "type": "賀",
+            "description": "恭喜 博班 張蕙玲 林佳瑩 碩班 王正綱 吳孟庭 的論文被接受!!",
+            "comment": "恭喜 論文 \"Gateway-assisted Retransmission for Lightweight and Reliable IoT\" 被 Sensors 接受"
+        },
+        {
+            "date": "2016-08-03",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 朱宥繐 獲得科技部大專學生研究計畫研究創作獎 (獲獎率僅 6%) !!!"
+        },
+        {
+            "date": "2016-07-29",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 徐朝逸 瞿旭民 的論文被接受!!",
+            "comment": "恭喜 論文 \"OpenFlow 為基礎之視覺化網路即時路況監測\" 及 \"透過Qt 實作跨系統的自動編譯開發平台\" 被 第二十一屆行動計算研討會 接受"
+        },
+        {
+            "date": "2016-06-22",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 陸勇盛 105 級專題生 方鈞麒 獲得 思銳科技 暑期實習機會!!"
+        },
+        {
+            "date": "2016-05-30",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 蔡昀展 通過科技部大專學生研究計畫 !!!"
+        },
+        {
+            "date": "2016-05-23",
+            "type": "賀",
+            "description": "恭喜 碩士生 吳孟庭 獲得 德國 RWTH Aachen University 交換學生機會!!"
+        },
+        {
+            "date": "2016-05-18",
+            "type": "賀",
+            "description": "恭喜 碩士生 林賢哲 獲得 Trend Micro 暑期實習機會!!"
+        },
+        {
+            "date": "2016-05-04",
+            "type": "賀",
+            "description": "恭喜 碩士生 吳孟庭 獲得 Trend Micro 暑期海外(美國)實習機會!!"
+        },
+        {
+            "date": "2016-04-22",
+            "type": "賀",
+            "description": "恭喜 博士生 林佳瑩 獲得 Yahoo! 暑期實習機會!!"
+        },
+        {
+            "date": "2016-04-22",
+            "type": "賀",
+            "description": "恭喜 碩士生 張鶴騰 獲得 加拿大 University of Ottawa (uOttawa) 短期研究機會!!"
+        },
+        {
+            "date": "2016-03-14",
+            "type": "賀",
+            "description": "恭喜 專題生 楊靜妃 碩士生 吳孟庭 獲得 Google Code Jam for Women 全球第 58 名及全球第 127 名，受邀前往美國 Google 總部(Mountain View)參加 Google I/O 2016!!"
+        },
+        {
+            "date": "2016-02-25",
+            "type": "賀",
+            "description": "恭喜 碩士生 呂宜龍 獲得 日本 北陸先端科學技術大學院大學 (JAIST) 短期研究機會!!"
+        },
+        {
+            "date": "2016-02-23",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 楊靜妃 朱宥繐 謝忠穎 獲得 成大資工系 105 級專題展 優等 及 人氣獎第二名!!"
+        },
+        {
+            "date": "2016-01-31",
+            "type": "賀",
+            "description": "恭喜 博士生 張蕙玲 莊琮暉 林佳瑩 及 碩士生 呂尚霖 的論文被接受!!",
+            "comment": "恭喜 論文 \"Optimistic DRX for Machine-type Communications in LTE-Advanced Network\" 被 IEEE ICC 2016 接受"
+        },
+        {
+            "date": "2016-01-08",
+            "type": "賀",
+            "description": "恭喜 博士生 林佳瑩 榮獲 Garmin 獎學金!!!!!"
+        }
+    ],
+    "year 2015": [{
+            "date": "2015-12-30",
+            "type": "賀",
+            "description": "恭喜 專題生 楊靜妃 榮獲洪肇奎博士獎助學金!!!!!"
+        },
+        {
+            "date": "2015-11-26",
+            "type": "賀",
+            "description": "恭喜 碩二 張鶴騰 呂宜龍 獲得 2015國際積體電路電腦輔助設計(CAD)軟體製作競賽 定題組B題佳作!!"
+        },
+        {
+            "date": "2015-09-17",
+            "type": "賀",
+            "description": "恭喜 106 級專題生 劉心慈 錄取第 13 屆新世紀領袖菁英培育班!!"
+        },
+        {
+            "date": "2015-08-18",
+            "type": "賀",
+            "description": "恭喜 碩一 張鶴騰 獲得聯詠獎學金!!"
+        },
+        {
+            "date": "2015-08-01",
+            "type": "賀",
+            "description": "恭喜 碩零 黃筱涵 林賢哲 105 級專題生 楊靜妃 朱宥繐 謝忠穎 的論文被接受!!",
+            "comment": "恭喜 論文 \"Android 系統中基於修改 framework 實現錄製與重播觸控行為之方法\" 及 \"愛停車 -- 雲端停車格即時監控暨引導系統\" 被 第二十屆行動計算研討會 接受"
+        },
+        {
+            "date": "2015-08-01",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 林季伯 的論文被接受!!",
+            "comment": "恭喜 論文 \"PCF Shadow Mapping Enhancement by Post-blurring Shadow Buffer\" 被 CVGIP 2015 接受"
+        },
+        {
+            "date": "2015-06-29",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 楊靜妃 獲得 教育部全國大學校院IC競賽 可程式邏輯設計組 特優 (陳培殷老師指導)"
+        },
+        {
+            "date": "2015-06-24",
+            "type": "賀",
+            "description": "恭喜 碩一 張蕙玲 碩零 林佳瑩 吳孟庭 林賢哲 黃筱涵 蘇容德 大三 楊靜妃 獲得暑期實習機會!!!可喜可賀!!!",
+            "comment": "恭喜 碩一 張蕙玲 碩零 蘇容德 獲得 聯發科(MTK) 暑期實習機會!<br/>恭喜 碩零 林佳瑩 獲得 宏達電(hTC) 暑期實習機會!<br/>恭喜 碩零 吳孟庭 林賢哲 黃筱涵 獲得 工研院(ITRI) 暑期實習機會!<br/>恭喜 大三 楊靜妃 獲得 美國 iwNetworks 暑期實習機會!"
+        },
+        {
+            "date": "2015-06-05",
+            "type": "賀",
+            "description": "恭喜 碩班 蘇佩華 榮膺 斐陶斐榮譽學會 榮譽會員!!"
+        },
+        {
+            "date": "2015-06-02",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 楊靜妃 謝忠穎 獲得預研生資格"
+        },
+        {
+            "date": "2015-05-28",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 朱宥繐 林季伯 通過科技部大專學生研究計畫 !!!"
+        },
+        {
+            "date": "2015-04-27",
+            "type": "賀",
+            "description": "恭喜 碩零 林佳瑩 獲得 <a href='http://www.cie.org.tw/cms/UpLoad/files/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF/104%E5%B9%B4%E5%BA%A6%20%E5%90%84%E7%8D%8E%E9%A0%85%E5%BE%97%E7%8D%8E%E4%BA%BA.pdf' target='_blank'>104 年度 中國工程師學會 優秀工程學生獎學金</a>!!"
+        },
+        {
+            "date": "2015-04-17",
+            "type": "賀",
+            "description": "恭喜 碩零 林佳瑩 獲得 成電文教基金會64級系友獎學金!!"
+        },
+        {
+            "date": "2015-04-17",
+            "type": "賀",
+            "description": "恭喜 專題生 楊靜妃 獲得 <a href='http://modernweb.tw/student-plan.html' target='_blank'>Modern Web 2015</a> 學生獎勵!!",
+            "comment": "恭喜 楊靜妃 獲得 Modern Web 2015 獎勵, 將出席 2015/5/15~2015/5/16 在中研院舉辦之 Modern Web 大會"
+        },
+        {
+            "date": "2015-03-31",
+            "type": "賀",
+            "description": "恭喜 碩零 林賢哲 的論文被推薦到 International Journal of Science and Engineering!!",
+            "comment": "恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 推薦至 International Journal of Science and Engineering"
+        },
+        {
+            "date": "2015-03-21",
+            "type": "賀",
+            "description": "恭喜 博士生 莊琮暉 獲得 國立成功大學 邁向頂尖大學計畫 出席國際會議補助!!"
+        },
+        {
+            "date": "2015-01-10",
+            "type": "賀",
+            "description": "恭喜 高宏瑋 碩士 及 專題生 朱宥繐 的論文被接受!!",
+            "comment": "恭喜 論文 \"Two-Stage Radio Access for Group-Based Machine Type Communication in LTE-A\" 被 IEEE ICC 2015 接受"
+        }
+    ],
+    "year 2014": [{
+            "date": "2014-12-30",
+            "type": "賀",
+            "description": "恭喜 專題生 林佳瑩 榮獲洪肇奎博士獎助學金!!!!!",
+            "description_en": "Chia-Ying Lin gets the Dr. Hung Scholarships !!"
+        },
+        {
+            "date": "2014-12-26",
+            "type": "賀",
+            "description": "恭喜 博班 莊琮暉 的論文被接受!!",
+            "comment": "恭喜 論文 \"Group-Based Uplink Scheduling for Machine-Type Communications in LTE-Advanced Networks\" 被 IEEE WAINA 2015 接受"
+        },
+        {
+            "date": "2014-11-24",
+            "type": "賀",
+            "description": "恭喜 碩班 呂尚霖 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎 ！！可喜可賀！！！",
+            "description_en": "Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!",
+            "comment": "恭喜 \"Call Me Back 請回電\" 獲得第八屆myfone行動創作獎 原創歌曲鈴聲組 三獎",
+            "comment_en": "Shang-Lin Lu won the 8th Taiwan Mobile myfone Mobile Creation Award - 3rd Prize!!"
+        },
+        {
+            "date": "2014-11-12",
+            "type": "狂賀",
+            "description": "恭喜 碩班 高宏瑋 獲得中華民國資訊學會最佳碩博士論文獎!!",
+            "description": "Hung-Wei Kao's paper has won the IICM Master Thesis Award!!",
+            "comment": "恭喜 論文 \"LTE-A 中基於分群之MTC 兩階段無線電存取\" 獲得 2014 中華民國資訊學會碩博士最佳論文獎",
+            "comment_en": "The paper \"Two-Stage Radio Access for Group-based Machine Type Communication in LTE-A\" has won the IICM Master Thesis Award!!"
+        },
+        {
+            "date": "2014-11-03",
+            "type": "賀",
+            "description": "恭喜 碩班 陳冠宏 博班 莊琮暉 的論文被接受!!",
+            "comment": "恭喜 論文 \"Inter-cell Interference through Cognitive Radio for LTE-Advanced Downlink Transmission in Heterogeneous Network\" 被 ICONI 2014 接受"
+        },
+        {
+            "date": "2014-11-03",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 楊靜妃 獲得 2014 晨鐘獎學金!!"
+        },
+        {
+            "date": "2014-09-04",
+            "type": "賀",
+            "description": "恭喜 105 級專題生 楊靜妃 錄取第 12 屆新世紀領袖菁英培育班!!"
+        },
+        {
+            "date": "2014-08-01",
+            "type": "賀",
+            "description": "恭喜 104 級專題生 林賢哲 的論文被接受!!",
+            "comment": "恭喜 論文 \"黎明志工銀行－你今天志工了嗎\" 被 第十九屆行動計算研討會 接受"
+        },
+        {
+            "date": "2014-08-01",
+            "type": "賀",
+            "description": "恭喜 104 級專題生 林佳瑩 蘇容德 碩一 蔡婉萍 的論文被接受!!",
+            "comment": "恭喜 論文 \"Finding Nearby Available Roadside Parking Spot\" 被 CVGIP 2014 接受"
+        },
+        {
+            "date": "2014-07-15",
+            "type": "賀",
+            "description": "恭喜 碩一 賴志豪 獲得 美國 Temple 大學 交換學生機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-07-15",
+            "type": "賀",
+            "description": "恭喜 碩二 蘇珮華 獲得 北京清華大學 交換學生機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-07-04",
+            "type": "賀",
+            "description": "恭喜 碩一 賴志豪 獲得 聯發科(MTK) 暑期實習機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-07-04",
+            "type": "賀",
+            "description": "恭喜 碩一 蔡婉萍 獲得 <a href='http://womany.net/?ref=logo' target='_blank'>Womany</a> 暑期實習機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-07-04",
+            "type": "賀",
+            "description": "恭喜 碩一 李思穎 獲得 趨勢科技 暑期實習機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-07-04",
+            "type": "賀",
+            "description": "恭喜 碩零 呂宜龍 獲得 昱泉科技 暑期實習機會!!!可喜可賀!!!"
+        },
+        {
+            "date": "2014-06-03",
+            "type": "賀",
+            "description": "恭喜 104 級專題生 林佳瑩 蘇容德 林賢哲 黃筱涵 獲得預研生資格"
+        },
+        {
+            "date": "2014-01-13",
+            "type": "賀",
+            "description": "恭喜 碩一 蔡婉萍 的論文被接受!!",
+            "comment": "恭喜 論文 \"IROL: A Humanoid Mobility Model for Mobile Ad Hoc Network\" 被 IEEE ICC 2014 接受"
+        }
+    ],
+    "year 2013": [{
+            "date": "2013-08-15",
+            "type": "賀",
+            "description": "恭喜 碩二 俞中豪, 碩一 蘇珮華 和 碩零 賴志豪 的論文被接受!!",
+            "comment": "恭喜 論文 \"A Novel Semi-Static Interference Coordination Scheme for LTE Uplink\" 被 ICICS 2013 接受"
+        },
+        {
+            "date": "2013-08-02",
+            "type": "賀",
+            "description": "恭喜 103 級專題生 陳冠宇 和 碩一 蔡婉萍 的論文被接受!!",
+            "comment": "恭喜 論文 \"管你停哪裡－適地性停車格引導服務\" 被 第十八屆行動計算研討會 接受"
+        },
+        {
+            "date": "2013-06-20",
+            "type": "賀",
+            "description": "恭喜 103 級專題生 陳冠宇 張釗銘 蘇偉嘉 獲得預研生資格"
+        },
+        {
+            "date": "2013-06-03",
+            "type": "賀",
+            "description": "恭喜 碩零 賴志豪 獲得 IBM 暑期實習機會!!!"
+        },
+        {
+            "date": "2013-05-30",
+            "type": "賀",
+            "description": "恭喜 103 級專題生 陳冠宇 通過國科會大專學生研究計畫 !!!"
+        },
+        {
+            "date": "2013-05-11",
+            "type": "賀",
+            "description": "恭喜 碩一 高宏瑋 獲得 IBM 暑期實習機會!!!"
+        },
+        {
+            "date": "2013-04-12",
+            "type": "賀",
+            "description": "恭喜 碩一 蘇珮華 獲得 IBM 暑期實習機會!!!可喜可賀!!!"
+        }
+    ],
+    "year 2012": [{
+            "date": "2012-12-12",
+            "type": "賀",
+            "description": "恭喜 四位同學 獲得 IBM 大型主機競賽前 20 名",
+            "comment": "恭喜 碩一 高宏瑋 李冠賢 陳彥誠 及 大三 陳冠宇 獲得 IBM 大型主機競賽前 20 名!!<br/>今年該競賽共有 887 人參加, 僅有 77 位能完成第二階段, 前 20 名受邀至 IBM 領獎 (成大共佔 9 位)<br/><img src='./images/ibm_zMaster_2012_ceremony.jpg' style='width:80%'>"
+        },
+        {
+            "date": "2012-07-11",
+            "type": "賀",
+            "description": "恭喜 碩零 高宏瑋 和 李冠賢 的論文被接受!!",
+            "comment": "恭喜 論文 \"Two-Phase Online Memory Leak Detection\" 被 APNOMS 2012 接受"
+        },
+        {
+            "date": "2012-07-05",
+            "type": "賀",
+            "description": "恭喜 碩零 李冠賢 獲得台積電暑期實習機會"
+        },
+        {
+            "date": "2012-06-26",
+            "type": "賀",
+            "description": "恭喜 102 級專題生 賴志豪 獲得預研生資格"
+        }
+    ]
 }

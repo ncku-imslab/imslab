@@ -72,14 +72,14 @@ const getConfContent = () => {
 };
 
 const getBlogContent = () => `
-- [林一平部落格](http://blog.bs2.to/liny)
 - [教書匠的夢想](http://blog.xuite.net/ycedu/blog)
 - [清大彭明輝的部落格](http://mhperng.blogspot.com/)
 - [vgod's blog](http://blog.vgod.tw/)`;
 
 const getApplyContent = () => `
 ### 出國參加研討會補助
-- [傑出人才發展基金會](http://www.faos.org.tw/Application/index.asp)
+-[傑出人才發展基金會](http://www.faos.org.tw/Application/ApplicatStud.html)
+-[研討會等級查詢](http://www.conferenceranks.com/)
 
 ---
 
@@ -100,10 +100,9 @@ const getApplyContent = () => `
 ### 比賽
 - [Google Summer of Code](http://summerofcode.withgoogle.com/about/) (Deadline: 四月初)
 - [經濟部 搶鮮大賽](http://www.getfresh.org.tw/index.aspx) (Deadline: 五月中)
-- [中華電信 電信創新應用大賽](http://telsoft.hinet.net/) (Deadline: 八月初)
+- [中華電信 電信創新應用大賽](https: //iot.cht.com.tw/2019CHT-IoT/) (Deadline: 八月初)
 - [經濟部工業局 通訊大賽](http://www.mobilehero.com/) (Deadline: 九月初)
 - [經濟部工業局 資訊應用服務創新競賽](http://innoserve.tca.org.tw/) (Deadline: 十月中)
-- [教育部 大學校院網路通訊軟體與創意應用競賽](http://ncsiac.csie.ncu.edu.tw/) (Deadline: 十一月底)
 
 ---
 
