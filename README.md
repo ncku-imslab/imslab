@@ -1,6 +1,7 @@
 # IMS Lab
 [![Build Status](https://travis-ci.com/ncku-imslab/imslab.svg?branch=reactapp)](https://travis-ci.com/ncku-imslab/imslab)
 
+<http://imslab.org/>
 ## Data
 
 Data is in [`./data`](data) directory with JSON format.
