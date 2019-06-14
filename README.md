@@ -1,5 +1,5 @@
 # IMS Lab
-[![Build Status](https://travis-ci.com/jingfei/imslab.svg?branch=reactapp)](https://travis-ci.com/jingfei/imslab)
+[![Build Status](https://travis-ci.com/ncku-imslab/imslab.svg?branch=reactapp)](https://travis-ci.com/ncku-imslab/imslab)
 
 ## Data
 
