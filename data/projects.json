@@ -5,6 +5,11 @@
             "duration": "2018/8 ~ 2019/7",
             "subsidy": "科技部 (107-2221-E-006-062 -)",
             "subsidy_en": "MOST (107-2221-E-006-062 -)"
+        }, {
+            "name": "Anomaly Detection in SDN with PDP",
+            "duration": "2019/7 ~ 2020/2",
+            "subsidy": "科技部 (108-2813-C-006-027-E)",
+            "subsidy_en": "MOST (108-2813-C-006-027-E)"
         }],
         "cooperation": [{
                 "name": "AIOT+SDN整合平台之前瞻邊緣交換機上的物聯網設備網路行為正常性分析技術研發",
