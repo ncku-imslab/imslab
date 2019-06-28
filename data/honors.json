@@ -1,6 +1,17 @@
 {
     "award": {
-        "year 2018": [{
+        "year 2019": [{
+            {
+                "name": ["孫名柔"],
+                "content": "科技部大專生計畫"
+            },
+            {
+                "name": ["林佳瑩"],
+                "content": "斐陶斐榮譽學會榮譽會員"
+            }
+        ],
+        "year 2018": [
+            {
                 "name": ["劉俊林"],
                 "name_en": ["Chan Lam Lao"],
                 "content": "成大資工系 108 級專題展 第二名",
@@ -286,7 +297,7 @@
     "research": {
         "year 2019": [{
             "name": ["王俞婷"],
-            "content": "日本 Kanazawa University (KU)"
+            "content": "日本金澤大學 (Kanazawa University; KU)"
         }],
         "year 2017": [{
                 "name": ["劉俊林"],
