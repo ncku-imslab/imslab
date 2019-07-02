@@ -11,18 +11,23 @@ DataList.News = ({data, lang}) => {
         <Row key={`news-${i}`} style={{marginTop: '10px'}} >
           <Col md={2} className='date'>{news.date}</Col>
           <Col md={1} xs={2} className='type'>{lang === 'en' ? 'grats' : news.type}</Col>
-          <Col md={9} xs={10}>
-            {lang === 'en' && news.description_en ? news.description_en : news.description}
-          </Col>
+          <Col md={9} xs={10}
+            dangerouslySetInnerHTML={{
+              __html: lang === 'en' && news.description_en ? news.description_en : news.description,
+            }}
+          />
         </Row>
     );
     if (news.comment) {
       rows.push(
           <Row key={`news-comment-${i}`}>
             <Col md={3} xs={2} />
-            <Col md={9} xs={10} className='comment'>
-              {lang === 'en' && news.comment_en ? news.comment_en : news.comment}
-            </Col>
+            <Col md={9} xs={10}
+              className='comment'
+              dangerouslySetInnerHTML={{
+                __html: lang === 'en' && news.comment_en ? news.comment_en : news.comment,
+              }}
+            />
           </Row>
       );
     }
@@ -37,7 +42,7 @@ DataList.News.propTypes = {
 DataList.Honor = ({data, lang}) => data.map((d, i) => (
   <Row key={`honor-${i}`} style={{margin: '5px -15px'}}>
     <Col md={3}>{lang === 'en' && d.name_en ? d.name_en : d.name}</Col>
-    <Col md={9}>{lang === 'en' && d.content_en ? d.content_en : d.content}</Col>
+    <Col md={9} dangerouslySetInnerHTML={{__html: lang === 'en' && d.content_en ? d.content_en : d.content}} />
   </Row>
 ));
 DataList.Honor.propTypes = {
