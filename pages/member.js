@@ -27,7 +27,13 @@ const getIndividualElm = (p, data) => (
     </Row>)}
     {p.job && (<Row className='comment'>
       <Col md={3}>{data.destn}</Col>
-      <Col md={9}>{p.job}</Col>
+      <Col md={9}>{
+        p.job.indexOf('/') === -1
+          ? p.job
+          : p.job.split('/').map((job, i) =>
+            <li className="job-list" key={p.name_en + '-' + i}>{job.trim()}</li>
+          )
+      }</Col>
     </Row>)}
   </Col>
 );
