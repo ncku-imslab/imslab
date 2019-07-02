@@ -340,6 +340,12 @@ ol > li ol {
         #member-container .comment > div:first-of-type::after {
           content: ": "; } }
 
+#member-container .job-list {
+  list-style-type: none;
+  line-height: 1.5; }
+  #member-container .job-list::before {
+    content: "- "; }
+
 #resource-container .block li {
   margin: 20px 0; }
 
