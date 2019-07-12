@@ -1,40 +1,45 @@
 {
-  "name": "imslab",
-  "version": "2.0.0",
-  "description": "IMSLAB",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "dev": "next",
-    "pre-commit": "eslint --fix components/ pages/",
-    "start": "next start",
-    "build": "next build && next export -o docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ncku-imslab/imslab.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ncku-imslab/imslab/issues"
-  },
-  "homepage": "http://imslab.org",
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^7.0.2",
-    "node-sass": "^4.11.0",
-    "react": "^16.7.0",
-    "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.7.0",
-    "react-markdown": "^4.0.6"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.1",
-    "eslint-config-google": "^0.11.0",
-    "eslint-plugin-react": "^7.12.4"
-  }
+    "name": "imslab",
+    "version": "2.0.0",
+    "description": "IMSLAB",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "dev": "next",
+        "pre-commit": "eslint --fix components/ pages/",
+        "start": "next start",
+        "build": "next build && next export -o docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ncku-imslab/imslab.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ncku-imslab/imslab/issues"
+    },
+    "homepage": "http://imslab.org",
+    "dependencies": {
+        "@zeit/next-sass": "^1.0.1",
+        "fstream": ">=1.0.12",
+        "js-yaml": ">=3.13.1",
+        "lodash.mergewith": ">=4.6.2",
+        "next": "^7.0.2",
+        "node-sass": "^4.11.0",
+        "npm": "^6.5.0",
+        "react": "^16.7.0",
+        "react-bootstrap": "^0.32.4",
+        "react-dom": "^16.7.0",
+        "react-markdown": "^4.0.6",
+        "tar": ">=2.2.2"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.12.1",
+        "eslint-config-google": "^0.11.0",
+        "eslint-plugin-react": "^7.12.4"
+    }
 }
