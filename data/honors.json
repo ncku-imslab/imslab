@@ -182,6 +182,17 @@
         }]
     },
     "intern": {
+        "year 2019": [{
+                "name": ["田少谷"],
+                "content": "中央研究院"
+            },
+            {
+                "name": ["黃俊豪"],
+                "name_en": ["Jun-Hao Huang"],
+                "content": "遠傳電信",
+                "content_en": "Far EasTone Telecommunications Co."
+            }
+        ],
         "year 2018": [{
                 "name": ["廖其忻"],
                 "name_en": ["Cayon Liow Keei Yann"],
