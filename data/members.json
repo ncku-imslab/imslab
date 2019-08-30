@@ -6,16 +6,7 @@
                     "name_en": "Tsung-Hui Chuang",
                     "image": "thchuang.jpg"
                 },
-                {
-                    "name_ch": "張蕙玲",
-                    "name_en": "Hui-Ling Chang",
-                    "image": "hlchang.jpg"
-                },
-                {
-                    "name_ch": "林佳瑩",
-                    "name_en": "Chia-Ying Lin",
-                    "image": "cylin.jpg"
-                },
+ 
                 {
                     "name_ch": "蔡昀展",
                     "name_en": "Yun-Zhan Cai",
@@ -34,11 +25,7 @@
             ]
         },
         "stu_master": {
-            "m3": [{
-                    "name_ch": "謝忠穎",
-                    "name_en": "Chung-Ying Hsieh",
-                    "image": "cyhsieh.jpg"
-                },
+            "m4": [
                 {
                     "name_ch": "陳蓓蓓",
                     "name_en": "Pei-Pei Chen",
@@ -50,11 +37,7 @@
                     "image": "ytfang.jpg"
                 }
             ],
-            "m2": [{
-                    "name_ch": "瞿旭民",
-                    "name_en": "Shu-Min Cyu",
-                    "image": "hmchiu.jpg"
-                },
+            "m3": [
                 {
                     "name_ch": "林瀞文",
                     "name_en": "Jing-Wen Lin",
@@ -66,7 +49,7 @@
                     "image": "jzzhuo.jpg"
                 }
             ],
-            "m1": [{
+            "m2": [{
                     "name_ch": "方鈞麒",
                     "name_en": "Chun-Chi Fang",
                     "image": "ccfang.jpg"
@@ -76,30 +59,21 @@
                     "name_en": "",
                     "image": "cychen.jpg"
                 }
-            ]
-        },
-        "stu_bachelor": {
-            "b108": [{
-                    "name_ch": "劉俊林",
-                    "name_en": "Chan Lam Lao",
-                    "image": "cllao.jpg"
-                },
-                {
-                    "name_ch": "廖其忻",
-                    "name_en": "Cayon Liow",
-                    "image": "cliow.jpg"
-                },
-                {
+            ],
+            "m1": [
+            	{
                     "name_ch": "梁祐承",
                     "name_en": "You-Cheng Liang",
                     "image": "ycliang.jpg"
                 },
                 {
-                    "name_ch": "謝耀賢",
-                    "name_en": "",
-                    "image": "ychsieh.jpg"
+                	"name_ch": "王靖元",
+                	"image": "jywang.jpg"
                 }
-            ],
+            ]
+        },
+        "stu_bachelor": {
+
             "b109": [{
                     "name_ch": "孫名柔",
                     "name_en": "",
@@ -139,7 +113,32 @@
         }
     },
     "alumni": {
+    	"alu_phd":{
+    		"p108":[               {
+                    "name_ch": "張蕙玲",
+                    "name_en": "Hui-Ling Chang",
+                    "image": "hlchang.jpg"
+                },
+                {
+                    "name_ch": "林佳瑩",
+                    "name_en": "Chia-Ying Lin",
+                    "image": "cylin.jpg"
+                }
+    		]
+
+    	},
         "alu_master": {
+        	"g108":[{
+                    "name_ch": "謝忠穎",
+                    "name_en": "Chung-Ying Hsieh",
+                    "image": "cyhsieh.jpg"
+                },
+                {
+                    "name_ch": "瞿旭民",
+                    "name_en": "Shu-Min Cyu",
+                    "image": "hmchiu.jpg"
+                }
+            ],
             "g107": [{
                     "name_ch": "吳孟庭",
                     "name_en": "Mong-Ting Wu",
@@ -260,6 +259,27 @@
             ]
         },
         "alu_bachelor": {
+        	            "b108": [{
+                    "name_ch": "劉俊林",
+                    "name_en": "Chan Lam Lao",
+                    "image": "cllao.jpg"
+                },
+                {
+                    "name_ch": "廖其忻",
+                    "name_en": "Cayon Liow",
+                    "image": "cliow.jpg"
+                },
+                {
+                    "name_ch": "梁祐承",
+                    "name_en": "You-Cheng Liang",
+                    "image": "ycliang.jpg"
+                },
+                {
+                    "name_ch": "謝耀賢",
+                    "name_en": "",
+                    "image": "ychsieh.jpg"
+                }
+            ],
             "b107": [{
                     "name_ch": "方鈞麒",
                     "name_en": "Chun-Chi Fang",
