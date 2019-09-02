@@ -6,7 +6,11 @@
                     "name_en": "Tsung-Hui Chuang",
                     "image": "thchuang.jpg"
                 },
+<<<<<<< HEAD
  
+=======
+           
+>>>>>>> origin/reactapp
                 {
                     "name_ch": "蔡昀展",
                     "name_en": "Yun-Zhan Cai",
@@ -25,7 +29,11 @@
             ]
         },
         "stu_master": {
+<<<<<<< HEAD
             "m4": [
+=======
+            "m3": [
+>>>>>>> origin/reactapp
                 {
                     "name_ch": "陳蓓蓓",
                     "name_en": "Pei-Pei Chen",
@@ -37,7 +45,11 @@
                     "image": "ytfang.jpg"
                 }
             ],
+<<<<<<< HEAD
             "m3": [
+=======
+            "m2": [
+>>>>>>> origin/reactapp
                 {
                     "name_ch": "林瀞文",
                     "name_en": "Jing-Wen Lin",
@@ -59,6 +71,7 @@
                     "name_en": "",
                     "image": "cychen.jpg"
                 }
+<<<<<<< HEAD
             ],
             "m1": [
             	{
@@ -74,6 +87,12 @@
         },
         "stu_bachelor": {
 
+=======
+            ]
+        },
+        "stu_bachelor": {
+        
+>>>>>>> origin/reactapp
             "b109": [{
                     "name_ch": "孫名柔",
                     "name_en": "",
@@ -113,8 +132,13 @@
         }
     },
     "alumni": {
+<<<<<<< HEAD
     	"alu_phd":{
     		"p108":[               {
+=======
+        "alu_phd": {
+                 {
+>>>>>>> origin/reactapp
                     "name_ch": "張蕙玲",
                     "name_en": "Hui-Ling Chang",
                     "image": "hlchang.jpg"
@@ -124,21 +148,35 @@
                     "name_en": "Chia-Ying Lin",
                     "image": "cylin.jpg"
                 }
+<<<<<<< HEAD
     		]
 
     	},
         "alu_master": {
         	"g108":[{
+=======
+            },
+        "alu_master": {
+              "g108": [{
+>>>>>>> origin/reactapp
                     "name_ch": "謝忠穎",
                     "name_en": "Chung-Ying Hsieh",
                     "image": "cyhsieh.jpg"
                 },
+<<<<<<< HEAD
                 {
+=======
+                       {
+>>>>>>> origin/reactapp
                     "name_ch": "瞿旭民",
                     "name_en": "Shu-Min Cyu",
                     "image": "hmchiu.jpg"
                 }
+<<<<<<< HEAD
             ],
+=======
+                       ]
+>>>>>>> origin/reactapp
             "g107": [{
                     "name_ch": "吳孟庭",
                     "name_en": "Mong-Ting Wu",
@@ -259,7 +297,11 @@
             ]
         },
         "alu_bachelor": {
+<<<<<<< HEAD
         	            "b108": [{
+=======
+                "b108": [{
+>>>>>>> origin/reactapp
                     "name_ch": "劉俊林",
                     "name_en": "Chan Lam Lao",
                     "image": "cllao.jpg"
