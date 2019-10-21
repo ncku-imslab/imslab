@@ -137,7 +137,7 @@
             "date": "2020, April 27-30",
             "place": "Beijing, China",
             "deadline": "2019, July 31",
-            "due": false,
+            "due": true,
             "link": "https://infocom2020.ieee-infocom.org/"
         },
         {
@@ -207,7 +207,7 @@
     "ICC": [{
             "date": "2020, June 7-11",
             "place": "Dublin, Ireland",
-            "deadline": "TBD",
+            "deadline": "2019, October 28",
             "due": false,
             "link": "http://icc2019.ieee-icc.org"
         },

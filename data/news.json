@@ -1,14 +1,20 @@
 {
     "year 2019": [{
+            "date": "2019-09-02",
+            "type": "賀",
+            "description": "恭喜 博班 蔡昀展 的論文被接受!!",
+            "description_en": "The paper \"Improving Programming Education Quality with Automatic Grading System\" was accepted by ICITL 2019",
+            "comment": "恭喜 論文 \"Improving Programming Education Quality with Automatic Grading System\" 被 ICITL 2019 接受"
+        }, {
             "date": "2019-06-20",
             "type": "賀",
             "description": "恭喜 109 級專題生 孫名柔 通過科技部大專學生研究計畫!!!"
-        }, 
+        },
         {
             "date": "2019-06-01",
             "type": "賀",
             "description": "恭喜 博班 林佳瑩 榮膺 斐陶斐榮譽學會 榮譽會員!!"
-        }, 
+        },
         {
             "date": "2019-06-14",
             "type": "賀",

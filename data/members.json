@@ -55,6 +55,11 @@
                     "name_ch": "陳俊佑",
                     "name_en": "",
                     "image": "cychen.jpg"
+                },
+                {
+                    "name_ch": "田少谷",
+                    "name_en": "Shao-Ku Tien",
+                    "image": "sktien.jpg"
                 }
             ],
             "m1": [{
@@ -65,6 +70,16 @@
                 {
                     "name_ch": "王靖元",
                     "image": "jywang.jpg"
+                },
+                {
+                    "name_ch": "鄭皓中",
+                    "name_en": "Hao-Zhong Zheng",
+                    "image": "hzzheng.jpg"
+                },
+                {
+                    "name_ch": "詹之鋐",
+                    "name_en": "Chih-Hung Chan",
+                    "image": "chchan.jpg"
                 }
             ]
         },
@@ -350,7 +365,7 @@
                     "comment": "工資管系",
                     "image": "yhju.jpg",
                     "proj": "愛停車 -- 雲端停車格即時監控暨引導系統 (104 年科技部大專生專題研究計畫; 科技部大專生專題研究計畫研究創作獎 )",
-                    "job": "工業技術研究院/UCSD CSE"
+                    "job": "工業技術研究院 / UCSD CSE / pony.ai"
                 },
                 {
                     "name_ch": "謝忠穎",
