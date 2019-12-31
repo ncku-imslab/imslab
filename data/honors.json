@@ -2,6 +2,12 @@
     "award": {
         "year 2019": [
             {
+                "name": ["林佳瑩"],
+                "name_en": ["Chia-Ying Lin"],
+                "content": "IEEE 台南分會 最佳博士論文獎",
+                "content_en": "Best Ph.D. Thesis Award, IEEE Tainan Section"
+            },
+            {
                 "name": ["孫名柔"],
                 "content": "科技部大專生計畫"
             },

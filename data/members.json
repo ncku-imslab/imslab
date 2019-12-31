@@ -20,32 +20,16 @@
                     "name_ch": "陳珞安",
                     "name_en": "Lo-An Chen",
                     "image": "lachen.jpg"
+                },
+                {
+                    "name_ch": "張軍斌",
+                    "name_en": "",
+                    "image": "jbchang.jpg"
                 }
             ]
         },
         "stu_master": {
-            "m4": [{
-                    "name_ch": "陳蓓蓓",
-                    "name_en": "Pei-Pei Chen",
-                    "image": "ppchen.jpg"
-                },
-                {
-                    "name_ch": "方彥婷",
-                    "name_en": "Yen-Ting Fang",
-                    "image": "ytfang.jpg"
-                }
-            ],
-            "m3": [{
-                    "name_ch": "林瀞文",
-                    "name_en": "Jing-Wen Lin",
-                    "image": "jwlin.jpg"
-                },
-                {
-                    "name_ch": "卓景昭",
-                    "name_en": "Jing-Zhao Zhuo",
-                    "image": "jzzhuo.jpg"
-                }
-            ],
+
             "m2": [{
                     "name_ch": "方鈞麒",
                     "name_en": "Chun-Chi Fang",
@@ -86,39 +70,34 @@
         "stu_bachelor": {
 
             "b109": [{
-                    "name_ch": "孫名柔",
+                    "name_ch": "黃政瑋",
                     "name_en": "",
-                    "image": "mzsun.jpg"
+                    "image": "jyhuang.jpg"
                 },
                 {
-                    "name_ch": "林亭伃",
+                    "name_ch": "吳添毅",
                     "name_en": "",
-                    "image": "tylin.jpg"
+                    "image": "tywu.jpg"
                 },
                 {
-                    "name_ch": "洪培軒",
+                    "name_ch": "黃盈慈",
                     "name_en": "",
-                    "image": "phhung.jpg"
+                    "image": "ythuang.jpg"
                 },
                 {
-                    "name_ch": "吳偵平",
+                    "name_ch": "戴源",
                     "name_en": "",
-                    "image": "jpwu.jpg"
+                    "image": "ydai.jpg"
                 },
                 {
-                    "name_ch": "廖胤瑞 (化工系)",
+                    "name_ch": "王聖中 (共同指導)",
                     "name_en": "",
                     "image": "yzliao.jpg"
                 },
                 {
-                    "name_ch": "黃俊豪 (共同指導)",
+                    "name_ch": "林信宇 (測量系)",
                     "name_en": "",
-                    "image": "jhhuang.jpg"
-                },
-                {
-                    "name_ch": "邵鏡軒(共同指導)",
-                    "name_en": "",
-                    "image": "jhchao.jpg"
+                    "image": "sylin.jpg"
                 }
             ]
         }
@@ -129,7 +108,8 @@
                     "name_ch": "張蕙玲",
                     "name_en": "Hui-Ling Chang",
                     "image": "hlchang.jpg",
-                    "paper": "物聯網裝置之省電機制研究"
+                    "paper": "物聯網裝置之省電機制研究",
+                    "job": "Microsoft Research (Redmond)"
                 },
                 {
                     "name_ch": "林佳瑩",
@@ -141,7 +121,13 @@
             ]
         },
         "alu_master": {
-            "g108": [{
+            "g108": [
+ 		{   "name_ch": "卓景昭",
+                    "name_en": "Jing-Zhao Zhuo",
+                    "image": "jzzhuo.jpg",
+		    "paper": "物聯網於軟體定義網路中基於週期子流之主動載入流表條目機制"
+                },
+		{
                     "name_ch": "謝忠穎",
                     "name_en": "Chung-Ying Hsieh",
                     "image": "cyhsieh.jpg",
@@ -275,32 +261,74 @@
             ]
         },
         "alu_bachelor": {
+           "b109": [{
+                    "name_ch": "孫名柔",
+                    "name_en": "",
+                    "image": "mzsun.jpg",
+                    "proj": "ATG.io: A Network I/O Game with Q-learning"
+                },
+                {
+                    "name_ch": "林亭伃",
+                    "name_en": "",
+                    "image": "tylin.jpg",
+                    "proj": "SDN資料平面中SYN Flooding及ARP Spoofing 之偵測"
+                },
+                {
+                    "name_ch": "洪培軒",
+                    "name_en": "",
+                    "image": "phhung.jpg",
+                    "proj": "SDN資料平面中SYN Flooding及ARP Spoofing 之偵測"
+                },
+                {
+                    "name_ch": "吳偵平",
+                    "name_en": "",
+                    "image": "jpwu.jpg",
+                    "proj": "SDN資料平面中SYN Flooding及ARP Spoofing 之偵測"
+                },
+                {
+                    "name_ch": "黃俊豪 (共同指導)",
+                    "name_en": "",
+                    "image": "jhhuang.jpg",
+                    "proj": "ATG.io: A Network I/O Game with Q-learning"
+                },
+                {
+                    "name_ch": "邵鏡軒(共同指導)",
+                    "name_en": "",
+                    "image": "jhchao.jpg",
+                    "proj": "SDN資料平面中SYN Flooding及ARP Spoofing 之偵測"
+                }
+            ],
             "b108": [{
                     "name_ch": "劉俊林",
                     "name_en": "Chan Lam Lao",
-                    "image": "cllao.jpg"
+                    "image": "cllao.jpg",
+                    "proj": "在軟體定義網路中透過卷積神經網絡檢測分散式阻斷服務攻擊"
+
                 },
                 {
                     "name_ch": "廖其忻",
                     "name_en": "Cayon Liow",
-                    "image": "cliow.jpg"
+                    "image": "cliow.jpg",
+                    "proj": "SDN中ARP形態之DoS攻擊應對效能改進"
                 },
                 {
                     "name_ch": "梁祐承",
                     "name_en": "You-Cheng Liang",
-                    "image": "ycliang.jpg"
+                    "image": "ycliang.jpg",
+                    "proj": "互動式線上遊戲評量系統"
                 },
                 {
                     "name_ch": "謝耀賢",
                     "name_en": "",
-                    "image": "ychsieh.jpg"
+                    "image": "ychsieh.jpg",
+                    "proj": "互動式線上遊戲評量系統"
                 }
             ],
             "b107": [{
                     "name_ch": "方鈞麒",
                     "name_en": "Chun-Chi Fang",
                     "image": "ccfang.jpg",
-                    "proj": "基於 SDN 之網路服務品質優化機制",
+                    "proj": "基於 SDN 之網路服務品質優化機制 (106 年科技部大專生專題研究計畫)",
                     "job": "成大資工所碩士生"
                 },
                 {
@@ -314,7 +342,7 @@
                     "name_ch": "陳珞安",
                     "name_en": "Lo-An Chen",
                     "image": "lachen.jpg",
-                    "proj": "整合智慧衣與語音通話之醫療應用照護開發",
+                    "proj": "整合智慧衣與語音通話之醫療應用照護開發 (106 年科技部大專生專題研究計畫)",
                     "job": "成大資工所博士生"
                 }
             ],
