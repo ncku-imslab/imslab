@@ -1,5 +1,12 @@
 {
-    "year 2019": [{
+    "year 2019": [
+        {
+            "date": "2019-11-15",
+            "type": "狂賀",
+            "description": "恭喜 博班 林佳瑩 獲得 IEEE 台南分會最佳博士論文獎!!",
+            "description_en": "Chia-Ying Lin's Ph.D. thesis has won the Best Ph.D. Thesis Award of IEEE Tainan Section!!"
+        },
+        {
             "date": "2019-09-02",
             "type": "賀",
             "description": "恭喜 博班 蔡昀展 的論文被接受!!",

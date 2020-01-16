@@ -32,9 +32,9 @@ const getWorkContent = () =>`
 const getResearchContent = () =>`
 - Internet of Things (IoT)
 - Software Defined Networking (SDN)
-- Design and Analysis of Mobile Network (GSM/UMTS/LTE/LTE-A)
+- Design and Analysis of Mobile Network (GSM/UMTS/LTE/LTE-A/5G/6G)
 - Performance Evaluation
-- Voice over IP (VoIP) Network`;
+- Network Security`;
 
 const Professor = ({router}) => {
   const title = router.query.title;
