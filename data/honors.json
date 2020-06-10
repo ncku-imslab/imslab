@@ -202,6 +202,27 @@
         }]
     },
     "intern": {
+        "year 2020": [
+            {
+                 "name": ["蔡昀展"],
+                 "content": "群暉科技",
+                 "content_en": "Synology Inc."
+             },
+            {
+                "name": ["王俞婷"],
+                "content": "新思科技",
+                "content_en": "Synopsys Inc."
+            },
+            {
+                "name": ["田少谷"],
+                "content": "中央研究院"
+            },
+            {
+                "name": ["邵鏡軒"],
+                "content": "中華電信研究院",
+                "content_en": "Chunghwa Telecom Laboratories"
+            }
+        ],
         "year 2019": [{
                 "name": ["田少谷"],
                 "content": "中央研究院"
