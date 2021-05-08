@@ -27,7 +27,7 @@
         "fstream": ">=1.0.12",
         "js-yaml": ">=3.13.1",
         "lodash.mergewith": ">=4.6.2",
-        "lodash": ">=4.17.13",
+        "lodash": ">=4.17.21",
         "next": "^7.0.2",
         "node-sass": "^4.11.0",
         "npm": "^6.5.0",
