@@ -29,7 +29,7 @@
         "lodash.mergewith": ">=4.6.2",
         "lodash": ">=4.17.13",
         "next": "^7.0.2",
-        "node-sass": "^4.11.0",
+        "node-sass": "^7.0.0",
         "npm": "^6.5.0",
         "react": "^16.7.0",
         "react-bootstrap": "^0.32.4",
